@@ -142,6 +142,33 @@ Proyecto2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/build
 .PHONY : Proyecto2/fast
 
+PathfindingA/PathfindingA.o: PathfindingA/PathfindingA.cpp.o
+
+.PHONY : PathfindingA/PathfindingA.o
+
+# target to build an object file
+PathfindingA/PathfindingA.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/PathfindingA/PathfindingA.cpp.o
+.PHONY : PathfindingA/PathfindingA.cpp.o
+
+PathfindingA/PathfindingA.i: PathfindingA/PathfindingA.cpp.i
+
+.PHONY : PathfindingA/PathfindingA.i
+
+# target to preprocess a source file
+PathfindingA/PathfindingA.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/PathfindingA/PathfindingA.cpp.i
+.PHONY : PathfindingA/PathfindingA.cpp.i
+
+PathfindingA/PathfindingA.s: PathfindingA/PathfindingA.cpp.s
+
+.PHONY : PathfindingA/PathfindingA.s
+
+# target to generate assembly for a file
+PathfindingA/PathfindingA.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/PathfindingA/PathfindingA.cpp.s
+.PHONY : PathfindingA/PathfindingA.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -178,6 +205,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Proyecto2"
+	@echo "... PathfindingA/PathfindingA.o"
+	@echo "... PathfindingA/PathfindingA.i"
+	@echo "... PathfindingA/PathfindingA.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

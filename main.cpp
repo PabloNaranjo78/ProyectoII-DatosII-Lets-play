@@ -1,6 +1,6 @@
 #include <iostream>
+#include "PathfindingA/PathfindingA.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+    PathfindingA * pathfindingA = new PathfindingA();
 }

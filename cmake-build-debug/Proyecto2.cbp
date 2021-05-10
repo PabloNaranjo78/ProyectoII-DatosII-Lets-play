@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/PathfindingA.cpp">
+			<Option target="Proyecto2"/>
+		</Unit>
+		<Unit filename="/home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/PathfindingA.h">
+			<Option target="Proyecto2"/>
+		</Unit>
 		<Unit filename="/home/anthony/Desktop/RepositoriosGit/Proyecto2/main.cpp">
 			<Option target="Proyecto2"/>
 		</Unit>

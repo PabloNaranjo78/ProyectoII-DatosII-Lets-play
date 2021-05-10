@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Proyecto2.dir/PathfindingA/PathfindingA.cpp.o"
   "CMakeFiles/Proyecto2.dir/main.cpp.o"
   "Proyecto2"
   "Proyecto2.pdb"

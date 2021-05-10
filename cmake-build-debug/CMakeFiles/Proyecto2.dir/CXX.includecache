@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/PathfindingA.cpp
+PathfindingA.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/PathfindingA.h
+
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/PathfindingA.h
+iostream
+-
+string
+-
+
