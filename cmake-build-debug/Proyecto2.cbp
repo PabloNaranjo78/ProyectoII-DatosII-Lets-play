@@ -82,6 +82,18 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/LinkedList.cpp">
+			<Option target="Proyecto2"/>
+		</Unit>
+		<Unit filename="/home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/LinkedList.h">
+			<Option target="Proyecto2"/>
+		</Unit>
+		<Unit filename="/home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/Node.cpp">
+			<Option target="Proyecto2"/>
+		</Unit>
+		<Unit filename="/home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/Node.h">
+			<Option target="Proyecto2"/>
+		</Unit>
 		<Unit filename="/home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/PathfindingA.cpp">
 			<Option target="Proyecto2"/>
 		</Unit>

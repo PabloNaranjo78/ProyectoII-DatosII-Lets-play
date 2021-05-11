@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Proyecto2.dir/PathfindingA/LinkedList.cpp.o"
+  "CMakeFiles/Proyecto2.dir/PathfindingA/Node.cpp.o"
   "CMakeFiles/Proyecto2.dir/PathfindingA/PathfindingA.cpp.o"
   "CMakeFiles/Proyecto2.dir/main.cpp.o"
   "Proyecto2"

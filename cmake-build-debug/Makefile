@@ -142,6 +142,60 @@ Proyecto2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/build
 .PHONY : Proyecto2/fast
 
+PathfindingA/LinkedList.o: PathfindingA/LinkedList.cpp.o
+
+.PHONY : PathfindingA/LinkedList.o
+
+# target to build an object file
+PathfindingA/LinkedList.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/PathfindingA/LinkedList.cpp.o
+.PHONY : PathfindingA/LinkedList.cpp.o
+
+PathfindingA/LinkedList.i: PathfindingA/LinkedList.cpp.i
+
+.PHONY : PathfindingA/LinkedList.i
+
+# target to preprocess a source file
+PathfindingA/LinkedList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/PathfindingA/LinkedList.cpp.i
+.PHONY : PathfindingA/LinkedList.cpp.i
+
+PathfindingA/LinkedList.s: PathfindingA/LinkedList.cpp.s
+
+.PHONY : PathfindingA/LinkedList.s
+
+# target to generate assembly for a file
+PathfindingA/LinkedList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/PathfindingA/LinkedList.cpp.s
+.PHONY : PathfindingA/LinkedList.cpp.s
+
+PathfindingA/Node.o: PathfindingA/Node.cpp.o
+
+.PHONY : PathfindingA/Node.o
+
+# target to build an object file
+PathfindingA/Node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/PathfindingA/Node.cpp.o
+.PHONY : PathfindingA/Node.cpp.o
+
+PathfindingA/Node.i: PathfindingA/Node.cpp.i
+
+.PHONY : PathfindingA/Node.i
+
+# target to preprocess a source file
+PathfindingA/Node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/PathfindingA/Node.cpp.i
+.PHONY : PathfindingA/Node.cpp.i
+
+PathfindingA/Node.s: PathfindingA/Node.cpp.s
+
+.PHONY : PathfindingA/Node.s
+
+# target to generate assembly for a file
+PathfindingA/Node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/PathfindingA/Node.cpp.s
+.PHONY : PathfindingA/Node.cpp.s
+
 PathfindingA/PathfindingA.o: PathfindingA/PathfindingA.cpp.o
 
 .PHONY : PathfindingA/PathfindingA.o
@@ -205,6 +259,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Proyecto2"
+	@echo "... PathfindingA/LinkedList.o"
+	@echo "... PathfindingA/LinkedList.i"
+	@echo "... PathfindingA/LinkedList.s"
+	@echo "... PathfindingA/Node.o"
+	@echo "... PathfindingA/Node.i"
+	@echo "... PathfindingA/Node.s"
 	@echo "... PathfindingA/PathfindingA.o"
 	@echo "... PathfindingA/PathfindingA.i"
 	@echo "... PathfindingA/PathfindingA.s"

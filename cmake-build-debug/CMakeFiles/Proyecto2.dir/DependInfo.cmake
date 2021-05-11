@@ -4,6 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/LinkedList.cpp" "/home/anthony/Desktop/RepositoriosGit/Proyecto2/cmake-build-debug/CMakeFiles/Proyecto2.dir/PathfindingA/LinkedList.cpp.o"
+  "/home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/Node.cpp" "/home/anthony/Desktop/RepositoriosGit/Proyecto2/cmake-build-debug/CMakeFiles/Proyecto2.dir/PathfindingA/Node.cpp.o"
   "/home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/PathfindingA.cpp" "/home/anthony/Desktop/RepositoriosGit/Proyecto2/cmake-build-debug/CMakeFiles/Proyecto2.dir/PathfindingA/PathfindingA.cpp.o"
   "/home/anthony/Desktop/RepositoriosGit/Proyecto2/main.cpp" "/home/anthony/Desktop/RepositoriosGit/Proyecto2/cmake-build-debug/CMakeFiles/Proyecto2.dir/main.cpp.o"
   )

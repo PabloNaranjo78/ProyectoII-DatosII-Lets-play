@@ -15,4 +15,14 @@ iostream
 -
 string
 -
+stdlib.h
+-
+time.h
+-
+
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/main.cpp
+iostream
+-
+PathfindingA/PathfindingA.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/PathfindingA.h
 
