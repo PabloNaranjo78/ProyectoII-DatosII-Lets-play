@@ -5,7 +5,6 @@
 #include "Node.h"
 
 
-Node::Node(int id, int val) {
-    this->value = val;
+Node::Node(int id) {
     this->id = id;
 }

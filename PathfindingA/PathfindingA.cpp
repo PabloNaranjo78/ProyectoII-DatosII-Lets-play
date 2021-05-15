@@ -72,16 +72,42 @@ void PathfindingA::setObstacles(int obstacles) {
     }
 }
 
-void PathfindingA::getNewELements(LinkedList *currentOpen, int id) {
+void PathfindingA::getNewELements(LinkedList * currentOpen, int id) {
     //Para un id, se buscan los adyacentes
     //centro arriba y centro abajo +/- 9
+
+    currentOpen->addValue(id-1);
+    currentOpen->addValue(id+1);
+
+    if (id-10 >= 1){
+        //Agregar a los de arriba
+        for (int i=0; i<3; i++){
+            if (!currentOpen->isIn(id-10+i)){
+                currentOpen->addValue(id-10+i);
+            }
+        }
+    }
+
+    if (id+10 <= this->limitsAt*this->limitsAt){
+        //Agregar a los de abajo
+        for(int i=0; i<3; i++){
+            if (!currentOpen->isIn(id+8+i)){
+                currentOpen->addValue(id+8+i);
+            }
+        }
+    }
+    currentOpen->printList();
+
+
 }
 
 LinkedList PathfindingA::getPath(int di, int dj) {
     LinkedList * openList = new LinkedList();
     LinkedList * closedList = new LinkedList();
     LinkedList * pathFound = new LinkedList();
-    closedList->addValue(0,this->matrix_names[di][dj]);
+    closedList->addValue(this->matrix_names[di][dj]);
+    cout << "id used" << this->matrix_names[di][dj] << endl;
+    this->getNewELements(openList, this->matrix_names[di][dj]);
     bool found_path = false;
     //while (!found_path){
 

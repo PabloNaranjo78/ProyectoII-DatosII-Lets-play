@@ -9,9 +9,8 @@
 class Node {
 public:
     Node * next;
-    int value;
     int id;
-    Node(int id, int val);
+    Node(int id);
 };
 
 

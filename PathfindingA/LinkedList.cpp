@@ -8,30 +8,30 @@ LinkedList::LinkedList() {
     this->head = NULL;
 }
 
-void LinkedList::addValue(int val, int id) {
+void LinkedList::addValue(int id) {
     if (this->head == NULL){
-        this->head = new Node(id, val);
+        this->head = new Node(id);
     }else{
         Node * tmp = this->head;
         while (tmp->next != NULL){
             tmp = tmp->next;
         }
-        tmp->next = new Node(id, val);
+        tmp->next = new Node(id);
     }
 }
 
-int LinkedList::getValueAtTop() {
-    int check = this->head->value;
-    int id_return = this->head->id;
+int LinkedList::getValueAt(int i) {
+    int counter = 0;
+    int id_return;
     Node * tmp = this->head;
     while (tmp != NULL){
-        if (tmp->value < check){
-            check = tmp->value;
+        if (i == counter){
             id_return = tmp->id;
+            break;
         }
         tmp = tmp->next;
+        counter++;
     }
-    this->deleteNode(id_return);
     return id_return;
 
 }
@@ -63,7 +63,7 @@ bool LinkedList::isIn(int id) {
 void LinkedList::printList() {
     Node * tmp = this->head;
     while (tmp != NULL){
-        cout << "<" << tmp->value << ">" << endl;
+        cout << "<" << tmp->id << ">" << endl;
         tmp = tmp->next;
     }
 }

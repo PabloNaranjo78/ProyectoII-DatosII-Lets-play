@@ -17,8 +17,8 @@ private:
     Node * head;
 public:
     LinkedList();
-    void addValue(int val, int id);
-    int getValueAtTop();
+    void addValue(int id);
+    int getValueAt(int i);
     void printList();
     bool isIn(int id);
     void deleteNode(int id);
