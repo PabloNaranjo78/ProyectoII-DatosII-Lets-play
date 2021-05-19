@@ -16,12 +16,15 @@ class LinkedList {
 private:
     Node * head;
 public:
+    int length;
     LinkedList();
     void addValue(int id);
     int getValueAt(int i);
     void printList();
     bool isIn(int id);
     void deleteNode(int id);
+    void setParent(int parent, int id);
+    int getParent(int id);
 };
 
 

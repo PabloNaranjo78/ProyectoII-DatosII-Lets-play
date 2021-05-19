@@ -232,6 +232,12 @@ Proyecto2_BINARY_DIR:STATIC=/home/anthony/Desktop/RepositoriosGit/Proyecto2/cmak
 //Value Computed by CMake
 Proyecto2_SOURCE_DIR:STATIC=/home/anthony/Desktop/RepositoriosGit/Proyecto2
 
+//The directory containing a CMake configuration file for SFML.
+SFML_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/SFML
+
+//Path to a file.
+SFML_DOC_DIR:PATH=SFML_DOC_DIR-NOTFOUND
+
 
 ########################
 # INTERNAL cache entries

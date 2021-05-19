@@ -10,6 +10,7 @@ class Node {
 public:
     Node * next;
     int id;
+    int parent;
     Node(int id);
 };
 

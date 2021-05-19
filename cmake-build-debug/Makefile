@@ -142,6 +142,114 @@ Proyecto2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/build
 .PHONY : Proyecto2/fast
 
+GameManagment/Ball.o: GameManagment/Ball.cpp.o
+
+.PHONY : GameManagment/Ball.o
+
+# target to build an object file
+GameManagment/Ball.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/GameManagment/Ball.cpp.o
+.PHONY : GameManagment/Ball.cpp.o
+
+GameManagment/Ball.i: GameManagment/Ball.cpp.i
+
+.PHONY : GameManagment/Ball.i
+
+# target to preprocess a source file
+GameManagment/Ball.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/GameManagment/Ball.cpp.i
+.PHONY : GameManagment/Ball.cpp.i
+
+GameManagment/Ball.s: GameManagment/Ball.cpp.s
+
+.PHONY : GameManagment/Ball.s
+
+# target to generate assembly for a file
+GameManagment/Ball.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/GameManagment/Ball.cpp.s
+.PHONY : GameManagment/Ball.cpp.s
+
+GameManagment/Board.o: GameManagment/Board.cpp.o
+
+.PHONY : GameManagment/Board.o
+
+# target to build an object file
+GameManagment/Board.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/GameManagment/Board.cpp.o
+.PHONY : GameManagment/Board.cpp.o
+
+GameManagment/Board.i: GameManagment/Board.cpp.i
+
+.PHONY : GameManagment/Board.i
+
+# target to preprocess a source file
+GameManagment/Board.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/GameManagment/Board.cpp.i
+.PHONY : GameManagment/Board.cpp.i
+
+GameManagment/Board.s: GameManagment/Board.cpp.s
+
+.PHONY : GameManagment/Board.s
+
+# target to generate assembly for a file
+GameManagment/Board.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/GameManagment/Board.cpp.s
+.PHONY : GameManagment/Board.cpp.s
+
+GameManagment/Scores.o: GameManagment/Scores.cpp.o
+
+.PHONY : GameManagment/Scores.o
+
+# target to build an object file
+GameManagment/Scores.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/GameManagment/Scores.cpp.o
+.PHONY : GameManagment/Scores.cpp.o
+
+GameManagment/Scores.i: GameManagment/Scores.cpp.i
+
+.PHONY : GameManagment/Scores.i
+
+# target to preprocess a source file
+GameManagment/Scores.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/GameManagment/Scores.cpp.i
+.PHONY : GameManagment/Scores.cpp.i
+
+GameManagment/Scores.s: GameManagment/Scores.cpp.s
+
+.PHONY : GameManagment/Scores.s
+
+# target to generate assembly for a file
+GameManagment/Scores.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/GameManagment/Scores.cpp.s
+.PHONY : GameManagment/Scores.cpp.s
+
+Graphics/BoardDisplay.o: Graphics/BoardDisplay.cpp.o
+
+.PHONY : Graphics/BoardDisplay.o
+
+# target to build an object file
+Graphics/BoardDisplay.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.o
+.PHONY : Graphics/BoardDisplay.cpp.o
+
+Graphics/BoardDisplay.i: Graphics/BoardDisplay.cpp.i
+
+.PHONY : Graphics/BoardDisplay.i
+
+# target to preprocess a source file
+Graphics/BoardDisplay.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.i
+.PHONY : Graphics/BoardDisplay.cpp.i
+
+Graphics/BoardDisplay.s: Graphics/BoardDisplay.cpp.s
+
+.PHONY : Graphics/BoardDisplay.s
+
+# target to generate assembly for a file
+Graphics/BoardDisplay.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.s
+.PHONY : Graphics/BoardDisplay.cpp.s
+
 PathfindingA/LinkedList.o: PathfindingA/LinkedList.cpp.o
 
 .PHONY : PathfindingA/LinkedList.o
@@ -223,6 +331,33 @@ PathfindingA/PathfindingA.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/PathfindingA/PathfindingA.cpp.s
 .PHONY : PathfindingA/PathfindingA.cpp.s
 
+Physics/Movement.o: Physics/Movement.cpp.o
+
+.PHONY : Physics/Movement.o
+
+# target to build an object file
+Physics/Movement.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/Physics/Movement.cpp.o
+.PHONY : Physics/Movement.cpp.o
+
+Physics/Movement.i: Physics/Movement.cpp.i
+
+.PHONY : Physics/Movement.i
+
+# target to preprocess a source file
+Physics/Movement.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/Physics/Movement.cpp.i
+.PHONY : Physics/Movement.cpp.i
+
+Physics/Movement.s: Physics/Movement.cpp.s
+
+.PHONY : Physics/Movement.s
+
+# target to generate assembly for a file
+Physics/Movement.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/Physics/Movement.cpp.s
+.PHONY : Physics/Movement.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -259,6 +394,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Proyecto2"
+	@echo "... GameManagment/Ball.o"
+	@echo "... GameManagment/Ball.i"
+	@echo "... GameManagment/Ball.s"
+	@echo "... GameManagment/Board.o"
+	@echo "... GameManagment/Board.i"
+	@echo "... GameManagment/Board.s"
+	@echo "... GameManagment/Scores.o"
+	@echo "... GameManagment/Scores.i"
+	@echo "... GameManagment/Scores.s"
+	@echo "... Graphics/BoardDisplay.o"
+	@echo "... Graphics/BoardDisplay.i"
+	@echo "... Graphics/BoardDisplay.s"
 	@echo "... PathfindingA/LinkedList.o"
 	@echo "... PathfindingA/LinkedList.i"
 	@echo "... PathfindingA/LinkedList.s"
@@ -268,6 +415,9 @@ help:
 	@echo "... PathfindingA/PathfindingA.o"
 	@echo "... PathfindingA/PathfindingA.i"
 	@echo "... PathfindingA/PathfindingA.s"
+	@echo "... Physics/Movement.o"
+	@echo "... Physics/Movement.i"
+	@echo "... Physics/Movement.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

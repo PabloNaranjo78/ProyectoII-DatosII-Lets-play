@@ -128,12 +128,82 @@ CMakeFiles/Proyecto2.dir/PathfindingA/Node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto2.dir/PathfindingA/Node.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/Node.cpp -o CMakeFiles/Proyecto2.dir/PathfindingA/Node.cpp.s
 
+CMakeFiles/Proyecto2.dir/Physics/Movement.cpp.o: CMakeFiles/Proyecto2.dir/flags.make
+CMakeFiles/Proyecto2.dir/Physics/Movement.cpp.o: ../Physics/Movement.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anthony/Desktop/RepositoriosGit/Proyecto2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Proyecto2.dir/Physics/Movement.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto2.dir/Physics/Movement.cpp.o -c /home/anthony/Desktop/RepositoriosGit/Proyecto2/Physics/Movement.cpp
+
+CMakeFiles/Proyecto2.dir/Physics/Movement.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto2.dir/Physics/Movement.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anthony/Desktop/RepositoriosGit/Proyecto2/Physics/Movement.cpp > CMakeFiles/Proyecto2.dir/Physics/Movement.cpp.i
+
+CMakeFiles/Proyecto2.dir/Physics/Movement.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto2.dir/Physics/Movement.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anthony/Desktop/RepositoriosGit/Proyecto2/Physics/Movement.cpp -o CMakeFiles/Proyecto2.dir/Physics/Movement.cpp.s
+
+CMakeFiles/Proyecto2.dir/GameManagment/Scores.cpp.o: CMakeFiles/Proyecto2.dir/flags.make
+CMakeFiles/Proyecto2.dir/GameManagment/Scores.cpp.o: ../GameManagment/Scores.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anthony/Desktop/RepositoriosGit/Proyecto2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Proyecto2.dir/GameManagment/Scores.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto2.dir/GameManagment/Scores.cpp.o -c /home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Scores.cpp
+
+CMakeFiles/Proyecto2.dir/GameManagment/Scores.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto2.dir/GameManagment/Scores.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Scores.cpp > CMakeFiles/Proyecto2.dir/GameManagment/Scores.cpp.i
+
+CMakeFiles/Proyecto2.dir/GameManagment/Scores.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto2.dir/GameManagment/Scores.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Scores.cpp -o CMakeFiles/Proyecto2.dir/GameManagment/Scores.cpp.s
+
+CMakeFiles/Proyecto2.dir/GameManagment/Board.cpp.o: CMakeFiles/Proyecto2.dir/flags.make
+CMakeFiles/Proyecto2.dir/GameManagment/Board.cpp.o: ../GameManagment/Board.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anthony/Desktop/RepositoriosGit/Proyecto2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Proyecto2.dir/GameManagment/Board.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto2.dir/GameManagment/Board.cpp.o -c /home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Board.cpp
+
+CMakeFiles/Proyecto2.dir/GameManagment/Board.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto2.dir/GameManagment/Board.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Board.cpp > CMakeFiles/Proyecto2.dir/GameManagment/Board.cpp.i
+
+CMakeFiles/Proyecto2.dir/GameManagment/Board.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto2.dir/GameManagment/Board.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Board.cpp -o CMakeFiles/Proyecto2.dir/GameManagment/Board.cpp.s
+
+CMakeFiles/Proyecto2.dir/GameManagment/Ball.cpp.o: CMakeFiles/Proyecto2.dir/flags.make
+CMakeFiles/Proyecto2.dir/GameManagment/Ball.cpp.o: ../GameManagment/Ball.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anthony/Desktop/RepositoriosGit/Proyecto2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Proyecto2.dir/GameManagment/Ball.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto2.dir/GameManagment/Ball.cpp.o -c /home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Ball.cpp
+
+CMakeFiles/Proyecto2.dir/GameManagment/Ball.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto2.dir/GameManagment/Ball.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Ball.cpp > CMakeFiles/Proyecto2.dir/GameManagment/Ball.cpp.i
+
+CMakeFiles/Proyecto2.dir/GameManagment/Ball.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto2.dir/GameManagment/Ball.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Ball.cpp -o CMakeFiles/Proyecto2.dir/GameManagment/Ball.cpp.s
+
+CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.o: CMakeFiles/Proyecto2.dir/flags.make
+CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.o: ../Graphics/BoardDisplay.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anthony/Desktop/RepositoriosGit/Proyecto2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.o -c /home/anthony/Desktop/RepositoriosGit/Proyecto2/Graphics/BoardDisplay.cpp
+
+CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anthony/Desktop/RepositoriosGit/Proyecto2/Graphics/BoardDisplay.cpp > CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.i
+
+CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anthony/Desktop/RepositoriosGit/Proyecto2/Graphics/BoardDisplay.cpp -o CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.s
+
 # Object files for target Proyecto2
 Proyecto2_OBJECTS = \
 "CMakeFiles/Proyecto2.dir/main.cpp.o" \
 "CMakeFiles/Proyecto2.dir/PathfindingA/PathfindingA.cpp.o" \
 "CMakeFiles/Proyecto2.dir/PathfindingA/LinkedList.cpp.o" \
-"CMakeFiles/Proyecto2.dir/PathfindingA/Node.cpp.o"
+"CMakeFiles/Proyecto2.dir/PathfindingA/Node.cpp.o" \
+"CMakeFiles/Proyecto2.dir/Physics/Movement.cpp.o" \
+"CMakeFiles/Proyecto2.dir/GameManagment/Scores.cpp.o" \
+"CMakeFiles/Proyecto2.dir/GameManagment/Board.cpp.o" \
+"CMakeFiles/Proyecto2.dir/GameManagment/Ball.cpp.o" \
+"CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.o"
 
 # External object files for target Proyecto2
 Proyecto2_EXTERNAL_OBJECTS =
@@ -142,9 +212,17 @@ Proyecto2: CMakeFiles/Proyecto2.dir/main.cpp.o
 Proyecto2: CMakeFiles/Proyecto2.dir/PathfindingA/PathfindingA.cpp.o
 Proyecto2: CMakeFiles/Proyecto2.dir/PathfindingA/LinkedList.cpp.o
 Proyecto2: CMakeFiles/Proyecto2.dir/PathfindingA/Node.cpp.o
+Proyecto2: CMakeFiles/Proyecto2.dir/Physics/Movement.cpp.o
+Proyecto2: CMakeFiles/Proyecto2.dir/GameManagment/Scores.cpp.o
+Proyecto2: CMakeFiles/Proyecto2.dir/GameManagment/Board.cpp.o
+Proyecto2: CMakeFiles/Proyecto2.dir/GameManagment/Ball.cpp.o
+Proyecto2: CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.o
 Proyecto2: CMakeFiles/Proyecto2.dir/build.make
+Proyecto2: /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1
+Proyecto2: /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1
+Proyecto2: /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
 Proyecto2: CMakeFiles/Proyecto2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/anthony/Desktop/RepositoriosGit/Proyecto2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Proyecto2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/anthony/Desktop/RepositoriosGit/Proyecto2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable Proyecto2"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Proyecto2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

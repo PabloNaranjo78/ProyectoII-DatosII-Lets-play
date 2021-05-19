@@ -33,4 +33,6 @@ iostream
 -
 PathfindingA/PathfindingA.h
 /home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/PathfindingA.h
+SFML/Graphics.hpp
+-
 

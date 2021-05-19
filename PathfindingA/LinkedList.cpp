@@ -9,6 +9,7 @@ LinkedList::LinkedList() {
 }
 
 void LinkedList::addValue(int id) {
+    this->length++;
     if (this->head == NULL){
         this->head = new Node(id);
     }else{
@@ -22,7 +23,7 @@ void LinkedList::addValue(int id) {
 
 int LinkedList::getValueAt(int i) {
     int counter = 0;
-    int id_return;
+    int id_return = 0;
     Node * tmp = this->head;
     while (tmp != NULL){
         if (i == counter){
@@ -38,12 +39,21 @@ int LinkedList::getValueAt(int i) {
 
 void LinkedList::deleteNode(int id) {
     Node * tmp = this->head;
-    while (tmp != NULL){
-        if (tmp->next->id == id){
-            tmp->next = tmp->next->next;
-            break;
+    if (this->head->id == id){
+        cout << "Found" << endl;
+        this->head = this->head->next;
+        this->length--;
+    }
+    else{
+        while (tmp != NULL) {
+            if (tmp->next->id == id) {
+                cout << "Found" << endl;
+                tmp->next = tmp->next->next;
+                this->length--;
+                break;
+            }
+            tmp = tmp->next;
         }
-        tmp = tmp->next;
     }
 }
 
@@ -66,6 +76,29 @@ void LinkedList::printList() {
         cout << "<" << tmp->id << ">" << endl;
         tmp = tmp->next;
     }
+}
+
+void LinkedList::setParent(int parent, int id) {
+    Node * tmp = this->head;
+    while (tmp != NULL){
+        if (id == tmp->id){
+            tmp->parent = parent;
+        }
+        tmp = tmp->next;
+    }
+}
+
+int LinkedList::getParent(int id) {
+    Node * tmp = this->head;
+    int parent = 0;
+    while (tmp != NULL){
+        if (id == tmp->id){
+            parent = tmp->parent;
+            break;
+        }
+        tmp = tmp->next;
+    }
+    return parent;
 }
 
 

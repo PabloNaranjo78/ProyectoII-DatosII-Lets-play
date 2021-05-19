@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/Cliente.dir/Graphics/BoardDisplay.cpp.o -o Cliente   -L/home/anthony/Desktop/RepositoriosGit/Proyecto2/SFML_LIBRARY_DIR  -Wl,-rpath,/home/anthony/Desktop/RepositoriosGit/Proyecto2/SFML_LIBRARY_DIR /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1 

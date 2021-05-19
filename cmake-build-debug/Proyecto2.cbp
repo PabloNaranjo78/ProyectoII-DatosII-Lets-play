@@ -5,7 +5,7 @@
 		<Option title="Proyecto2"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/anthony/Desktop/RepositoriosGit/Proyecto2/cmake-build-debug"/>
@@ -44,6 +44,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/anthony/Desktop/RepositoriosGit/Proyecto2/SFML_INCLUDE_DIR"/>
 					<Add directory="/usr/include/c++/10"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
 					<Add directory="/usr/include/c++/10/backward"/>
@@ -66,6 +67,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/anthony/Desktop/RepositoriosGit/Proyecto2/SFML_INCLUDE_DIR"/>
 					<Add directory="/usr/include/c++/10"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
 					<Add directory="/usr/include/c++/10/backward"/>
@@ -82,6 +84,30 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Ball.cpp">
+			<Option target="Proyecto2"/>
+		</Unit>
+		<Unit filename="/home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Ball.h">
+			<Option target="Proyecto2"/>
+		</Unit>
+		<Unit filename="/home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Board.cpp">
+			<Option target="Proyecto2"/>
+		</Unit>
+		<Unit filename="/home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Board.h">
+			<Option target="Proyecto2"/>
+		</Unit>
+		<Unit filename="/home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Scores.cpp">
+			<Option target="Proyecto2"/>
+		</Unit>
+		<Unit filename="/home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Scores.h">
+			<Option target="Proyecto2"/>
+		</Unit>
+		<Unit filename="/home/anthony/Desktop/RepositoriosGit/Proyecto2/Graphics/BoardDisplay.cpp">
+			<Option target="Proyecto2"/>
+		</Unit>
+		<Unit filename="/home/anthony/Desktop/RepositoriosGit/Proyecto2/Graphics/BoardDisplay.h">
+			<Option target="Proyecto2"/>
+		</Unit>
 		<Unit filename="/home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/LinkedList.cpp">
 			<Option target="Proyecto2"/>
 		</Unit>
@@ -100,11 +126,32 @@
 		<Unit filename="/home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/PathfindingA.h">
 			<Option target="Proyecto2"/>
 		</Unit>
+		<Unit filename="/home/anthony/Desktop/RepositoriosGit/Proyecto2/Physics/Movement.cpp">
+			<Option target="Proyecto2"/>
+		</Unit>
+		<Unit filename="/home/anthony/Desktop/RepositoriosGit/Proyecto2/Physics/Movement.h">
+			<Option target="Proyecto2"/>
+		</Unit>
 		<Unit filename="/home/anthony/Desktop/RepositoriosGit/Proyecto2/main.cpp">
 			<Option target="Proyecto2"/>
 		</Unit>
 		<Unit filename="/home/anthony/Desktop/RepositoriosGit/Proyecto2/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/anthony/Desktop/RepositoriosGit/Proyecto2/../../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/home/anthony/Desktop/RepositoriosGit/Proyecto2/../../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/home/anthony/Desktop/RepositoriosGit/Proyecto2/../../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/home/anthony/Desktop/RepositoriosGit/Proyecto2/../../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets-none.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/home/anthony/Desktop/RepositoriosGit/Proyecto2/../../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>
