@@ -6,6 +6,28 @@
 
 #IncludeRegexTransform: 
 
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Board.cpp
+Board.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Board.h
+
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Board.h
+iostream
+-
+string
+-
+stdlib.h
+-
+time.h
+-
+../PathfindingA/PathfindingA.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/PathfindingA.h
+../Physics/Movement.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/Physics/Movement.h
+Scores.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Scores.h
+
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Scores.h
+
 /home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/LinkedList.h
 Node.h
 /home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/Node.h
@@ -28,11 +50,13 @@ time.h
 LinkedList.h
 /home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/LinkedList.h
 
-/home/anthony/Desktop/RepositoriosGit/Proyecto2/main.cpp
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/Physics/Movement.h
+string
+-
 iostream
 -
-PathfindingA/PathfindingA.h
-/home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/PathfindingA.h
-SFML/Graphics.hpp
+math.h
 -
+../GameManagment/Scores.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Scores.h
 

@@ -6,10 +6,15 @@
 #define PROYECTO2_BOARDDISPLAY_H
 #include <SFML/Graphics.hpp>
 
+using namespace sf;
+
 class BoardDisplay {
-
-
-
+private:
+    RenderWindow * bpGame;
+    bool keepOpen;
+public:
+    BoardDisplay();
+    void runGame();
 };
 
 

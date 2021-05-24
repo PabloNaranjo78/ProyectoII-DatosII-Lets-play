@@ -19,9 +19,9 @@ private:
     int limitsAt = 9;
     int matrix [9][9];
     int matrix_names[9][9];
+    bool obstacles[9][9];
     int positionAt[2];
     int goal[2];
-    bool obstacles[9][9];
     void setMatrix();
     void setObstacles(int obstacles);
     int calculateHeuristics(int di, int dj);
@@ -35,7 +35,7 @@ private:
 
 public:
     string result;
-    PathfindingA();
+    PathfindingA(bool obstacles[9][9], int goal[2]);
     LinkedList * getPath(int di, int dj);
 
 

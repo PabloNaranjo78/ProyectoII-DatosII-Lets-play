@@ -4,12 +4,17 @@
 
 #include "PathfindingA.h"
 
-PathfindingA::PathfindingA(){
+PathfindingA::PathfindingA(bool obstacles[9][9], int goal[2]){
 
     this->result = "";
-    this->goal[0] = 4;
-    this->goal[1] = 1;
+    this->goal[0] = goal[0];
+    this->goal[1] = goal[1];
     this->setMatrix();
+    for (int i=0; i<this->limitsAt; i++){
+        for(int j=0; j<this->limitsAt; j++){
+            this->obstacles[i][j] = obstacles[i][j];
+        }
+    }
     this->setObstacles(8);
     this->printMatrix();
 
@@ -94,7 +99,6 @@ bool PathfindingA::getObstacleFrom(int id) {
             }
         }
     }
-
     return valueReturn;
 }
 

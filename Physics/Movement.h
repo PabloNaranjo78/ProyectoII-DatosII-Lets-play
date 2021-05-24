@@ -14,14 +14,14 @@
 
 class Movement {
 private:
-    const int grid_x = 50;
+    const int grid_x = 90;
     const int grid_y = 70;
-    int x;
-    int y;
     bool obstacles[9][9];
     Scores * scores;
     bool goalScored(bool team) ; //Es un bool para saber si en el movimiento se anota
 public:
+    int x;
+    int y;
     Movement(Scores * currentScores);
     void setObstacles(bool matrix[9][9]);
     void performLaunch(int force, int angle);
