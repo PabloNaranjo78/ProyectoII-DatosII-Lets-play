@@ -12,6 +12,7 @@ Board::Board() {
     this->goals[3] = 7;
     int goal_init1[2] = {goals[0], goals[1]};
     int goal_init2[2] = {goals[2], goals[3]};
+    this->turnPlayers = true;
     this->scores = new Scores();
     this->obstaclesNum = 6;
     this->setObstacles(6);

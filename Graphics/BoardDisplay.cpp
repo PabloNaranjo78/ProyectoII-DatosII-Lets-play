@@ -6,9 +6,10 @@
 
 
 BoardDisplay::BoardDisplay() {
+
     this->keepOpen = true;
     this->board = new Board();
-    this->bpGame = new RenderWindow(VideoMode(810,630), "BP Game: Hockey Edition");
+    this->bpGame = new RenderWindow(VideoMode(1060,630), "BP Game: Hockey Edition");
     this->bpGame->setFramerateLimit(60);
     this->events = new Event();
 
@@ -20,6 +21,11 @@ void BoardDisplay::checkEvents() {
             case Event::Closed:
                 this->bpGame->close();
                 exit(1);
+                break;
+            case Event::MouseButtonPressed:
+                if (Mouse::isButtonPressed(Mouse::Left)){
+                    
+                }
                 break;
         }
 
@@ -70,16 +76,17 @@ void BoardDisplay::runGame() {
     Sprite * puck = new Sprite;
     puck->setTexture(*puckImage);
     puck->setPosition(385,290);
-    int force = 18;
+    int force = 15;
     int out_when = 0;
 
     while (this->keepOpen){
+        this->checkMousePosition();
         this->checkEvents();
         this->bpGame->clear(Color::White);
         this->bpGame->draw(*bg);
         this->bpGame->draw(*puck);
         if (force > 0 && out_when > 100){
-            this->board->puck->performLaunch(force, -30, puck->getPosition().x, puck->getPosition().y, puck);
+            this->board->puck->performLaunch(force, 70, puck->getPosition().x, puck->getPosition().y, puck);
             force --;
         }
         for (int i=0; i<this->board->obstaclesNum; i++){
@@ -88,4 +95,11 @@ void BoardDisplay::runGame() {
         out_when ++;
         this->bpGame->display();
     }
+}
+
+void BoardDisplay::checkMouse() {
+
+    this->pos_mouse = Mouse::getPosition(*this->bpGame);
+    this->pos_mouse = (Vector2i) this->bpGame->mapPixelToCoords(this->pos_mouse);
+
 }

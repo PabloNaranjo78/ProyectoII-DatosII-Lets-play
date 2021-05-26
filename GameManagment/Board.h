@@ -18,7 +18,6 @@ private:
     const int grid_y = 70;
     int limitsAt;
     int goals[4];
-    bool turnPlayers;
     PathfindingA * pathfinder1;
     //PathfindingA * pathfinder2;
     Scores * scores;
@@ -27,6 +26,7 @@ private:
 public:
     Board();
     Movement * puck;
+    bool turnPlayers;
     int obstaclesNum;
     int matrix_names[9][9];
     bool obstacles[9][9];
