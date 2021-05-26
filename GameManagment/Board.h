@@ -17,17 +17,19 @@ private:
     const int grid_x = 90;
     const int grid_y = 70;
     int limitsAt;
-    bool obstacles[9][9];
     int goals[4];
     bool turnPlayers;
     PathfindingA * pathfinder1;
     //PathfindingA * pathfinder2;
-    Movement * puck;
     Scores * scores;
     void setObstacles(int obstacles);
 
 public:
     Board();
+    Movement * puck;
+    int obstaclesNum;
+    int matrix_names[9][9];
+    bool obstacles[9][9];
     void getPathPlayer();
 
 };

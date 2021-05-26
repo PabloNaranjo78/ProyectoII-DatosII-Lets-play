@@ -15,8 +15,14 @@ CMakeFiles/Proyecto2.dir/GameManagment/Board.cpp.o: ../Physics/Movement.h
 CMakeFiles/Proyecto2.dir/GameManagment/Scores.cpp.o: ../GameManagment/Scores.cpp
 CMakeFiles/Proyecto2.dir/GameManagment/Scores.cpp.o: ../GameManagment/Scores.h
 
+CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.o: ../GameManagment/Board.h
+CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.o: ../GameManagment/Scores.h
 CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.o: ../Graphics/BoardDisplay.cpp
 CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.o: ../Graphics/BoardDisplay.h
+CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.o: ../PathfindingA/LinkedList.h
+CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.o: ../PathfindingA/Node.h
+CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.o: ../PathfindingA/PathfindingA.h
+CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.o: ../Physics/Movement.h
 
 CMakeFiles/Proyecto2.dir/PathfindingA/LinkedList.cpp.o: ../PathfindingA/LinkedList.cpp
 CMakeFiles/Proyecto2.dir/PathfindingA/LinkedList.cpp.o: ../PathfindingA/LinkedList.h
@@ -36,6 +42,7 @@ CMakeFiles/Proyecto2.dir/Physics/Movement.cpp.o: ../Physics/Movement.h
 
 CMakeFiles/Proyecto2.dir/main.cpp.o: ../GameManagment/Board.h
 CMakeFiles/Proyecto2.dir/main.cpp.o: ../GameManagment/Scores.h
+CMakeFiles/Proyecto2.dir/main.cpp.o: ../Graphics/BoardDisplay.h
 CMakeFiles/Proyecto2.dir/main.cpp.o: ../PathfindingA/LinkedList.h
 CMakeFiles/Proyecto2.dir/main.cpp.o: ../PathfindingA/Node.h
 CMakeFiles/Proyecto2.dir/main.cpp.o: ../PathfindingA/PathfindingA.h

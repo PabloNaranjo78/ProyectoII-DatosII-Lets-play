@@ -9,13 +9,12 @@ PathfindingA::PathfindingA(bool obstacles[9][9], int goal[2]){
     this->result = "";
     this->goal[0] = goal[0];
     this->goal[1] = goal[1];
-    this->setMatrix();
     for (int i=0; i<this->limitsAt; i++){
-        for(int j=0; j<this->limitsAt; j++){
+        for (int  j=0; j<this->limitsAt; j++){
             this->obstacles[i][j] = obstacles[i][j];
         }
     }
-    this->setObstacles(8);
+    this->setMatrix();
     this->printMatrix();
 
 }
@@ -30,7 +29,6 @@ void PathfindingA::setMatrix() {
     for (int i = 0; i<this->limitsAt; i++){
         for (int j = 0; j<this->limitsAt; j++){
             this->matrix[i][j] = calculateHeuristics(i,j);
-            this->obstacles[i][j] = false;
         }
     }
     int numAt = 1;
