@@ -26,7 +26,8 @@ Board::Board() {
         }
         cout << endl;
     }
-
+    //obstacles, portería 47,
+    backTrackingSearch = new BackTrackingSearch();
     this->pathfinder1 = new PathfindingA(this->obstacles, goal_init1);
 }
 

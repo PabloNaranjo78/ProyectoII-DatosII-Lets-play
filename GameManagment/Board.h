@@ -11,6 +11,7 @@
 #include "../PathfindingA/PathfindingA.h"
 #include "../Physics/Movement.h"
 #include "Scores.h"
+#include "../BT/BackTrackingSearch.h"
 
 class Board {
 private:
@@ -22,6 +23,7 @@ private:
     //PathfindingA * pathfinder2;
     Scores * scores;
     void setObstacles(int obstacles);
+    BackTrackingSearch * backTrackingSearch;
 
 public:
     Board();
@@ -31,6 +33,7 @@ public:
     int matrix_names[9][9];
     bool obstacles[9][9];
     LinkedList * getPathPlayer(int y, int x);
+
 
 };
 

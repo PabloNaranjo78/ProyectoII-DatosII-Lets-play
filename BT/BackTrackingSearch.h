@@ -24,6 +24,7 @@ private:
     int startRow = 0;
     int startColumn = 0;
     string result = "";
+    LinkedList* regList;
 };
 
 

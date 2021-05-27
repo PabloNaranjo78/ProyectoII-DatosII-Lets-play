@@ -19,11 +19,12 @@ public:
     LLNode *getLastElement();
     string getLastMovement();
     void printList();
-    void printPostList();
+    //void printPostList();
     void replaceInALl(int num,int x, int y);
 private:
     LLNode *thisData = NULL;
     LLNode *firstData;
+    LinkedList *regList;
 
 };
 

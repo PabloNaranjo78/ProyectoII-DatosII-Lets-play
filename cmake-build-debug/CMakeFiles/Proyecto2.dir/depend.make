@@ -20,6 +20,9 @@ CMakeFiles/Proyecto2.dir/BT/BackTrackingSearch.cpp.o: ../PathfindingA/Node.h
 CMakeFiles/Proyecto2.dir/GameManagment/Ball.cpp.o: ../GameManagment/Ball.cpp
 CMakeFiles/Proyecto2.dir/GameManagment/Ball.cpp.o: ../GameManagment/Ball.h
 
+CMakeFiles/Proyecto2.dir/GameManagment/Board.cpp.o: ../BT/BTListRegister/BTLinkedList.h
+CMakeFiles/Proyecto2.dir/GameManagment/Board.cpp.o: ../BT/BTListRegister/LLNode.h
+CMakeFiles/Proyecto2.dir/GameManagment/Board.cpp.o: ../BT/BackTrackingSearch.h
 CMakeFiles/Proyecto2.dir/GameManagment/Board.cpp.o: ../GameManagment/Board.cpp
 CMakeFiles/Proyecto2.dir/GameManagment/Board.cpp.o: ../GameManagment/Board.h
 CMakeFiles/Proyecto2.dir/GameManagment/Board.cpp.o: ../GameManagment/Scores.h
@@ -31,6 +34,9 @@ CMakeFiles/Proyecto2.dir/GameManagment/Board.cpp.o: ../Physics/Movement.h
 CMakeFiles/Proyecto2.dir/GameManagment/Scores.cpp.o: ../GameManagment/Scores.cpp
 CMakeFiles/Proyecto2.dir/GameManagment/Scores.cpp.o: ../GameManagment/Scores.h
 
+CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.o: ../BT/BTListRegister/BTLinkedList.h
+CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.o: ../BT/BTListRegister/LLNode.h
+CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.o: ../BT/BackTrackingSearch.h
 CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.o: ../GameManagment/Board.h
 CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.o: ../GameManagment/Scores.h
 CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.o: ../Graphics/BoardDisplay.cpp
@@ -56,6 +62,9 @@ CMakeFiles/Proyecto2.dir/Physics/Movement.cpp.o: ../GameManagment/Scores.h
 CMakeFiles/Proyecto2.dir/Physics/Movement.cpp.o: ../Physics/Movement.cpp
 CMakeFiles/Proyecto2.dir/Physics/Movement.cpp.o: ../Physics/Movement.h
 
+CMakeFiles/Proyecto2.dir/main.cpp.o: ../BT/BTListRegister/BTLinkedList.h
+CMakeFiles/Proyecto2.dir/main.cpp.o: ../BT/BTListRegister/LLNode.h
+CMakeFiles/Proyecto2.dir/main.cpp.o: ../BT/BackTrackingSearch.h
 CMakeFiles/Proyecto2.dir/main.cpp.o: ../GameManagment/Board.h
 CMakeFiles/Proyecto2.dir/main.cpp.o: ../GameManagment/Scores.h
 CMakeFiles/Proyecto2.dir/main.cpp.o: ../Graphics/BoardDisplay.h

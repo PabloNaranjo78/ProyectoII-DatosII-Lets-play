@@ -23,7 +23,7 @@ void BackTrackingSearch::printMatrix() {
 }
 
 void BackTrackingSearch::printPostList(){
-    list.printPostList();
+//    list.printPostList();
 }
 
 void BackTrackingSearch::add(int _matrix[9][9]) {
