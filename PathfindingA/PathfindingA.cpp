@@ -86,7 +86,7 @@ void PathfindingA::setObstacles(int obstacles) {
 }
 
 bool PathfindingA::getObstacleFrom(int id) {
-    //cout << "function called" << endl;
+    cout << "function called with" << id << endl;
     bool valueReturn = false;
     for (int i=0; i<this->limitsAt; i++){
         for (int j=0; j<this->limitsAt; j++){
@@ -118,17 +118,21 @@ void PathfindingA::getNewELements(LinkedList * currentOpen, LinkedList * current
     //Para un id, se buscan los adyacentes
     //centro arriba y centro abajo +/- 9
     if (id-1 >= 0 && !this->getObstacleFrom(id-1) && id-1 != this->initial && !currentOpen->isIn(id-1) && !currentClosed->isIn(id-1)) {
+        cout << "checking right" << endl;
         currentOpen->addValue(id-1);
+        cout << "added" << endl;
         currentOpen->setParent(id, id-1);
         this->updateValue(id-1, this->getValueFrom(id) + 10, true);
     }
     else if (currentOpen->isIn(id-1)){
+        cout << "into this" << endl;
         if (this->getValueFrom(id-1) > this->getValueFrom(id) + 10){
             this->updateValue(id-1, this->getValueFrom(id) + 10, false);
             currentOpen->setParent(id, id-1);
         }
     }
 
+    cout << "first if" << endl;
     if (id+1 <= this->limitsAt * limitsAt && !this->getObstacleFrom(id+1) && id+1 != this->initial && !currentOpen->isIn(id+1) && !currentClosed->isIn(id+1)){
         currentOpen->addValue(id+1);
         currentOpen->setParent(id, id+1);
@@ -245,7 +249,9 @@ LinkedList * PathfindingA::getPath(int di, int dj) {
     this->initial = this->matrix_names[di][dj];
     cout << "id used: " << this->initial << endl;
     int id_used = this->matrix_names[di][dj];
+    cout << "getting first round" << endl;
     this->getNewELements(openList, closedList,this->matrix_names[di][dj]);
+    cout << "gotten!" << endl;
     this->printMatrix();
     int checking;
 
@@ -290,6 +296,8 @@ LinkedList * PathfindingA::getPath(int di, int dj) {
     openList->printList();
     cout << "Closed list:" << endl;
     closedList->printList();
+
+    cout << "final del proceso con exito" << endl;
 
     return pathFound;
 }

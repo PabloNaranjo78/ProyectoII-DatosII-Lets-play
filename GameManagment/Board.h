@@ -30,7 +30,7 @@ public:
     int obstaclesNum;
     int matrix_names[9][9];
     bool obstacles[9][9];
-    void getPathPlayer();
+    LinkedList * getPathPlayer(int y, int x);
 
 };
 
