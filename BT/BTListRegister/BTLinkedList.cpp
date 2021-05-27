@@ -9,7 +9,7 @@ using namespace std;
 BTLinkedList::BTLinkedList() {
 }
 
-void BTLinkedList::addToList(int _data[9][9],string movement) {
+void BTLinkedList::addToList(int _data[9][9],string movement, int x, int y) {
     if (thisData == NULL){
         thisData = new LLNode;
         thisData->setData(_data,movement);

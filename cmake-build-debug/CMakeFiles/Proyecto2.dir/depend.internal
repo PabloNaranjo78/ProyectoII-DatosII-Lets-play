@@ -5,6 +5,8 @@ CMakeFiles/Proyecto2.dir/BT/BTListRegister/BTLinkedList.cpp.o
  /home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BTListRegister/BTLinkedList.cpp
  /home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BTListRegister/BTLinkedList.h
  /home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BTListRegister/LLNode.h
+ /home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/LinkedList.h
+ /home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/Node.h
 CMakeFiles/Proyecto2.dir/BT/BTListRegister/LLNode.cpp.o
  /home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BTListRegister/LLNode.cpp
  /home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BTListRegister/LLNode.h
@@ -13,6 +15,8 @@ CMakeFiles/Proyecto2.dir/BT/BackTrackingSearch.cpp.o
  /home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BTListRegister/LLNode.h
  /home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BackTrackingSearch.cpp
  /home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BackTrackingSearch.h
+ /home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/LinkedList.h
+ /home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/Node.h
 CMakeFiles/Proyecto2.dir/GameManagment/Ball.cpp.o
  /home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Ball.cpp
  /home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Ball.h

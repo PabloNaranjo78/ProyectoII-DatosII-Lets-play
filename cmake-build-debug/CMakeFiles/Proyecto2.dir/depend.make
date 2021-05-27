@@ -4,6 +4,8 @@
 CMakeFiles/Proyecto2.dir/BT/BTListRegister/BTLinkedList.cpp.o: ../BT/BTListRegister/BTLinkedList.cpp
 CMakeFiles/Proyecto2.dir/BT/BTListRegister/BTLinkedList.cpp.o: ../BT/BTListRegister/BTLinkedList.h
 CMakeFiles/Proyecto2.dir/BT/BTListRegister/BTLinkedList.cpp.o: ../BT/BTListRegister/LLNode.h
+CMakeFiles/Proyecto2.dir/BT/BTListRegister/BTLinkedList.cpp.o: ../PathfindingA/LinkedList.h
+CMakeFiles/Proyecto2.dir/BT/BTListRegister/BTLinkedList.cpp.o: ../PathfindingA/Node.h
 
 CMakeFiles/Proyecto2.dir/BT/BTListRegister/LLNode.cpp.o: ../BT/BTListRegister/LLNode.cpp
 CMakeFiles/Proyecto2.dir/BT/BTListRegister/LLNode.cpp.o: ../BT/BTListRegister/LLNode.h
@@ -12,6 +14,8 @@ CMakeFiles/Proyecto2.dir/BT/BackTrackingSearch.cpp.o: ../BT/BTListRegister/BTLin
 CMakeFiles/Proyecto2.dir/BT/BackTrackingSearch.cpp.o: ../BT/BTListRegister/LLNode.h
 CMakeFiles/Proyecto2.dir/BT/BackTrackingSearch.cpp.o: ../BT/BackTrackingSearch.cpp
 CMakeFiles/Proyecto2.dir/BT/BackTrackingSearch.cpp.o: ../BT/BackTrackingSearch.h
+CMakeFiles/Proyecto2.dir/BT/BackTrackingSearch.cpp.o: ../PathfindingA/LinkedList.h
+CMakeFiles/Proyecto2.dir/BT/BackTrackingSearch.cpp.o: ../PathfindingA/Node.h
 
 CMakeFiles/Proyecto2.dir/GameManagment/Ball.cpp.o: ../GameManagment/Ball.cpp
 CMakeFiles/Proyecto2.dir/GameManagment/Ball.cpp.o: ../GameManagment/Ball.h
