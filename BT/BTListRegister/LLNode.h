@@ -12,10 +12,11 @@ public:
     LLNode();
 
     int getData();
-    void setData(int _data[9][9], string movement);
+    void setData(int _data[9][9], string movement, int x,int y);
     string movement;
     LLNode *prev;
     int data[9][9];
+    int posMove = 0;
 private:
 };
 
