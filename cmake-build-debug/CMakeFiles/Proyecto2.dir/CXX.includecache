@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Board.cpp
-Board.h
-/home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Board.h
-
 /home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Board.h
 iostream
 -
@@ -47,6 +43,8 @@ string
 -
 
 /home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/Node.h
+iostream
+-
 
 /home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/PathfindingA.h
 iostream
@@ -72,13 +70,5 @@ SFML/Graphics.hpp
 ../GameManagment/Scores.h
 /home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Scores.h
 iostream
--
-
-/home/anthony/Desktop/RepositoriosGit/Proyecto2/main.cpp
-iostream
--
-Graphics/BoardDisplay.h
-/home/anthony/Desktop/RepositoriosGit/Proyecto2/Graphics/BoardDisplay.h
-SFML/Graphics.hpp
 -
 

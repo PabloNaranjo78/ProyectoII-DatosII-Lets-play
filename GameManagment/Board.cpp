@@ -44,13 +44,13 @@ void Board::setObstacles(int obstacles) {
     while (obstaclesLeft > 0){
         int num1 = rand()%this->limitsAt;
         int num2 = rand()%this->limitsAt;
-        if (!this->obstacles[num1][num2] && this->goals[0] != num1 && this->goals[1] != num2 && this->goals[2] != num1 && this->goals[3] != num2){
+        if (!this->obstacles[num1][num2] && this->goals[0] != num1 && this->goals[1] != num2 && this->goals[2] != num1 && this->goals[3] != num2 && num1 != 4 && num2 != 4){
             this->obstacles[num1][num2] = true;
             obstaclesLeft--;
         }
     }
 }
 
-void Board::getPathPlayer() {
-    this->pathfinder1->getPath(this->puck->y/this->grid_y, this->puck->x/this->grid_x);
+LinkedList * Board::getPathPlayer(int y, int x) {
+    return this->pathfinder1->getPath(y/this->grid_y, x/this->grid_x);
 }

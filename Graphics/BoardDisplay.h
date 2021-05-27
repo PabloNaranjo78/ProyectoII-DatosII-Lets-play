@@ -15,15 +15,18 @@ private:
     RenderWindow * bpGame;
     Board * board;
     Event * events;
+    Sprite * puck;
     bool keepOpen;
     Vector2i pos_mouse;
+    LinkedList * listPathPlayer;
 public:
     BoardDisplay();
     void runGame();
     void checkEvents();
     void checkMousePosition();
     void checkCollisions();
-    void checkMouse();
+    void setPlayerPath();
+    void setComputerPath();
 };
 
 

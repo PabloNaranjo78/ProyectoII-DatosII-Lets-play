@@ -19,6 +19,7 @@ void LinkedList::addValue(int id) {
         }
         tmp->next = new Node(id);
     }
+    cout << "Node added" << endl;
 }
 
 int LinkedList::getValueAt(int i) {
@@ -67,6 +68,7 @@ bool LinkedList::isIn(int id) {
         }
         tmp = tmp->next;
     }
+    cout << "all right" << endl;
     return check;
 }
 

@@ -1,5 +1,5 @@
 #include <iostream>
-//#include "PathfindingA/PathfindingA.h"
+#include "PathfindingA/PathfindingA.h"
 //#include "GameManagment/Board.h"
 #include "Graphics/BoardDisplay.h"
 #include <SFML/Graphics.hpp>
@@ -12,5 +12,6 @@ int main() {
     //board->getPathPlayer();
     BoardDisplay * bpGame = new BoardDisplay();
     bpGame->runGame();
+
 
 }
