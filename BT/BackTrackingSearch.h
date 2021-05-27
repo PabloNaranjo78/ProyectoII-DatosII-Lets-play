@@ -15,6 +15,7 @@ public:
     void printMatrix();
     void searchOnePath();
     void searchBestPath();
+    void printPostList();
 private:
     BTLinkedList list;
     void searchStart();

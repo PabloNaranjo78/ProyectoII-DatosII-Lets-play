@@ -9,8 +9,9 @@ LLNode::LLNode() {
 }
 
 
-void LLNode::setData(int _data[9][9],string _movement) {
+void LLNode::setData(int _data[9][9],string _movement,int x,int y) {
     memcpy(data,_data,sizeof(int)*9*9);
     movement = _movement;
+    posMove = (x*10)+y;
 }
 

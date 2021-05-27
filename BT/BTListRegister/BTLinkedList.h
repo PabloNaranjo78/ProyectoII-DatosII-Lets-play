@@ -8,19 +8,23 @@
 
 #include "LLNode.h"
 #include "iostream"
+#include "../../PathfindingA/LinkedList.h"
+
 using namespace std;
 class BTLinkedList {
 
 public:
     BTLinkedList();
-    void addToList(int _data[9][9],string movement);
+    void addToList(int _data[9][9],string movement, int x, int y);
     LLNode *getLastElement();
     string getLastMovement();
     void printList();
+    void printPostList();
     void replaceInALl(int num,int x, int y);
 private:
     LLNode *thisData = NULL;
     LLNode *firstData;
+
 };
 
 

@@ -13,12 +13,17 @@ BackTrackingSearch::BackTrackingSearch() {
 }
 
 void BackTrackingSearch::printMatrix() {
+    cout<<endl;
     for (int i = 0; i < 9; i++){
         for (int j = 0; j < 9;j++){
             cout<<matrix[i][j]<<" ";
         }
         cout<<endl;
     }
+}
+
+void BackTrackingSearch::printPostList(){
+    list.printPostList();
 }
 
 void BackTrackingSearch::add(int _matrix[9][9]) {
@@ -38,21 +43,21 @@ void BackTrackingSearch::searchOnePath() {
             if (matrix[y-1][x] == 0 and matrix[y-1][x] != 4 and y>0 and matrix[y-1][x] != 5){
                 y-=1;
                 matrix[y][x] = 1;
-                list.addToList(matrix,"y-1");
+                list.addToList(matrix,"y-1",x,y);
             } else
             if (matrix[y][x-1] == 0 and matrix[y][x-1] != 4 and x >0 and matrix[y][x-1] != 5){
                 x-=1;
                 matrix[y][x] = 1;
-                list.addToList(matrix,"x-1");
+                list.addToList(matrix,"x-1",x,y);
             }else
             if (matrix[y + 1][x] == 0 and matrix[y + 1][x] != 4 and matrix[y + 1][x] != 5) {
                 y += 1;
                 matrix[y][x] = 1;
-                list.addToList(matrix,"y+1");
+                list.addToList(matrix,"y+1",x,y);
             } else if (matrix[y][x + 1] == 0 and matrix[y][x + 1] != 4 and matrix[y][x + 1] != 4) {
                 x += 1;
                 matrix[y][x] = 1;
-                list.addToList(matrix, "x+1");
+                list.addToList(matrix, "x+1",x,y);
             }else if (closePath(x,y)){
                 string lastMov = list.getLastMovement();
                 memcpy(matrix,list.getLastElement()->data, sizeof(int)*9*9);
