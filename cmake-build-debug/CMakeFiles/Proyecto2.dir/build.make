@@ -193,45 +193,6 @@ CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/Graphics/BoardDisplay.cpp -o CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.s
 
-CMakeFiles/Proyecto2.dir/BT/BackTrackingSearch.cpp.o: CMakeFiles/Proyecto2.dir/flags.make
-CMakeFiles/Proyecto2.dir/BT/BackTrackingSearch.cpp.o: ../BT/BackTrackingSearch.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Proyecto2.dir/BT/BackTrackingSearch.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto2.dir/BT/BackTrackingSearch.cpp.o -c /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BackTrackingSearch.cpp
-
-CMakeFiles/Proyecto2.dir/BT/BackTrackingSearch.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto2.dir/BT/BackTrackingSearch.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BackTrackingSearch.cpp > CMakeFiles/Proyecto2.dir/BT/BackTrackingSearch.cpp.i
-
-CMakeFiles/Proyecto2.dir/BT/BackTrackingSearch.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto2.dir/BT/BackTrackingSearch.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BackTrackingSearch.cpp -o CMakeFiles/Proyecto2.dir/BT/BackTrackingSearch.cpp.s
-
-CMakeFiles/Proyecto2.dir/BT/BTListRegister/LinkedList.cpp.o: CMakeFiles/Proyecto2.dir/flags.make
-CMakeFiles/Proyecto2.dir/BT/BTListRegister/LinkedList.cpp.o: ../BT/BTListRegister/LinkedList.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Proyecto2.dir/BT/BTListRegister/LinkedList.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto2.dir/BT/BTListRegister/LinkedList.cpp.o -c /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BTListRegister/LinkedList.cpp
-
-CMakeFiles/Proyecto2.dir/BT/BTListRegister/LinkedList.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto2.dir/BT/BTListRegister/LinkedList.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BTListRegister/LinkedList.cpp > CMakeFiles/Proyecto2.dir/BT/BTListRegister/LinkedList.cpp.i
-
-CMakeFiles/Proyecto2.dir/BT/BTListRegister/LinkedList.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto2.dir/BT/BTListRegister/LinkedList.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BTListRegister/LinkedList.cpp -o CMakeFiles/Proyecto2.dir/BT/BTListRegister/LinkedList.cpp.s
-
-CMakeFiles/Proyecto2.dir/BT/BTListRegister/LLNode.cpp.o: CMakeFiles/Proyecto2.dir/flags.make
-CMakeFiles/Proyecto2.dir/BT/BTListRegister/LLNode.cpp.o: ../BT/BTListRegister/LLNode.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Proyecto2.dir/BT/BTListRegister/LLNode.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto2.dir/BT/BTListRegister/LLNode.cpp.o -c /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BTListRegister/LLNode.cpp
-
-CMakeFiles/Proyecto2.dir/BT/BTListRegister/LLNode.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto2.dir/BT/BTListRegister/LLNode.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BTListRegister/LLNode.cpp > CMakeFiles/Proyecto2.dir/BT/BTListRegister/LLNode.cpp.i
-
-CMakeFiles/Proyecto2.dir/BT/BTListRegister/LLNode.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto2.dir/BT/BTListRegister/LLNode.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BTListRegister/LLNode.cpp -o CMakeFiles/Proyecto2.dir/BT/BTListRegister/LLNode.cpp.s
-
 # Object files for target Proyecto2
 Proyecto2_OBJECTS = \
 "CMakeFiles/Proyecto2.dir/main.cpp.o" \
@@ -242,10 +203,7 @@ Proyecto2_OBJECTS = \
 "CMakeFiles/Proyecto2.dir/GameManagment/Scores.cpp.o" \
 "CMakeFiles/Proyecto2.dir/GameManagment/Board.cpp.o" \
 "CMakeFiles/Proyecto2.dir/GameManagment/Ball.cpp.o" \
-"CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.o" \
-"CMakeFiles/Proyecto2.dir/BT/BackTrackingSearch.cpp.o" \
-"CMakeFiles/Proyecto2.dir/BT/BTListRegister/LinkedList.cpp.o" \
-"CMakeFiles/Proyecto2.dir/BT/BTListRegister/LLNode.cpp.o"
+"CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.o"
 
 # External object files for target Proyecto2
 Proyecto2_EXTERNAL_OBJECTS =
@@ -259,15 +217,12 @@ Proyecto2: CMakeFiles/Proyecto2.dir/GameManagment/Scores.cpp.o
 Proyecto2: CMakeFiles/Proyecto2.dir/GameManagment/Board.cpp.o
 Proyecto2: CMakeFiles/Proyecto2.dir/GameManagment/Ball.cpp.o
 Proyecto2: CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.o
-Proyecto2: CMakeFiles/Proyecto2.dir/BT/BackTrackingSearch.cpp.o
-Proyecto2: CMakeFiles/Proyecto2.dir/BT/BTListRegister/LinkedList.cpp.o
-Proyecto2: CMakeFiles/Proyecto2.dir/BT/BTListRegister/LLNode.cpp.o
 Proyecto2: CMakeFiles/Proyecto2.dir/build.make
 Proyecto2: /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1
 Proyecto2: /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1
 Proyecto2: /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
 Proyecto2: CMakeFiles/Proyecto2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable Proyecto2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable Proyecto2"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Proyecto2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -1,7 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Proyecto2.dir/BT/BTListRegister/LLNode.cpp.o"
-  "CMakeFiles/Proyecto2.dir/BT/BTListRegister/LinkedList.cpp.o"
-  "CMakeFiles/Proyecto2.dir/BT/BackTrackingSearch.cpp.o"
   "CMakeFiles/Proyecto2.dir/GameManagment/Ball.cpp.o"
   "CMakeFiles/Proyecto2.dir/GameManagment/Board.cpp.o"
   "CMakeFiles/Proyecto2.dir/GameManagment/Scores.cpp.o"

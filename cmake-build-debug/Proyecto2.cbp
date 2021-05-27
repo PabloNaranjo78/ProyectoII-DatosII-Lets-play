@@ -46,6 +46,9 @@
 				<Compiler>
 					<Add directory="/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/SFML_INCLUDE_DIR"/>
 					<Add directory="/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/AlgoritmoG"/>
+					<Add directory="/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/Graphics"/>
+					<Add directory="/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/ImageLoading"/>
+					<Add directory="/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/ImageCutting"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -70,6 +73,9 @@
 				<Compiler>
 					<Add directory="/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/SFML_INCLUDE_DIR"/>
 					<Add directory="/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/AlgoritmoG"/>
+					<Add directory="/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/Graphics"/>
+					<Add directory="/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/ImageLoading"/>
+					<Add directory="/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/ImageCutting"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -86,24 +92,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BTListRegister/LLNode.cpp">
-			<Option target="Proyecto2"/>
-		</Unit>
-		<Unit filename="/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BTListRegister/LLNode.h">
-			<Option target="Proyecto2"/>
-		</Unit>
-		<Unit filename="/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BTListRegister/LinkedList.cpp">
-			<Option target="Proyecto2"/>
-		</Unit>
-		<Unit filename="/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BTListRegister/LinkedList.h">
-			<Option target="Proyecto2"/>
-		</Unit>
-		<Unit filename="/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BackTrackingSearch.cpp">
-			<Option target="Proyecto2"/>
-		</Unit>
-		<Unit filename="/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BackTrackingSearch.h">
-			<Option target="Proyecto2"/>
-		</Unit>
 		<Unit filename="/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/GameManagment/Ball.cpp">
 			<Option target="Proyecto2"/>
 		</Unit>

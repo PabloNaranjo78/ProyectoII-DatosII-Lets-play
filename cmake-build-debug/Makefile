@@ -142,87 +142,6 @@ Proyecto2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/build
 .PHONY : Proyecto2/fast
 
-BT/BTListRegister/LLNode.o: BT/BTListRegister/LLNode.cpp.o
-
-.PHONY : BT/BTListRegister/LLNode.o
-
-# target to build an object file
-BT/BTListRegister/LLNode.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/BT/BTListRegister/LLNode.cpp.o
-.PHONY : BT/BTListRegister/LLNode.cpp.o
-
-BT/BTListRegister/LLNode.i: BT/BTListRegister/LLNode.cpp.i
-
-.PHONY : BT/BTListRegister/LLNode.i
-
-# target to preprocess a source file
-BT/BTListRegister/LLNode.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/BT/BTListRegister/LLNode.cpp.i
-.PHONY : BT/BTListRegister/LLNode.cpp.i
-
-BT/BTListRegister/LLNode.s: BT/BTListRegister/LLNode.cpp.s
-
-.PHONY : BT/BTListRegister/LLNode.s
-
-# target to generate assembly for a file
-BT/BTListRegister/LLNode.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/BT/BTListRegister/LLNode.cpp.s
-.PHONY : BT/BTListRegister/LLNode.cpp.s
-
-BT/BTListRegister/LinkedList.o: BT/BTListRegister/LinkedList.cpp.o
-
-.PHONY : BT/BTListRegister/LinkedList.o
-
-# target to build an object file
-BT/BTListRegister/LinkedList.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/BT/BTListRegister/LinkedList.cpp.o
-.PHONY : BT/BTListRegister/LinkedList.cpp.o
-
-BT/BTListRegister/LinkedList.i: BT/BTListRegister/LinkedList.cpp.i
-
-.PHONY : BT/BTListRegister/LinkedList.i
-
-# target to preprocess a source file
-BT/BTListRegister/LinkedList.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/BT/BTListRegister/LinkedList.cpp.i
-.PHONY : BT/BTListRegister/LinkedList.cpp.i
-
-BT/BTListRegister/LinkedList.s: BT/BTListRegister/LinkedList.cpp.s
-
-.PHONY : BT/BTListRegister/LinkedList.s
-
-# target to generate assembly for a file
-BT/BTListRegister/LinkedList.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/BT/BTListRegister/LinkedList.cpp.s
-.PHONY : BT/BTListRegister/LinkedList.cpp.s
-
-BT/BackTrackingSearch.o: BT/BackTrackingSearch.cpp.o
-
-.PHONY : BT/BackTrackingSearch.o
-
-# target to build an object file
-BT/BackTrackingSearch.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/BT/BackTrackingSearch.cpp.o
-.PHONY : BT/BackTrackingSearch.cpp.o
-
-BT/BackTrackingSearch.i: BT/BackTrackingSearch.cpp.i
-
-.PHONY : BT/BackTrackingSearch.i
-
-# target to preprocess a source file
-BT/BackTrackingSearch.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/BT/BackTrackingSearch.cpp.i
-.PHONY : BT/BackTrackingSearch.cpp.i
-
-BT/BackTrackingSearch.s: BT/BackTrackingSearch.cpp.s
-
-.PHONY : BT/BackTrackingSearch.s
-
-# target to generate assembly for a file
-BT/BackTrackingSearch.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/BT/BackTrackingSearch.cpp.s
-.PHONY : BT/BackTrackingSearch.cpp.s
-
 GameManagment/Ball.o: GameManagment/Ball.cpp.o
 
 .PHONY : GameManagment/Ball.o
@@ -475,15 +394,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Proyecto2"
-	@echo "... BT/BTListRegister/LLNode.o"
-	@echo "... BT/BTListRegister/LLNode.i"
-	@echo "... BT/BTListRegister/LLNode.s"
-	@echo "... BT/BTListRegister/LinkedList.o"
-	@echo "... BT/BTListRegister/LinkedList.i"
-	@echo "... BT/BTListRegister/LinkedList.s"
-	@echo "... BT/BackTrackingSearch.o"
-	@echo "... BT/BackTrackingSearch.i"
-	@echo "... BT/BackTrackingSearch.s"
 	@echo "... GameManagment/Ball.o"
 	@echo "... GameManagment/Ball.i"
 	@echo "... GameManagment/Ball.s"
