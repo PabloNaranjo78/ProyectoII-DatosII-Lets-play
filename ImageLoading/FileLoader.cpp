@@ -12,15 +12,19 @@ void FileLoader::load_image() {
     else{
         error();
     }
-
-
-
 }
 
 void FileLoader::error() {
     string zenCmd = "zenity --info --title=\"Error Loading Image\" --text=\"Imagen no pudo ser cargada!\"";
     string output = getCmdOutput(zenCmd);
 }
+
+void FileLoader::getimagedivisions() {
+    string zenCmd = "zenity --entry --title \"Entry of a value\" --text \"Enter a value\"";
+    string output = getCmdOutput(zenCmd);
+    this->divisions = stoi(output);
+}
+
 
 string FileLoader::getCmdOutput(string cmd) {
     // string to store the final results in

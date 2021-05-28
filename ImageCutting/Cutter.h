@@ -12,7 +12,7 @@ class Cutter {
 public:
     Vector2u divs;
 
-    Vector2u getdivision(int div, int max);
+    void getdivision(int div, int max);
 
 };
 

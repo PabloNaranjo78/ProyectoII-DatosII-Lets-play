@@ -6,9 +6,21 @@
 
 #IncludeRegexTransform: 
 
+/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/AlgoritmoG/Genetic.cpp
+Genetic.h
+/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/AlgoritmoG/Genetic.h
+Individuo.h
+/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/AlgoritmoG/Individuo.h
+Individuo.cpp
+/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/AlgoritmoG/Individuo.cpp
+
 /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/AlgoritmoG/Genetic.h
 bits/stdc++.h
 -
+Individuo.h
+/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/AlgoritmoG/Individuo.h
+
+/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/AlgoritmoG/Individuo.cpp
 Individuo.h
 /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/AlgoritmoG/Individuo.h
 
@@ -61,20 +73,34 @@ string
 -
 ../ImageLoading/FileLoader.h
 /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/ImageLoading/FileLoader.h
+../ImageLoading/FileLoader.cpp
+/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/ImageLoading/FileLoader.cpp
 ../ImageCutting/Cutter.h
 /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/ImageCutting/Cutter.h
+../ImageCutting/Cutter.cpp
+/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/ImageCutting/Cutter.cpp
 ../AlgoritmoG/Genetic.h
 /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/AlgoritmoG/Genetic.h
+../AlgoritmoG/Genetic.cpp
+/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/AlgoritmoG/Genetic.cpp
 Button.h
 /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/Graphics/Button.h
 Button.cpp
 /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/Graphics/Button.cpp
+
+/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/ImageCutting/Cutter.cpp
+Cutter.h
+/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/ImageCutting/Cutter.h
 
 /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/ImageCutting/Cutter.h
 iostream
 -
 SFML/Graphics.hpp
 -
+
+/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/ImageLoading/FileLoader.cpp
+FileLoader.h
+/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/ImageLoading/FileLoader.h
 
 /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/ImageLoading/FileLoader.h
 cstdio

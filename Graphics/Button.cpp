@@ -3,6 +3,7 @@
 Button::Button(float x, float y, float width, float height, Font *font, string text, Color idleColor, Color hoverColor,
                Color activeColor) {
     this->buttonstate = BTN_IDLE;
+    this->disabled = false;
 
     this->shape.setPosition(Vector2f(x,y));
     this->shape.setSize(Vector2f(width,height));
@@ -10,8 +11,8 @@ Button::Button(float x, float y, float width, float height, Font *font, string t
     this->font = font;
     this->text.setFont(*this->font);
     this->text.setString(text);
-    this->text.setFillColor(Color::White);
-    this->text.setCharacterSize(12);
+    this->text.setFillColor(Color::Black);
+    this->text.setCharacterSize(20);
     this->text.setPosition(this->shape.getPosition().x + (this->shape.getGlobalBounds().width / 2.f) - this->text.getGlobalBounds().width/2.f,
                            this->shape.getPosition().y + (this->shape.getGlobalBounds().height / 2.f) - this->text.getGlobalBounds().height/2.f);
 
@@ -23,7 +24,7 @@ Button::Button(float x, float y, float width, float height, Font *font, string t
 }
 
 //Accesors
-const bool Button::get_pressed() const {
+const bool Button::is_pressed() const {
    if(this->buttonstate== BTN_ACTIVE){
        return true;
    }
@@ -34,17 +35,21 @@ const bool Button::get_pressed() const {
 
 void Button::update(const Vector2f mousepos) {
 
-    this->buttonstate = BTN_IDLE;
-    //hover
+    if(!this->disabled){
+        this->buttonstate = BTN_IDLE;
+    }
+    else{
+        this->buttonstate = BTN_ACTIVE;
+    }
 
+    //hover
     if(this->shape.getGlobalBounds().contains(mousepos)){
-        cout<<"HOVER"<<endl;
+
         this->buttonstate = BTN_HOVER;
 
         //pressed
         if(Mouse::isButtonPressed(Mouse::Left)){
             this->buttonstate = BTN_ACTIVE;
-
         }
     }
 

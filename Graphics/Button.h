@@ -22,13 +22,16 @@ private:
     Color hoverColor;
     Color activeColor;
 
+
 public:
+    bool disabled;
+
     Button(float x, float y, float width, float height, Font* font, string text,
            Color idleColor, Color hoverColor, Color activeColor);
     //functions
     void render(RenderTarget* target);
     void update(const Vector2f mousepos);
-    const bool get_pressed()const;
+    const bool is_pressed()const;
 
 };
 
