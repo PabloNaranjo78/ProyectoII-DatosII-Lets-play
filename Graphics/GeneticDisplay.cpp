@@ -22,6 +22,31 @@ GeneticDisplay::GeneticDisplay() {
     this->draw_image = false;
     this->draw_puzzle = false;
     this->genindex = 0;
+    this->trad['0'] = 0;
+    this->trad['1'] = 1;
+    this->trad['2'] = 2;
+    this->trad['3'] = 3;
+    this->trad['4'] = 4;
+    this->trad['5'] = 5;
+    this->trad['6'] = 6;
+    this->trad['7'] = 7;
+    this->trad['8'] = 8;
+    this->trad['9'] = 9;
+    this->trad['a'] = 10;
+    this->trad['b'] = 11;
+    this->trad['c'] = 12;
+    this->trad['d'] = 13;
+    this->trad['e'] = 14;
+    this->trad['f'] = 15;
+    this->trad['g'] = 16;
+    this->trad['h'] = 17;
+    this->trad['i'] = 18;
+    this->trad['j'] = 19;
+    this->trad['k'] = 20;
+    this->trad['l'] = 21;
+    this->trad['m'] = 22;
+    this->trad['n'] = 23;
+    this->trad['o'] = 24;
 
     //GUI load
     this->background.setSize(Vector2f(this->width,this->height));
@@ -57,25 +82,22 @@ GeneticDisplay::GeneticDisplay() {
 void GeneticDisplay::gnome_to_image() {
 
     string gnome = this->fittest[this->genindex];
+    if(gnome == get_target()){
+        this->startGbutton->disabled = false;
+        this->divisionbutton->disabled = false;
+        this->filebutton->disabled = false;
+    }
+
     int Garray[this->filer->divisions];
 
-    for(int i = 0; i < 10 ; i++ ){
-        Garray[i] = gnome[i]-'0';
+    for(int i = 0; i < this->filer->divisions ; i++ ){
+        Garray[i] = this->trad[gnome[i]];
     }
-    bool mayor = false;
-    if(this->filer->divisions >=10){
-        int rest = this->filer->divisions - 10;
-        while(rest != 0){
-            rest--;
-        }
-    }
-
-    /*
+    cout<<Garray[0]<<" | "<<Garray[1]<<endl;
 
     for(int u = 0; u < this->filer->divisions; u++){
-        this->puzzle[tmp[u]].setPosition(this->positions[u].x,this->positions[u].y);
+        this->puzzle.at(Garray[u]).setPosition(this->positions[u].x,this->positions[u].y);
     }
-    */
 }
 
 void GeneticDisplay::cut_display_image() {
@@ -181,6 +203,8 @@ void GeneticDisplay::update(Vector2f mousepos,TcpSocket* socket) {
         cout<<"Amount of positions: "<<this->positions.size()<<endl;
         this->draw_puzzle = true;
         this->startGbutton->disabled = true;
+        this->divisionbutton->disabled = true;
+        this->filebutton->disabled = true;
         json = jsonSenderG("startG","start",get_target());
         packetS << json;//empaqueta el json
         socket->send(packetS);//manda el json a cliente
@@ -276,6 +300,7 @@ void GeneticDisplay::rungenetic() {
         Event event;
         while (this->Gwindow->pollEvent(event)) {
             if (event.type == Event::Closed) {
+                socket.disconnect();
                 Gwindow->close();
                 this->keepOpen = false;
 

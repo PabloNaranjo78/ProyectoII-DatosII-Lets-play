@@ -42,12 +42,15 @@ class GeneticDisplay {
     bool draw_image;
     bool draw_puzzle;
     int genindex;
+    map<char,int> trad;
+
 
     //IMAGE DIVDER
     Vector2u psize;
     float divx;
     float divy;
     vector<Vector2u> positions;
+
 
     //GUI PARTS
     RectangleShape background;

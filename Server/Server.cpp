@@ -45,7 +45,7 @@ Document jsonReceiver(Packet packet)
  */
 string jsonSender(string type, string gnome)
 {
-    string jsonStr = R"({"type":")"+ type + R"(","gnome":")" + finalG + "\"}";
+    string jsonStr = R"({"type":")"+ type + R"(","gnome":")" + gnome + "\"}";
     return jsonStr;
 }
 
@@ -56,7 +56,7 @@ void run_geneticAlgorithm(TcpSocket* socket, Genetic* gen){
     string json;
 
     srand((unsigned)(time(0)));
-
+    cout<<gen->genes.size()<<endl;
     // current generation
     int generation = 0;
 
@@ -92,14 +92,14 @@ void run_geneticAlgorithm(TcpSocket* socket, Genetic* gen){
 
         // Perform Elitism, that mean 10% of fittest population
         // goes to the next generation
-        int s = (2*POPULATION_SIZE)/100;
+        int s = (10*POPULATION_SIZE)/100;
         for(int i = 0;i<s;i++)
             new_generation.push_back(population[i]);
 
 
         // From 50% of fittest population, Individuals
         // will mate to produce offspring
-        s = (98*POPULATION_SIZE)/100;
+        s = (90*POPULATION_SIZE)/100;
         for(int i = 0;i<s;i++)
         {
             int len = population.size();
@@ -116,19 +116,20 @@ void run_geneticAlgorithm(TcpSocket* socket, Genetic* gen){
         cout<< "String: "<< population[0].chromosome <<"\t";
         cout<< "Fitness: "<< population[0].fitness << "\n";
         //escribir XML
-        /*
+
         json = jsonSender("gnome",population[0].chromosome);
         cout << json<<endl;
         packetS << json;//empaqueta el json
         socket->send(packetS);//manda el json a cliente
         packetS.clear();//vacia los packets
-*/
+
         generation++;
     }
     cout<< "Generation: " << generation << "\t";
     cout<< "String: "<< population[0].chromosome <<"\t";
     cout<< "Fitness: "<< population[0].fitness << "\n";
 
+    //json = jsonSender("gnome",population[0].chromosome);
     json = jsonSender("gnome",population[0].chromosome);
     cout << json <<endl;
     packetS << json;//empaqueta el json

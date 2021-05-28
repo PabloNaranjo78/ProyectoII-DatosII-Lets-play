@@ -108,9 +108,7 @@ LinkedList* BackTrackingSearch::searchOnePath() {
     return getPostList();
 }
 
-void BackTrackingSearch::searchBestPath() {
 
-}
 
 void BackTrackingSearch::searchStart() {
     for (int i = 0; i < 9; i++){
