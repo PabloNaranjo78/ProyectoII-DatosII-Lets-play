@@ -80,6 +80,19 @@ void LinkedList::printList() {
     }
 }
 
+
+
+string LinkedList::getListString() {
+    string result;
+    Node * tmp = this->head;
+    while (tmp != NULL){
+        cout << "<" << tmp->id << ">" << endl;
+        result+= "$"+ to_string(tmp->id);
+        tmp = tmp->next;
+    }
+    return result;
+}
+
 void LinkedList::setParent(int parent, int id) {
     Node * tmp = this->head;
     while (tmp != NULL){

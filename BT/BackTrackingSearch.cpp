@@ -136,6 +136,7 @@ bool BackTrackingSearch::closePath(int x, int y) {
 }
 
 void BackTrackingSearch::clearMatrix() {
+
     for (int i = 0;i<9;i++){
         for (int j = 0; j< 9;j++){
             matrix[i][j] = 0;
