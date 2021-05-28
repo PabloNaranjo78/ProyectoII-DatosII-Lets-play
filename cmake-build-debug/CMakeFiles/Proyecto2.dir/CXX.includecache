@@ -18,6 +18,10 @@ SFML/Window.hpp
 string
 -
 
+../Graphics/GeneticDisplay.cpp
+GeneticDisplay.h
+../Graphics/GeneticDisplay.h
+
 ../Graphics/GeneticDisplay.h
 SFML/Graphics.hpp
 -
@@ -66,12 +70,6 @@ cstdio
 string
 -
 
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BTListRegister/BTLinkedList.cpp
-iostream
--
-BTLinkedList.h
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BTListRegister/BTLinkedList.h
-
 /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BTListRegister/BTLinkedList.h
 LLNode.h
 /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BTListRegister/LLNode.h
@@ -80,37 +78,13 @@ iostream
 ../../PathfindingA/LinkedList.h
 /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/PathfindingA/LinkedList.h
 
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BTListRegister/LLNode.cpp
-cstring
--
-LLNode.h
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BTListRegister/LLNode.h
-
 /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BTListRegister/LLNode.h
 iostream
 /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BTListRegister/iostream
 
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BackTrackingSearch.cpp
-cstring
--
-BackTrackingSearch.h
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BackTrackingSearch.h
-iostream
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/iostream
-
 /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BackTrackingSearch.h
 BTListRegister/BTLinkedList.h
 /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BTListRegister/BTLinkedList.h
-
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/GameManagment/Ball.cpp
-Ball.h
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/GameManagment/Ball.h
-
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/GameManagment/Ball.h
-
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/GameManagment/Board.cpp
-Board.h
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/GameManagment/Board.h
 
 /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/GameManagment/Board.h
 iostream
@@ -130,19 +104,11 @@ Scores.h
 ../BT/BackTrackingSearch.h
 /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BackTrackingSearch.h
 
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/GameManagment/Scores.cpp
-Scores.h
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/GameManagment/Scores.h
-
 /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/GameManagment/Scores.h
 string
 -
 iostream
 -
-
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/Graphics/BoardDisplay.cpp
-BoardDisplay.h
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/Graphics/BoardDisplay.h
 
 /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/Graphics/BoardDisplay.h
 SFML/Graphics.hpp
@@ -150,10 +116,6 @@ SFML/Graphics.hpp
 ../GameManagment/Board.h
 /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/GameManagment/Board.h
 
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/PathfindingA/LinkedList.cpp
-LinkedList.h
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/PathfindingA/LinkedList.h
-
 /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/PathfindingA/LinkedList.h
 Node.h
 /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/PathfindingA/Node.h
@@ -162,17 +124,9 @@ iostream
 string
 -
 
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/PathfindingA/Node.cpp
-Node.h
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/PathfindingA/Node.h
-
 /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/PathfindingA/Node.h
 iostream
 -
-
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/PathfindingA/PathfindingA.cpp
-PathfindingA.h
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/PathfindingA/PathfindingA.h
 
 /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/PathfindingA/PathfindingA.h
 iostream
@@ -185,10 +139,6 @@ time.h
 -
 LinkedList.h
 /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/PathfindingA/LinkedList.h
-
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/Physics/Movement.cpp
-Movement.h
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/Physics/Movement.h
 
 /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/Physics/Movement.h
 string
@@ -217,4 +167,6 @@ SFML/Graphics.hpp
 -
 ../Graphics/GeneticDisplay.h
 /home/david/Documents/Proyecto2Complete/Graphics/GeneticDisplay.h
+../Graphics/GeneticDisplay.cpp
+/home/david/Documents/Proyecto2Complete/Graphics/GeneticDisplay.cpp
 

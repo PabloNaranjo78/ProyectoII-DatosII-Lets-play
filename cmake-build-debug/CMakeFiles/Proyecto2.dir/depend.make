@@ -64,6 +64,7 @@ CMakeFiles/Proyecto2.dir/Physics/Movement.cpp.o: ../Physics/Movement.h
 
 CMakeFiles/Proyecto2.dir/main.cpp.o: ../Graphics/Button.cpp
 CMakeFiles/Proyecto2.dir/main.cpp.o: ../Graphics/Button.h
+CMakeFiles/Proyecto2.dir/main.cpp.o: ../Graphics/GeneticDisplay.cpp
 CMakeFiles/Proyecto2.dir/main.cpp.o: ../Graphics/GeneticDisplay.h
 CMakeFiles/Proyecto2.dir/main.cpp.o: ../ImageCutting/Cutter.cpp
 CMakeFiles/Proyecto2.dir/main.cpp.o: ../ImageCutting/Cutter.h
