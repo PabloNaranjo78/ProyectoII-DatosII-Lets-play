@@ -14,10 +14,10 @@ public:
     int getData();
     void setData(int _data[9][9], string movement, int pos);
     string movement;
-    LLNode *prev;
+    LLNode *prev = NULL;
     int data[9][9];
     int posMove = 0;
-private:
+
 };
 
 

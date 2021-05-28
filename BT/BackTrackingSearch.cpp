@@ -20,7 +20,7 @@ BackTrackingSearch::BackTrackingSearch(bool obstacles[9][9]) {
 }
 
 LinkedList* BackTrackingSearch::getPath(int x, int y) {
-    matrix[7][4] = 2;
+    matrix[4][7] = 2;
     matrix[y][x] = 3;
     add(matrix);
     return searchOnePath();
@@ -67,8 +67,7 @@ LinkedList* BackTrackingSearch::searchOnePath() {
             list.addToList(matrix,"y+1",x,y);
         }
 
-             else
-            if (matrix[y][x-1] == 0 and matrix[y][x-1] != 4 and x >0 and matrix[y][x-1] != 5){
+             else if (matrix[y][x-1] == 0 and matrix[y][x-1] != 4 and x >0 and matrix[y][x-1] != 5){
                 x-=1;
                 matrix[y][x] = 1;
                 list.addToList(matrix,"x-1",x,y);
