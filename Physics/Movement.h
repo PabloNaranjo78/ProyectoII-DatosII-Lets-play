@@ -33,7 +33,8 @@ public:
     int a = -1;
     int b = -1;
     Movement(Scores * currentScores, bool obstacles[9][9]);
-    void performLaunch(int force, float angle, float init_x, float init_y, Sprite * puck);
+    void setUpLaunch();
+    bool performLaunch(int force, float angle, float init_x, float init_y, Sprite * puck);
     bool checkObstacleCollision(bool dir);
     bool checkInGoal(int x, int y);
 };

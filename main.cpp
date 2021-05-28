@@ -11,23 +11,25 @@ int main() {
     //pathfindingA->getPath(6,7);
     //Board * board = new Board();
     //board->getPathPlayer();
-//    BoardDisplay * bpGame = new BoardDisplay();
-//    bpGame->runGame();
+    BoardDisplay * bpGame = new BoardDisplay();
+    bpGame->runGame();
 
-    int num[9][9]={
-            {4,4,4,4,4,4,4,4,4},
-            {4,0,0,0,2,0,0,0,4},
-            {4,0,0,0,0,0,0,0,4},
-            {4,0,4,4,4,4,4,4,4},
-            {4,0,0,0,0,0,0,0,4},
-            {4,0,0,0,0,0,0,0,4},
-            {4,0,0,0,0,0,0,0,4},
-            {4,0,0,0,0,0,3,0,4},
-            {4,4,4,4,4,4,4,4,4},
-    };
-    BackTrackingSearch backTrackingSearch;
-    backTrackingSearch.add(num);
-    backTrackingSearch.searchOnePath();
-    cout<<endl;
-    backTrackingSearch.printMatrix();
+//    int num[9][9]={
+//            {4,4,4,4,4,4,4,4,4},
+//            {4,0,0,0,2,0,0,0,4},
+//            {4,0,0,0,0,0,0,0,4},
+//            {4,0,4,4,4,4,4,4,4},
+//            {4,0,0,0,0,0,0,0,4},
+//            {4,0,0,0,0,0,0,0,4},
+//            {4,0,0,0,0,0,0,0,4},
+//            {4,0,0,0,0,0,3,0,4},
+//            {4,4,4,4,4,4,4,4,4},
+//    };
+//    BackTrackingSearch backTrackingSearch;
+//    backTrackingSearch.add(num);
+//    backTrackingSearch.searchOnePath();
+//    cout<<endl;
+//    backTrackingSearch.printMatrix();
+
+
 }

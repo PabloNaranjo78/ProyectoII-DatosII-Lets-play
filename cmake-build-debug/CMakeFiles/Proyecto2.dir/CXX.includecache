@@ -6,23 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/home/pablo/Documentos/GitHub/ProyectoII-DatosII-Lets-play/BT/BTListRegister/BTLinkedList.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BTListRegister/BTLinkedList.h
 LLNode.h
-/home/pablo/Documentos/GitHub/ProyectoII-DatosII-Lets-play/BT/BTListRegister/LLNode.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BTListRegister/LLNode.h
 iostream
-/home/pablo/Documentos/GitHub/ProyectoII-DatosII-Lets-play/BT/BTListRegister/iostream
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BTListRegister/iostream
 ../../PathfindingA/LinkedList.h
-/home/pablo/Documentos/GitHub/ProyectoII-DatosII-Lets-play/PathfindingA/LinkedList.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/LinkedList.h
 
-/home/pablo/Documentos/GitHub/ProyectoII-DatosII-Lets-play/BT/BTListRegister/LLNode.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BTListRegister/LLNode.h
 iostream
-/home/pablo/Documentos/GitHub/ProyectoII-DatosII-Lets-play/BT/BTListRegister/iostream
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BTListRegister/iostream
 
-/home/pablo/Documentos/GitHub/ProyectoII-DatosII-Lets-play/BT/BackTrackingSearch.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BackTrackingSearch.h
 BTListRegister/BTLinkedList.h
-/home/pablo/Documentos/GitHub/ProyectoII-DatosII-Lets-play/BT/BTListRegister/BTLinkedList.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BTListRegister/BTLinkedList.h
 
-/home/pablo/Documentos/GitHub/ProyectoII-DatosII-Lets-play/GameManagment/Board.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Board.h
 iostream
 -
 string
@@ -32,35 +32,43 @@ stdlib.h
 time.h
 -
 ../PathfindingA/PathfindingA.h
-/home/pablo/Documentos/GitHub/ProyectoII-DatosII-Lets-play/PathfindingA/PathfindingA.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/PathfindingA.h
 ../Physics/Movement.h
-/home/pablo/Documentos/GitHub/ProyectoII-DatosII-Lets-play/Physics/Movement.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/Physics/Movement.h
 Scores.h
-/home/pablo/Documentos/GitHub/ProyectoII-DatosII-Lets-play/GameManagment/Scores.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Scores.h
 ../BT/BackTrackingSearch.h
-/home/pablo/Documentos/GitHub/ProyectoII-DatosII-Lets-play/BT/BackTrackingSearch.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BackTrackingSearch.h
 
-/home/pablo/Documentos/GitHub/ProyectoII-DatosII-Lets-play/GameManagment/Scores.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Scores.h
+string
+-
+iostream
+-
 
-/home/pablo/Documentos/GitHub/ProyectoII-DatosII-Lets-play/Graphics/BoardDisplay.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/Graphics/BoardDisplay.cpp
+BoardDisplay.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/Graphics/BoardDisplay.h
+
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/Graphics/BoardDisplay.h
 SFML/Graphics.hpp
 -
 ../GameManagment/Board.h
-/home/pablo/Documentos/GitHub/ProyectoII-DatosII-Lets-play/GameManagment/Board.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Board.h
 
-/home/pablo/Documentos/GitHub/ProyectoII-DatosII-Lets-play/PathfindingA/LinkedList.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/LinkedList.h
 Node.h
-/home/pablo/Documentos/GitHub/ProyectoII-DatosII-Lets-play/PathfindingA/Node.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/Node.h
 iostream
 -
 string
 -
 
-/home/pablo/Documentos/GitHub/ProyectoII-DatosII-Lets-play/PathfindingA/Node.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/Node.h
 iostream
 -
 
-/home/pablo/Documentos/GitHub/ProyectoII-DatosII-Lets-play/PathfindingA/PathfindingA.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/PathfindingA.h
 iostream
 -
 string
@@ -70,9 +78,9 @@ stdlib.h
 time.h
 -
 LinkedList.h
-/home/pablo/Documentos/GitHub/ProyectoII-DatosII-Lets-play/PathfindingA/LinkedList.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/LinkedList.h
 
-/home/pablo/Documentos/GitHub/ProyectoII-DatosII-Lets-play/Physics/Movement.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/Physics/Movement.h
 string
 -
 iostream
@@ -82,19 +90,7 @@ math.h
 SFML/Graphics.hpp
 -
 ../GameManagment/Scores.h
-/home/pablo/Documentos/GitHub/ProyectoII-DatosII-Lets-play/GameManagment/Scores.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Scores.h
 iostream
--
-
-/home/pablo/Documentos/GitHub/ProyectoII-DatosII-Lets-play/main.cpp
-iostream
--
-PathfindingA/PathfindingA.h
-/home/pablo/Documentos/GitHub/ProyectoII-DatosII-Lets-play/PathfindingA/PathfindingA.h
-Graphics/BoardDisplay.h
-/home/pablo/Documentos/GitHub/ProyectoII-DatosII-Lets-play/Graphics/BoardDisplay.h
-BT/BackTrackingSearch.h
-/home/pablo/Documentos/GitHub/ProyectoII-DatosII-Lets-play/BT/BackTrackingSearch.h
-SFML/Graphics.hpp
 -
 

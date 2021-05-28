@@ -245,6 +245,11 @@ LinkedList * PathfindingA::getPath(int di, int dj) {
     LinkedList * openList = new LinkedList();
     LinkedList * closedList = new LinkedList();
     LinkedList * pathFound = new LinkedList();
+
+    if (this->matrix_names[di][dj] == this->matrix_names[this->goal[0]][this->goal[1]]){
+        return pathFound;
+    }
+
     closedList->addValue(this->matrix_names[di][dj]);
     this->initial = this->matrix_names[di][dj];
     cout << "id used: " << this->initial << endl;
@@ -256,6 +261,7 @@ LinkedList * PathfindingA::getPath(int di, int dj) {
     int checking;
 
     while (!this->isGoalIn(openList)){
+
         cout << "paso 1" << endl;
         checking = this->getMin(openList);
 
@@ -288,6 +294,9 @@ LinkedList * PathfindingA::getPath(int di, int dj) {
         pathFound->addValue(current_checking);
         current_checking = closedList->getParent(current_checking);
         cout << "checking current: " << current_checking << endl;
+        if (current_checking == 0){
+            break;
+        }
     }
     pathFound->addValue(this->initial);
     cout << "path list:" << endl;

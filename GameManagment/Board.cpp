@@ -29,6 +29,7 @@ Board::Board() {
     //obstacles, portería 47,
     backTrackingSearch = new BackTrackingSearch();
     this->pathfinder1 = new PathfindingA(this->obstacles, goal_init1);
+    this->pathfinder2 = new PathfindingA(this->obstacles, goal_init2);
 }
 
 void Board::setObstacles(int obstacles) {
@@ -54,4 +55,8 @@ void Board::setObstacles(int obstacles) {
 
 LinkedList * Board::getPathPlayer(int y, int x) {
     return this->pathfinder1->getPath(y/this->grid_y, x/this->grid_x);
+}
+
+LinkedList * Board::getPathComputer(int y, int x) {
+    return this->pathfinder2->getPath(y/this->grid_y, x/this->grid_x);
 }

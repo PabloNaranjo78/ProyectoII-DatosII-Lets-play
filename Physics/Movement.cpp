@@ -21,8 +21,13 @@ Movement::Movement(Scores *currentScores, bool obstacles[9][9]) {
 
 }
 
+void Movement::setUpLaunch() {
+    this->a = -1;
+    this->b = -1;
+    this->collide = false;
+}
 
-void Movement::performLaunch(int force, float angle, float init_x, float init_y, Sprite * puck) {
+bool Movement::performLaunch(int force, float angle, float init_x, float init_y, Sprite * puck) {
     this->x = init_x;
     this->y = init_y;
     cout << "a, b" << a << "," << b << endl;
@@ -37,8 +42,11 @@ void Movement::performLaunch(int force, float angle, float init_x, float init_y,
         this->a *= -1;
         this->collide = true;
     }
-    //if (this->checkInGoal(this->x, this->y)){}
     puck->setPosition(this->x, this->y);
+    if (this->checkInGoal(this->x, this->y)){
+        return true;
+    }
+    return false;
     //sleep(0.001);
 }
 
@@ -72,5 +80,18 @@ bool Movement::checkObstacleCollision(bool dir) {
     }
 
     return result;
+
+}
+
+bool Movement::checkInGoal(int x, int y) {
+    if (x+25 >= this->grid_x*(this->goals[1]) && x+25 <= this->grid_x*(this->goals[1]+1) && y+25 >= this->grid_y*(this->goals[0]) && y+25 <= this->grid_y*(this->goals[0]+1)){
+        this->scores->scoreFor(true);
+        return true;
+    }else if (x+25 >= this->grid_x*(this->goals[3]) && x+25 <= this->grid_x*(this->goals[3]+1) && y+25 >= this->grid_y*(this->goals[2]) && y+25 <= this->grid_y*(this->goals[2]+1)){
+        this->scores->scoreFor(false);
+        return true;
+    }
+
+    return false;
 
 }
