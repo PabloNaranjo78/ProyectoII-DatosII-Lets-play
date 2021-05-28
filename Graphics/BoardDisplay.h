@@ -8,6 +8,10 @@
 
 using namespace sf;
 
+
+/**
+ * Interfaz grafica para BP game
+ */
 class BoardDisplay {
 private:
     const int grid_x = 90;
@@ -31,13 +35,39 @@ private:
 
 
 public:
+    /**
+     * Constructor de la clase
+     */
     BoardDisplay();
+    /**
+     * Ciclo de juego en el que los valores cambian internamente
+     */
     void runGame();
+    /**
+     * Revisa los eventos relacionados al mouse o la ventana
+     */
     void checkEvents();
+    /**
+     * Revisa la posicion del mouse y la actualiza
+     */
     void checkMousePosition();
+    /**
+     * Revisa las colisiones con los bordes y los obstaculos
+     */
     void checkCollisions();
+    /**
+     * Busca el camino que se sugiere al jugador
+     */
     void setPlayerPath();
+    /**
+     * Busca el camino que debe seguir el lanzamiento de la computadora
+     */
     void setComputerPath();
+    /**
+     * Busca el angulo donde inicia el lanzamiento
+     * @param current_pos posicion inicial relativa a la matriz
+     * @param first_on_path primera posicion a la que se va
+     */
     void searchAngleStart(int current_pos, int first_on_path);
 };
 

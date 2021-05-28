@@ -305,7 +305,7 @@ LinkedList * PathfindingA::getPath(int di, int dj) {
     openList->printList();
     cout << "Closed list:" << endl;
     closedList->printList();
-
+    cout << "id used: " << this->initial << endl;
     cout << "final del proceso con exito" << endl;
 
     return pathFound;

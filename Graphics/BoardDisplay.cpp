@@ -190,6 +190,7 @@ void BoardDisplay::runGame() {
 
         if (calculating && this->board->turnPlayers && !this->launching){
             //cout << "Error here" << endl;
+            this->listPathPlayer = NULL;
             this->listPathPlayer = this->board->getPathPlayer(this->puck->getPosition().y+25, this->puck->getPosition().x+25);
             this->board->puck->setUpLaunch();
             calculating = false;
@@ -218,6 +219,7 @@ void BoardDisplay::runGame() {
             if (this->step == 1){
             //    cout << "step 1" << endl;
                 if (first_in){
+                    this->listComputerPath = NULL;
                     this->listComputerPath = this->board->getPathComputer(this->puck->getPosition().y+25, this->puck->getPosition().x+25);
                     this->listComputerPath->printList();
                     int i = this->puck->getPosition().y/grid_y;
