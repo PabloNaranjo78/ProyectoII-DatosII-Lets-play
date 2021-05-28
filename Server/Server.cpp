@@ -45,8 +45,11 @@ Document jsonReceiver(Packet packet)
  */
 string jsonSender(string type, string gnome)
 {   string finalG;
-
-    string jsonStr = R"({"type":")"+ type + R"(","gnome":")" + gnome + "\"}";
+    for(int i =0; i <gnome.size();i++){
+        finalG.append(1,gnome[i]);
+        finalG.append(1,'#');
+    }
+    string jsonStr = R"({"type":")"+ type + R"(","gnome":")" + finalG + "\"}";
     return jsonStr;
 }
 

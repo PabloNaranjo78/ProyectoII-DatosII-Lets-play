@@ -6,6 +6,7 @@
 
 #IncludeRegexTransform: 
 
+<<<<<<< HEAD
 /home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BTListRegister/BTLinkedList.cpp
 iostream
 -
@@ -13,6 +14,73 @@ BTLinkedList.h
 /home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BTListRegister/BTLinkedList.h
 
 /home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BTListRegister/BTLinkedList.h
+=======
+../Graphics/Button.cpp
+Button.h
+../Graphics/Button.h
+
+../Graphics/Button.h
+SFML/Graphics.hpp
+-
+SFML/Window.hpp
+-
+string
+-
+
+../Graphics/GeneticDisplay.cpp
+GeneticDisplay.h
+../Graphics/GeneticDisplay.h
+
+../Graphics/GeneticDisplay.h
+SFML/Graphics.hpp
+-
+SFML/Network.hpp
+-
+vector
+-
+iostream
+-
+string
+-
+cstdio
+-
+rapidjson/document.h
+../Graphics/rapidjson/document.h
+../ImageLoading/FileLoader.h
+../ImageLoading/FileLoader.h
+../ImageLoading/FileLoader.cpp
+../ImageLoading/FileLoader.cpp
+../ImageCutting/Cutter.h
+../ImageCutting/Cutter.h
+../ImageCutting/Cutter.cpp
+../ImageCutting/Cutter.cpp
+Button.h
+../Graphics/Button.h
+Button.cpp
+../Graphics/Button.cpp
+
+../ImageCutting/Cutter.cpp
+Cutter.h
+../ImageCutting/Cutter.h
+
+../ImageCutting/Cutter.h
+iostream
+-
+SFML/Graphics.hpp
+-
+
+../ImageLoading/FileLoader.cpp
+FileLoader.h
+../ImageLoading/FileLoader.h
+
+../ImageLoading/FileLoader.h
+cstdio
+-
+string
+-
+
+/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BTListRegister/BTLinkedList.h
+>>>>>>> b632488eee8ff9bb39a7e4163e502bd9f2982931
 LLNode.h
 /home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BTListRegister/LLNode.h
 iostream
@@ -20,6 +88,7 @@ iostream
 ../../PathfindingA/LinkedList.h
 /home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/LinkedList.h
 
+<<<<<<< HEAD
 /home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BTListRegister/LLNode.cpp
 cstring
 -
@@ -27,9 +96,13 @@ LLNode.h
 /home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BTListRegister/LLNode.h
 
 /home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BTListRegister/LLNode.h
+=======
+/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BTListRegister/LLNode.h
+>>>>>>> b632488eee8ff9bb39a7e4163e502bd9f2982931
 iostream
 /home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BTListRegister/iostream
 
+<<<<<<< HEAD
 /home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BackTrackingSearch.cpp
 cstring
 -
@@ -39,9 +112,13 @@ iostream
 /home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/iostream
 
 /home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BackTrackingSearch.h
+=======
+/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BackTrackingSearch.h
+>>>>>>> b632488eee8ff9bb39a7e4163e502bd9f2982931
 BTListRegister/BTLinkedList.h
 /home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BTListRegister/BTLinkedList.h
 
+<<<<<<< HEAD
 /home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Ball.cpp
 Ball.h
 /home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Ball.h
@@ -53,6 +130,9 @@ Board.h
 /home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Board.h
 
 /home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Board.h
+=======
+/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/GameManagment/Board.h
+>>>>>>> b632488eee8ff9bb39a7e4163e502bd9f2982931
 iostream
 -
 string
@@ -70,31 +150,43 @@ Scores.h
 ../BT/BackTrackingSearch.h
 /home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BackTrackingSearch.h
 
+<<<<<<< HEAD
 /home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Scores.cpp
 Scores.h
 /home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Scores.h
 
 /home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Scores.h
+=======
+/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/GameManagment/Scores.h
+>>>>>>> b632488eee8ff9bb39a7e4163e502bd9f2982931
 string
 -
 iostream
 -
 
+<<<<<<< HEAD
 /home/anthony/Desktop/RepositoriosGit/Proyecto2/Graphics/BoardDisplay.cpp
 BoardDisplay.h
 /home/anthony/Desktop/RepositoriosGit/Proyecto2/Graphics/BoardDisplay.h
 
 /home/anthony/Desktop/RepositoriosGit/Proyecto2/Graphics/BoardDisplay.h
+=======
+/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/Graphics/BoardDisplay.h
+>>>>>>> b632488eee8ff9bb39a7e4163e502bd9f2982931
 SFML/Graphics.hpp
 -
 ../GameManagment/Board.h
 /home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Board.h
 
+<<<<<<< HEAD
 /home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/LinkedList.cpp
 LinkedList.h
 /home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/LinkedList.h
 
 /home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/LinkedList.h
+=======
+/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/PathfindingA/LinkedList.h
+>>>>>>> b632488eee8ff9bb39a7e4163e502bd9f2982931
 Node.h
 /home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/Node.h
 iostream
@@ -102,6 +194,7 @@ iostream
 string
 -
 
+<<<<<<< HEAD
 /home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/Node.cpp
 Node.h
 /home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/Node.h
@@ -115,6 +208,13 @@ PathfindingA.h
 /home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/PathfindingA.h
 
 /home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/PathfindingA.h
+=======
+/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/PathfindingA/Node.h
+iostream
+-
+
+/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/PathfindingA/PathfindingA.h
+>>>>>>> b632488eee8ff9bb39a7e4163e502bd9f2982931
 iostream
 -
 string
@@ -126,11 +226,15 @@ time.h
 LinkedList.h
 /home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/LinkedList.h
 
+<<<<<<< HEAD
 /home/anthony/Desktop/RepositoriosGit/Proyecto2/Physics/Movement.cpp
 Movement.h
 /home/anthony/Desktop/RepositoriosGit/Proyecto2/Physics/Movement.h
 
 /home/anthony/Desktop/RepositoriosGit/Proyecto2/Physics/Movement.h
+=======
+/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/Physics/Movement.h
+>>>>>>> b632488eee8ff9bb39a7e4163e502bd9f2982931
 string
 -
 iostream
@@ -155,4 +259,11 @@ BT/BackTrackingSearch.h
 /home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BackTrackingSearch.h
 SFML/Graphics.hpp
 -
+<<<<<<< HEAD
+=======
+../Graphics/GeneticDisplay.h
+/home/david/Documents/Proyecto2Complete/Graphics/GeneticDisplay.h
+../Graphics/GeneticDisplay.cpp
+/home/david/Documents/Proyecto2Complete/Graphics/GeneticDisplay.cpp
+>>>>>>> b632488eee8ff9bb39a7e4163e502bd9f2982931
 
