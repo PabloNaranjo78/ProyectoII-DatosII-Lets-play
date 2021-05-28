@@ -1,4 +1,0 @@
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/cmake-build-debug/CMakeFiles/Server.dir
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/cmake-build-debug/CMakeFiles/Proyecto2.dir
