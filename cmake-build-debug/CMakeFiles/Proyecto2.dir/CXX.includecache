@@ -6,113 +6,53 @@
 
 #IncludeRegexTransform: 
 
-../Graphics/Button.cpp
-Button.h
-../Graphics/Button.h
-
-../Graphics/Button.h
-SFML/Graphics.hpp
--
-SFML/Window.hpp
--
-string
--
-
-../Graphics/GeneticDisplay.h
-SFML/Graphics.hpp
--
-SFML/Network.hpp
--
-vector
--
-iostream
--
-string
--
-cstdio
--
-rapidjson/document.h
-../Graphics/rapidjson/document.h
-../ImageLoading/FileLoader.h
-../ImageLoading/FileLoader.h
-../ImageLoading/FileLoader.cpp
-../ImageLoading/FileLoader.cpp
-../ImageCutting/Cutter.h
-../ImageCutting/Cutter.h
-../ImageCutting/Cutter.cpp
-../ImageCutting/Cutter.cpp
-Button.h
-../Graphics/Button.h
-Button.cpp
-../Graphics/Button.cpp
-
-../ImageCutting/Cutter.cpp
-Cutter.h
-../ImageCutting/Cutter.h
-
-../ImageCutting/Cutter.h
-iostream
--
-SFML/Graphics.hpp
--
-
-../ImageLoading/FileLoader.cpp
-FileLoader.h
-../ImageLoading/FileLoader.h
-
-../ImageLoading/FileLoader.h
-cstdio
--
-string
--
-
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BTListRegister/BTLinkedList.cpp
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BTListRegister/BTLinkedList.cpp
 iostream
 -
 BTLinkedList.h
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BTListRegister/BTLinkedList.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BTListRegister/BTLinkedList.h
 
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BTListRegister/BTLinkedList.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BTListRegister/BTLinkedList.h
 LLNode.h
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BTListRegister/LLNode.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BTListRegister/LLNode.h
 iostream
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BTListRegister/iostream
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BTListRegister/iostream
 ../../PathfindingA/LinkedList.h
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/PathfindingA/LinkedList.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/LinkedList.h
 
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BTListRegister/LLNode.cpp
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BTListRegister/LLNode.cpp
 cstring
 -
 LLNode.h
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BTListRegister/LLNode.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BTListRegister/LLNode.h
 
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BTListRegister/LLNode.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BTListRegister/LLNode.h
 iostream
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BTListRegister/iostream
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BTListRegister/iostream
 
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BackTrackingSearch.cpp
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BackTrackingSearch.cpp
 cstring
 -
 BackTrackingSearch.h
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BackTrackingSearch.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BackTrackingSearch.h
 iostream
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/iostream
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/iostream
 
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BackTrackingSearch.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BackTrackingSearch.h
 BTListRegister/BTLinkedList.h
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BTListRegister/BTLinkedList.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BTListRegister/BTLinkedList.h
 
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/GameManagment/Ball.cpp
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Ball.cpp
 Ball.h
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/GameManagment/Ball.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Ball.h
 
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/GameManagment/Ball.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Ball.h
 
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/GameManagment/Board.cpp
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Board.cpp
 Board.h
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/GameManagment/Board.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Board.h
 
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/GameManagment/Board.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Board.h
 iostream
 -
 string
@@ -122,59 +62,59 @@ stdlib.h
 time.h
 -
 ../PathfindingA/PathfindingA.h
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/PathfindingA/PathfindingA.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/PathfindingA.h
 ../Physics/Movement.h
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/Physics/Movement.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/Physics/Movement.h
 Scores.h
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/GameManagment/Scores.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Scores.h
 ../BT/BackTrackingSearch.h
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BackTrackingSearch.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BackTrackingSearch.h
 
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/GameManagment/Scores.cpp
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Scores.cpp
 Scores.h
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/GameManagment/Scores.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Scores.h
 
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/GameManagment/Scores.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Scores.h
 string
 -
 iostream
 -
 
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/Graphics/BoardDisplay.cpp
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/Graphics/BoardDisplay.cpp
 BoardDisplay.h
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/Graphics/BoardDisplay.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/Graphics/BoardDisplay.h
 
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/Graphics/BoardDisplay.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/Graphics/BoardDisplay.h
 SFML/Graphics.hpp
 -
 ../GameManagment/Board.h
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/GameManagment/Board.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Board.h
 
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/PathfindingA/LinkedList.cpp
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/LinkedList.cpp
 LinkedList.h
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/PathfindingA/LinkedList.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/LinkedList.h
 
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/PathfindingA/LinkedList.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/LinkedList.h
 Node.h
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/PathfindingA/Node.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/Node.h
 iostream
 -
 string
 -
 
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/PathfindingA/Node.cpp
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/Node.cpp
 Node.h
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/PathfindingA/Node.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/Node.h
 
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/PathfindingA/Node.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/Node.h
 iostream
 -
 
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/PathfindingA/PathfindingA.cpp
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/PathfindingA.cpp
 PathfindingA.h
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/PathfindingA/PathfindingA.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/PathfindingA.h
 
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/PathfindingA/PathfindingA.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/PathfindingA.h
 iostream
 -
 string
@@ -184,13 +124,13 @@ stdlib.h
 time.h
 -
 LinkedList.h
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/PathfindingA/LinkedList.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/LinkedList.h
 
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/Physics/Movement.cpp
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/Physics/Movement.cpp
 Movement.h
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/Physics/Movement.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/Physics/Movement.h
 
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/Physics/Movement.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/Physics/Movement.h
 string
 -
 iostream
@@ -200,21 +140,19 @@ math.h
 SFML/Graphics.hpp
 -
 ../GameManagment/Scores.h
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/GameManagment/Scores.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Scores.h
 iostream
 -
 
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/main.cpp
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/main.cpp
 iostream
 -
 PathfindingA/PathfindingA.h
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/PathfindingA/PathfindingA.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/PathfindingA.h
 Graphics/BoardDisplay.h
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/Graphics/BoardDisplay.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/Graphics/BoardDisplay.h
 BT/BackTrackingSearch.h
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BackTrackingSearch.h
+/home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BackTrackingSearch.h
 SFML/Graphics.hpp
 -
-../Graphics/GeneticDisplay.h
-/home/david/Documents/Proyecto2Complete/Graphics/GeneticDisplay.h
 

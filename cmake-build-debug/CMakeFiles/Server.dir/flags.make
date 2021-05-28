@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/SFML_INCLUDE_DIR -I/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/AlgoritmoG -I/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/Graphics -I/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT -I/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BTListRegister
+CXX_INCLUDES = -I/home/anthony/Desktop/RepositoriosGit/Proyecto2/SFML_INCLUDE_DIR -I/home/anthony/Desktop/RepositoriosGit/Proyecto2/AlgoritmoG -I/home/anthony/Desktop/RepositoriosGit/Proyecto2/Graphics -I/home/anthony/Desktop/RepositoriosGit/Proyecto2/BT -I/home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BTListRegister
 
 CXX_FLAGS = -g -std=gnu++14
 
