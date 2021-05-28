@@ -62,6 +62,14 @@ CMakeFiles/Proyecto2.dir/Physics/Movement.cpp.o: ../GameManagment/Scores.h
 CMakeFiles/Proyecto2.dir/Physics/Movement.cpp.o: ../Physics/Movement.cpp
 CMakeFiles/Proyecto2.dir/Physics/Movement.cpp.o: ../Physics/Movement.h
 
+CMakeFiles/Proyecto2.dir/main.cpp.o: ../Graphics/Button.cpp
+CMakeFiles/Proyecto2.dir/main.cpp.o: ../Graphics/Button.h
+CMakeFiles/Proyecto2.dir/main.cpp.o: ../Graphics/GeneticDisplay.cpp
+CMakeFiles/Proyecto2.dir/main.cpp.o: ../Graphics/GeneticDisplay.h
+CMakeFiles/Proyecto2.dir/main.cpp.o: ../ImageCutting/Cutter.cpp
+CMakeFiles/Proyecto2.dir/main.cpp.o: ../ImageCutting/Cutter.h
+CMakeFiles/Proyecto2.dir/main.cpp.o: ../ImageLoading/FileLoader.cpp
+CMakeFiles/Proyecto2.dir/main.cpp.o: ../ImageLoading/FileLoader.h
 CMakeFiles/Proyecto2.dir/main.cpp.o: ../BT/BTListRegister/BTLinkedList.h
 CMakeFiles/Proyecto2.dir/main.cpp.o: ../BT/BTListRegister/LLNode.h
 CMakeFiles/Proyecto2.dir/main.cpp.o: ../BT/BackTrackingSearch.h

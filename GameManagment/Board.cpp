@@ -10,8 +10,7 @@ Board::Board() {
     this->goals[1] = 1;
     this->goals[2] = 4;
     this->goals[3] = 7;
-    int goal_init1[2] = {goals[0], goals[1]};
-    int goal_init2[2] = {goals[2], goals[3]};
+
     this->turnPlayers = true;
     this->scores = new Scores();
     this->obstaclesNum = 6;
@@ -27,7 +26,6 @@ Board::Board() {
         cout << endl;
     }
     //obstacles, portería 47,
-    this->pathfinder1 = new PathfindingA(this->obstacles, goal_init1);
     this->backTrackingSearch = new BackTrackingSearch(this->obstacles);
 }
 
@@ -53,6 +51,8 @@ void Board::setObstacles(int obstacles) {
 }
 
 LinkedList * Board::getPathPlayer(int y, int x) {
+    int goal_init1[2] = {goals[0], goals[1]};
+    this->pathfinder1 = new PathfindingA(this->obstacles, goal_init1);
     return this->pathfinder1->getPath(y/this->grid_y, x/this->grid_x);
 }
 

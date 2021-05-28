@@ -1,3 +1,0 @@
-/home/pablo/Documentos/GitHub/ProyectoII-DatosII-Lets-play/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/pablo/Documentos/GitHub/ProyectoII-DatosII-Lets-play/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/pablo/Documentos/GitHub/ProyectoII-DatosII-Lets-play/cmake-build-debug/CMakeFiles/Proyecto2.dir

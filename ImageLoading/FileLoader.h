@@ -12,10 +12,11 @@ class FileLoader {
 
 public:
     string image;
-
+    int divisions;
     void load_image();
     string getCmdOutput(string cmd);
     void error();
+    void getimagedivisions();
 };
 
 
