@@ -22,7 +22,7 @@ private:
     BTLinkedList list;
     void searchStart();
     bool closePath(int x, int y);
-    int matrix[9][9]{};
+    int matrix[9][9];
 
     int startRow = 0;
     int startColumn = 0;

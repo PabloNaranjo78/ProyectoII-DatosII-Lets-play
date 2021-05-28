@@ -13,6 +13,7 @@
 #include "Scores.h"
 #include "../BT/BackTrackingSearch.h"
 
+
 class Board {
 private:
     const int grid_x = 90;
@@ -20,7 +21,7 @@ private:
     int limitsAt;
     int goals[4];
     PathfindingA * pathfinder1;
-    PathfindingA * pathfinder2;
+    //PathfindingA * pathfinder2;
     void setObstacles(int obstacles);
     BackTrackingSearch * backTrackingSearch;
 
