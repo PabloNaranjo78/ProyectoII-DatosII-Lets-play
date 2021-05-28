@@ -8,11 +8,18 @@
 #include <iostream>
 
 using namespace std;
+/**
+ * Nodo de la lista enlazada simple
+ */
 class Node {
 public:
     Node * next;
     int id;
     int parent;
+    /**
+     * Constructor de la clase
+     * @param id identificador del nodo
+     */
     Node(int id);
 };
 

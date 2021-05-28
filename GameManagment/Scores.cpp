@@ -23,14 +23,14 @@ void Scores::scoreFor(bool team) {
 
 
 bool Scores::getMatchFinishedP1() {
-    if (this->scorePlayer1 > 2){
+    if (this->scorePlayer1 > 1){
         return true;
     }
     return false;
 }
 
 bool Scores::getMatchFinishedP2() {
-    if (this->scorePlayer2 > 2){
+    if (this->scorePlayer2 > 1){
         return true;
     }
     return false;

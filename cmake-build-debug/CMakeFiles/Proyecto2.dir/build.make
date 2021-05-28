@@ -62,10 +62,10 @@ RM = /snap/clion/151/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anthony/Desktop/RepositoriosGit/Proyecto2
+CMAKE_SOURCE_DIR = /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anthony/Desktop/RepositoriosGit/Proyecto2/cmake-build-debug
+CMAKE_BINARY_DIR = /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Proyecto2.dir/depend.make
@@ -78,159 +78,159 @@ include CMakeFiles/Proyecto2.dir/flags.make
 
 CMakeFiles/Proyecto2.dir/main.cpp.o: CMakeFiles/Proyecto2.dir/flags.make
 CMakeFiles/Proyecto2.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anthony/Desktop/RepositoriosGit/Proyecto2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Proyecto2.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto2.dir/main.cpp.o -c /home/anthony/Desktop/RepositoriosGit/Proyecto2/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Proyecto2.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto2.dir/main.cpp.o -c /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/main.cpp
 
 CMakeFiles/Proyecto2.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto2.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anthony/Desktop/RepositoriosGit/Proyecto2/main.cpp > CMakeFiles/Proyecto2.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/main.cpp > CMakeFiles/Proyecto2.dir/main.cpp.i
 
 CMakeFiles/Proyecto2.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto2.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anthony/Desktop/RepositoriosGit/Proyecto2/main.cpp -o CMakeFiles/Proyecto2.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/main.cpp -o CMakeFiles/Proyecto2.dir/main.cpp.s
 
 CMakeFiles/Proyecto2.dir/PathfindingA/PathfindingA.cpp.o: CMakeFiles/Proyecto2.dir/flags.make
 CMakeFiles/Proyecto2.dir/PathfindingA/PathfindingA.cpp.o: ../PathfindingA/PathfindingA.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anthony/Desktop/RepositoriosGit/Proyecto2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Proyecto2.dir/PathfindingA/PathfindingA.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto2.dir/PathfindingA/PathfindingA.cpp.o -c /home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/PathfindingA.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Proyecto2.dir/PathfindingA/PathfindingA.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto2.dir/PathfindingA/PathfindingA.cpp.o -c /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/PathfindingA/PathfindingA.cpp
 
 CMakeFiles/Proyecto2.dir/PathfindingA/PathfindingA.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto2.dir/PathfindingA/PathfindingA.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/PathfindingA.cpp > CMakeFiles/Proyecto2.dir/PathfindingA/PathfindingA.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/PathfindingA/PathfindingA.cpp > CMakeFiles/Proyecto2.dir/PathfindingA/PathfindingA.cpp.i
 
 CMakeFiles/Proyecto2.dir/PathfindingA/PathfindingA.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto2.dir/PathfindingA/PathfindingA.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/PathfindingA.cpp -o CMakeFiles/Proyecto2.dir/PathfindingA/PathfindingA.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/PathfindingA/PathfindingA.cpp -o CMakeFiles/Proyecto2.dir/PathfindingA/PathfindingA.cpp.s
 
 CMakeFiles/Proyecto2.dir/PathfindingA/LinkedList.cpp.o: CMakeFiles/Proyecto2.dir/flags.make
 CMakeFiles/Proyecto2.dir/PathfindingA/LinkedList.cpp.o: ../PathfindingA/LinkedList.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anthony/Desktop/RepositoriosGit/Proyecto2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Proyecto2.dir/PathfindingA/LinkedList.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto2.dir/PathfindingA/LinkedList.cpp.o -c /home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/LinkedList.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Proyecto2.dir/PathfindingA/LinkedList.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto2.dir/PathfindingA/LinkedList.cpp.o -c /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/PathfindingA/LinkedList.cpp
 
 CMakeFiles/Proyecto2.dir/PathfindingA/LinkedList.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto2.dir/PathfindingA/LinkedList.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/LinkedList.cpp > CMakeFiles/Proyecto2.dir/PathfindingA/LinkedList.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/PathfindingA/LinkedList.cpp > CMakeFiles/Proyecto2.dir/PathfindingA/LinkedList.cpp.i
 
 CMakeFiles/Proyecto2.dir/PathfindingA/LinkedList.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto2.dir/PathfindingA/LinkedList.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/LinkedList.cpp -o CMakeFiles/Proyecto2.dir/PathfindingA/LinkedList.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/PathfindingA/LinkedList.cpp -o CMakeFiles/Proyecto2.dir/PathfindingA/LinkedList.cpp.s
 
 CMakeFiles/Proyecto2.dir/PathfindingA/Node.cpp.o: CMakeFiles/Proyecto2.dir/flags.make
 CMakeFiles/Proyecto2.dir/PathfindingA/Node.cpp.o: ../PathfindingA/Node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anthony/Desktop/RepositoriosGit/Proyecto2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Proyecto2.dir/PathfindingA/Node.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto2.dir/PathfindingA/Node.cpp.o -c /home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/Node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Proyecto2.dir/PathfindingA/Node.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto2.dir/PathfindingA/Node.cpp.o -c /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/PathfindingA/Node.cpp
 
 CMakeFiles/Proyecto2.dir/PathfindingA/Node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto2.dir/PathfindingA/Node.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/Node.cpp > CMakeFiles/Proyecto2.dir/PathfindingA/Node.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/PathfindingA/Node.cpp > CMakeFiles/Proyecto2.dir/PathfindingA/Node.cpp.i
 
 CMakeFiles/Proyecto2.dir/PathfindingA/Node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto2.dir/PathfindingA/Node.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anthony/Desktop/RepositoriosGit/Proyecto2/PathfindingA/Node.cpp -o CMakeFiles/Proyecto2.dir/PathfindingA/Node.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/PathfindingA/Node.cpp -o CMakeFiles/Proyecto2.dir/PathfindingA/Node.cpp.s
 
 CMakeFiles/Proyecto2.dir/Physics/Movement.cpp.o: CMakeFiles/Proyecto2.dir/flags.make
 CMakeFiles/Proyecto2.dir/Physics/Movement.cpp.o: ../Physics/Movement.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anthony/Desktop/RepositoriosGit/Proyecto2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Proyecto2.dir/Physics/Movement.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto2.dir/Physics/Movement.cpp.o -c /home/anthony/Desktop/RepositoriosGit/Proyecto2/Physics/Movement.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Proyecto2.dir/Physics/Movement.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto2.dir/Physics/Movement.cpp.o -c /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/Physics/Movement.cpp
 
 CMakeFiles/Proyecto2.dir/Physics/Movement.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto2.dir/Physics/Movement.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anthony/Desktop/RepositoriosGit/Proyecto2/Physics/Movement.cpp > CMakeFiles/Proyecto2.dir/Physics/Movement.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/Physics/Movement.cpp > CMakeFiles/Proyecto2.dir/Physics/Movement.cpp.i
 
 CMakeFiles/Proyecto2.dir/Physics/Movement.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto2.dir/Physics/Movement.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anthony/Desktop/RepositoriosGit/Proyecto2/Physics/Movement.cpp -o CMakeFiles/Proyecto2.dir/Physics/Movement.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/Physics/Movement.cpp -o CMakeFiles/Proyecto2.dir/Physics/Movement.cpp.s
 
 CMakeFiles/Proyecto2.dir/GameManagment/Scores.cpp.o: CMakeFiles/Proyecto2.dir/flags.make
 CMakeFiles/Proyecto2.dir/GameManagment/Scores.cpp.o: ../GameManagment/Scores.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anthony/Desktop/RepositoriosGit/Proyecto2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Proyecto2.dir/GameManagment/Scores.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto2.dir/GameManagment/Scores.cpp.o -c /home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Scores.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Proyecto2.dir/GameManagment/Scores.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto2.dir/GameManagment/Scores.cpp.o -c /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/GameManagment/Scores.cpp
 
 CMakeFiles/Proyecto2.dir/GameManagment/Scores.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto2.dir/GameManagment/Scores.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Scores.cpp > CMakeFiles/Proyecto2.dir/GameManagment/Scores.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/GameManagment/Scores.cpp > CMakeFiles/Proyecto2.dir/GameManagment/Scores.cpp.i
 
 CMakeFiles/Proyecto2.dir/GameManagment/Scores.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto2.dir/GameManagment/Scores.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Scores.cpp -o CMakeFiles/Proyecto2.dir/GameManagment/Scores.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/GameManagment/Scores.cpp -o CMakeFiles/Proyecto2.dir/GameManagment/Scores.cpp.s
 
 CMakeFiles/Proyecto2.dir/GameManagment/Board.cpp.o: CMakeFiles/Proyecto2.dir/flags.make
 CMakeFiles/Proyecto2.dir/GameManagment/Board.cpp.o: ../GameManagment/Board.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anthony/Desktop/RepositoriosGit/Proyecto2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Proyecto2.dir/GameManagment/Board.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto2.dir/GameManagment/Board.cpp.o -c /home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Board.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Proyecto2.dir/GameManagment/Board.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto2.dir/GameManagment/Board.cpp.o -c /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/GameManagment/Board.cpp
 
 CMakeFiles/Proyecto2.dir/GameManagment/Board.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto2.dir/GameManagment/Board.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Board.cpp > CMakeFiles/Proyecto2.dir/GameManagment/Board.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/GameManagment/Board.cpp > CMakeFiles/Proyecto2.dir/GameManagment/Board.cpp.i
 
 CMakeFiles/Proyecto2.dir/GameManagment/Board.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto2.dir/GameManagment/Board.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Board.cpp -o CMakeFiles/Proyecto2.dir/GameManagment/Board.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/GameManagment/Board.cpp -o CMakeFiles/Proyecto2.dir/GameManagment/Board.cpp.s
 
 CMakeFiles/Proyecto2.dir/GameManagment/Ball.cpp.o: CMakeFiles/Proyecto2.dir/flags.make
 CMakeFiles/Proyecto2.dir/GameManagment/Ball.cpp.o: ../GameManagment/Ball.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anthony/Desktop/RepositoriosGit/Proyecto2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Proyecto2.dir/GameManagment/Ball.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto2.dir/GameManagment/Ball.cpp.o -c /home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Ball.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Proyecto2.dir/GameManagment/Ball.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto2.dir/GameManagment/Ball.cpp.o -c /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/GameManagment/Ball.cpp
 
 CMakeFiles/Proyecto2.dir/GameManagment/Ball.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto2.dir/GameManagment/Ball.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Ball.cpp > CMakeFiles/Proyecto2.dir/GameManagment/Ball.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/GameManagment/Ball.cpp > CMakeFiles/Proyecto2.dir/GameManagment/Ball.cpp.i
 
 CMakeFiles/Proyecto2.dir/GameManagment/Ball.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto2.dir/GameManagment/Ball.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anthony/Desktop/RepositoriosGit/Proyecto2/GameManagment/Ball.cpp -o CMakeFiles/Proyecto2.dir/GameManagment/Ball.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/GameManagment/Ball.cpp -o CMakeFiles/Proyecto2.dir/GameManagment/Ball.cpp.s
 
 CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.o: CMakeFiles/Proyecto2.dir/flags.make
 CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.o: ../Graphics/BoardDisplay.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anthony/Desktop/RepositoriosGit/Proyecto2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.o -c /home/anthony/Desktop/RepositoriosGit/Proyecto2/Graphics/BoardDisplay.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.o -c /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/Graphics/BoardDisplay.cpp
 
 CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anthony/Desktop/RepositoriosGit/Proyecto2/Graphics/BoardDisplay.cpp > CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/Graphics/BoardDisplay.cpp > CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.i
 
 CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anthony/Desktop/RepositoriosGit/Proyecto2/Graphics/BoardDisplay.cpp -o CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/Graphics/BoardDisplay.cpp -o CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.s
 
 CMakeFiles/Proyecto2.dir/BT/BackTrackingSearch.cpp.o: CMakeFiles/Proyecto2.dir/flags.make
 CMakeFiles/Proyecto2.dir/BT/BackTrackingSearch.cpp.o: ../BT/BackTrackingSearch.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anthony/Desktop/RepositoriosGit/Proyecto2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Proyecto2.dir/BT/BackTrackingSearch.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto2.dir/BT/BackTrackingSearch.cpp.o -c /home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BackTrackingSearch.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Proyecto2.dir/BT/BackTrackingSearch.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto2.dir/BT/BackTrackingSearch.cpp.o -c /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/BT/BackTrackingSearch.cpp
 
 CMakeFiles/Proyecto2.dir/BT/BackTrackingSearch.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto2.dir/BT/BackTrackingSearch.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BackTrackingSearch.cpp > CMakeFiles/Proyecto2.dir/BT/BackTrackingSearch.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/BT/BackTrackingSearch.cpp > CMakeFiles/Proyecto2.dir/BT/BackTrackingSearch.cpp.i
 
 CMakeFiles/Proyecto2.dir/BT/BackTrackingSearch.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto2.dir/BT/BackTrackingSearch.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BackTrackingSearch.cpp -o CMakeFiles/Proyecto2.dir/BT/BackTrackingSearch.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/BT/BackTrackingSearch.cpp -o CMakeFiles/Proyecto2.dir/BT/BackTrackingSearch.cpp.s
 
 CMakeFiles/Proyecto2.dir/BT/BTListRegister/BTLinkedList.cpp.o: CMakeFiles/Proyecto2.dir/flags.make
 CMakeFiles/Proyecto2.dir/BT/BTListRegister/BTLinkedList.cpp.o: ../BT/BTListRegister/BTLinkedList.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anthony/Desktop/RepositoriosGit/Proyecto2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Proyecto2.dir/BT/BTListRegister/BTLinkedList.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto2.dir/BT/BTListRegister/BTLinkedList.cpp.o -c /home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BTListRegister/BTLinkedList.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Proyecto2.dir/BT/BTListRegister/BTLinkedList.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto2.dir/BT/BTListRegister/BTLinkedList.cpp.o -c /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/BT/BTListRegister/BTLinkedList.cpp
 
 CMakeFiles/Proyecto2.dir/BT/BTListRegister/BTLinkedList.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto2.dir/BT/BTListRegister/BTLinkedList.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BTListRegister/BTLinkedList.cpp > CMakeFiles/Proyecto2.dir/BT/BTListRegister/BTLinkedList.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/BT/BTListRegister/BTLinkedList.cpp > CMakeFiles/Proyecto2.dir/BT/BTListRegister/BTLinkedList.cpp.i
 
 CMakeFiles/Proyecto2.dir/BT/BTListRegister/BTLinkedList.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto2.dir/BT/BTListRegister/BTLinkedList.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BTListRegister/BTLinkedList.cpp -o CMakeFiles/Proyecto2.dir/BT/BTListRegister/BTLinkedList.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/BT/BTListRegister/BTLinkedList.cpp -o CMakeFiles/Proyecto2.dir/BT/BTListRegister/BTLinkedList.cpp.s
 
 CMakeFiles/Proyecto2.dir/BT/BTListRegister/LLNode.cpp.o: CMakeFiles/Proyecto2.dir/flags.make
 CMakeFiles/Proyecto2.dir/BT/BTListRegister/LLNode.cpp.o: ../BT/BTListRegister/LLNode.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anthony/Desktop/RepositoriosGit/Proyecto2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Proyecto2.dir/BT/BTListRegister/LLNode.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto2.dir/BT/BTListRegister/LLNode.cpp.o -c /home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BTListRegister/LLNode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Proyecto2.dir/BT/BTListRegister/LLNode.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto2.dir/BT/BTListRegister/LLNode.cpp.o -c /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/BT/BTListRegister/LLNode.cpp
 
 CMakeFiles/Proyecto2.dir/BT/BTListRegister/LLNode.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto2.dir/BT/BTListRegister/LLNode.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BTListRegister/LLNode.cpp > CMakeFiles/Proyecto2.dir/BT/BTListRegister/LLNode.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/BT/BTListRegister/LLNode.cpp > CMakeFiles/Proyecto2.dir/BT/BTListRegister/LLNode.cpp.i
 
 CMakeFiles/Proyecto2.dir/BT/BTListRegister/LLNode.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto2.dir/BT/BTListRegister/LLNode.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anthony/Desktop/RepositoriosGit/Proyecto2/BT/BTListRegister/LLNode.cpp -o CMakeFiles/Proyecto2.dir/BT/BTListRegister/LLNode.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/BT/BTListRegister/LLNode.cpp -o CMakeFiles/Proyecto2.dir/BT/BTListRegister/LLNode.cpp.s
 
 # Object files for target Proyecto2
 Proyecto2_OBJECTS = \
@@ -268,7 +268,7 @@ Proyecto2: /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1
 Proyecto2: /usr/lib/x86_64-linux-gnu/libsfml-network.so.2.5.1
 Proyecto2: /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
 Proyecto2: CMakeFiles/Proyecto2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/anthony/Desktop/RepositoriosGit/Proyecto2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable Proyecto2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable Proyecto2"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Proyecto2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -281,6 +281,6 @@ CMakeFiles/Proyecto2.dir/clean:
 .PHONY : CMakeFiles/Proyecto2.dir/clean
 
 CMakeFiles/Proyecto2.dir/depend:
-	cd /home/anthony/Desktop/RepositoriosGit/Proyecto2/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anthony/Desktop/RepositoriosGit/Proyecto2 /home/anthony/Desktop/RepositoriosGit/Proyecto2 /home/anthony/Desktop/RepositoriosGit/Proyecto2/cmake-build-debug /home/anthony/Desktop/RepositoriosGit/Proyecto2/cmake-build-debug /home/anthony/Desktop/RepositoriosGit/Proyecto2/cmake-build-debug/CMakeFiles/Proyecto2.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/cmake-build-debug /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/cmake-build-debug /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/cmake-build-debug/CMakeFiles/Proyecto2.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Proyecto2.dir/depend
 
