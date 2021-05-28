@@ -67,10 +67,10 @@ RM = /snap/clion/151/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anthony/Desktop/RepositoriosGit/Proyecto2
+CMAKE_SOURCE_DIR = /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anthony/Desktop/RepositoriosGit/Proyecto2/cmake-build-debug
+CMAKE_BINARY_DIR = /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,9 +99,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/Desktop/RepositoriosGit/Proyecto2/cmake-build-debug/CMakeFiles /home/anthony/Desktop/RepositoriosGit/Proyecto2/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/cmake-build-debug/CMakeFiles /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/Desktop/RepositoriosGit/Proyecto2/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -130,6 +130,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named Server
+
+# Build rule for target.
+Server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Server
+.PHONY : Server
+
+# fast build rule for target.
+Server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/build
+.PHONY : Server/fast
+
+#=============================================================================
 # Target rules for targets named Proyecto2
 
 # Build rule for target.
@@ -141,87 +154,6 @@ Proyecto2: cmake_check_build_system
 Proyecto2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/build
 .PHONY : Proyecto2/fast
-
-BT/BTListRegister/BTLinkedList.o: BT/BTListRegister/BTLinkedList.cpp.o
-
-.PHONY : BT/BTListRegister/BTLinkedList.o
-
-# target to build an object file
-BT/BTListRegister/BTLinkedList.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/BT/BTListRegister/BTLinkedList.cpp.o
-.PHONY : BT/BTListRegister/BTLinkedList.cpp.o
-
-BT/BTListRegister/BTLinkedList.i: BT/BTListRegister/BTLinkedList.cpp.i
-
-.PHONY : BT/BTListRegister/BTLinkedList.i
-
-# target to preprocess a source file
-BT/BTListRegister/BTLinkedList.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/BT/BTListRegister/BTLinkedList.cpp.i
-.PHONY : BT/BTListRegister/BTLinkedList.cpp.i
-
-BT/BTListRegister/BTLinkedList.s: BT/BTListRegister/BTLinkedList.cpp.s
-
-.PHONY : BT/BTListRegister/BTLinkedList.s
-
-# target to generate assembly for a file
-BT/BTListRegister/BTLinkedList.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/BT/BTListRegister/BTLinkedList.cpp.s
-.PHONY : BT/BTListRegister/BTLinkedList.cpp.s
-
-BT/BTListRegister/LLNode.o: BT/BTListRegister/LLNode.cpp.o
-
-.PHONY : BT/BTListRegister/LLNode.o
-
-# target to build an object file
-BT/BTListRegister/LLNode.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/BT/BTListRegister/LLNode.cpp.o
-.PHONY : BT/BTListRegister/LLNode.cpp.o
-
-BT/BTListRegister/LLNode.i: BT/BTListRegister/LLNode.cpp.i
-
-.PHONY : BT/BTListRegister/LLNode.i
-
-# target to preprocess a source file
-BT/BTListRegister/LLNode.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/BT/BTListRegister/LLNode.cpp.i
-.PHONY : BT/BTListRegister/LLNode.cpp.i
-
-BT/BTListRegister/LLNode.s: BT/BTListRegister/LLNode.cpp.s
-
-.PHONY : BT/BTListRegister/LLNode.s
-
-# target to generate assembly for a file
-BT/BTListRegister/LLNode.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/BT/BTListRegister/LLNode.cpp.s
-.PHONY : BT/BTListRegister/LLNode.cpp.s
-
-BT/BackTrackingSearch.o: BT/BackTrackingSearch.cpp.o
-
-.PHONY : BT/BackTrackingSearch.o
-
-# target to build an object file
-BT/BackTrackingSearch.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/BT/BackTrackingSearch.cpp.o
-.PHONY : BT/BackTrackingSearch.cpp.o
-
-BT/BackTrackingSearch.i: BT/BackTrackingSearch.cpp.i
-
-.PHONY : BT/BackTrackingSearch.i
-
-# target to preprocess a source file
-BT/BackTrackingSearch.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/BT/BackTrackingSearch.cpp.i
-.PHONY : BT/BackTrackingSearch.cpp.i
-
-BT/BackTrackingSearch.s: BT/BackTrackingSearch.cpp.s
-
-.PHONY : BT/BackTrackingSearch.s
-
-# target to generate assembly for a file
-BT/BackTrackingSearch.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/BT/BackTrackingSearch.cpp.s
-.PHONY : BT/BackTrackingSearch.cpp.s
 
 GameManagment/Ball.o: GameManagment/Ball.cpp.o
 
@@ -439,6 +371,33 @@ Physics/Movement.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/Physics/Movement.cpp.s
 .PHONY : Physics/Movement.cpp.s
 
+Server/Server.o: Server/Server.cpp.o
+
+.PHONY : Server/Server.o
+
+# target to build an object file
+Server/Server.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Server/Server.cpp.o
+.PHONY : Server/Server.cpp.o
+
+Server/Server.i: Server/Server.cpp.i
+
+.PHONY : Server/Server.i
+
+# target to preprocess a source file
+Server/Server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Server/Server.cpp.i
+.PHONY : Server/Server.cpp.i
+
+Server/Server.s: Server/Server.cpp.s
+
+.PHONY : Server/Server.s
+
+# target to generate assembly for a file
+Server/Server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Server/Server.cpp.s
+.PHONY : Server/Server.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -475,15 +434,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Proyecto2"
-	@echo "... BT/BTListRegister/BTLinkedList.o"
-	@echo "... BT/BTListRegister/BTLinkedList.i"
-	@echo "... BT/BTListRegister/BTLinkedList.s"
-	@echo "... BT/BTListRegister/LLNode.o"
-	@echo "... BT/BTListRegister/LLNode.i"
-	@echo "... BT/BTListRegister/LLNode.s"
-	@echo "... BT/BackTrackingSearch.o"
-	@echo "... BT/BackTrackingSearch.i"
-	@echo "... BT/BackTrackingSearch.s"
+	@echo "... Server"
 	@echo "... GameManagment/Ball.o"
 	@echo "... GameManagment/Ball.i"
 	@echo "... GameManagment/Ball.s"
@@ -508,6 +459,9 @@ help:
 	@echo "... Physics/Movement.o"
 	@echo "... Physics/Movement.i"
 	@echo "... Physics/Movement.s"
+	@echo "... Server/Server.o"
+	@echo "... Server/Server.i"
+	@echo "... Server/Server.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

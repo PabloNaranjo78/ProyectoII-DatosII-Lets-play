@@ -4,5 +4,17 @@
 -- SFML_LIBRARIES: 
 -- SFML_VERSION: 2.5.1
 -- Configuring done
--- Generating done
--- Build files have been written to: /home/anthony/Desktop/RepositoriosGit/Proyecto2/cmake-build-debug
+CMake Error at CMakeLists.txt:23 (add_executable):
+  Cannot find source file:
+
+    BT/BTListRegister/LinkedList.cpp
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .m .M .mm .h .hh .h++ .hm
+  .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .ispc
+
+
+CMake Error at CMakeLists.txt:23 (add_executable):
+  No SOURCES given to target: Proyecto2
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.

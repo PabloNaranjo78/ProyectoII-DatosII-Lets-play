@@ -17,6 +17,7 @@ public:
 private:
     void add(int _matrix[9][9]);
     LinkedList* searchOnePath();
+    void clearMatrix();
     void searchBestPath();
     LinkedList * getPostList();
     BTLinkedList list;
@@ -24,6 +25,7 @@ private:
     bool closePath(int x, int y);
     int matrix[9][9];
 
+    bool obstacles[9][9];
     int startRow = 0;
     int startColumn = 0;
     string result = "";

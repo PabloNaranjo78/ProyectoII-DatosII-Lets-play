@@ -10,7 +10,7 @@ using namespace std;
 class Genetic {
 
 public:
-    string genes ="0123456789";
+    string genes ="0123456789abcdefghijklmno";
     string target;
 
     int random_num(int start, int end);

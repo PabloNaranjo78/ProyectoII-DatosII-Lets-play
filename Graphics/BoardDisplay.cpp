@@ -216,7 +216,7 @@ void BoardDisplay::runGame() {
 
         }else if (!this->launching && !this->board->turnPlayers){
             if (this->step == 1){
-                cout << "step 1" << endl;
+            //    cout << "step 1" << endl;
                 if (first_in){
                     this->listComputerPath = this->board->getPathComputer(this->puck->getPosition().y+25, this->puck->getPosition().x+25);
                     this->listComputerPath->printList();
@@ -229,11 +229,11 @@ void BoardDisplay::runGame() {
                 }
 
             }else if (this->step == 2){
-                cout << "step 2" << endl;
-                cout << "comp path len" << this->listComputerPath->length << endl;
+//                cout << "step 2" << endl;
+//                cout << "comp path len" << this->listComputerPath->length << endl;
                 Sprite * dirB[this->listComputerPath->length];
-                cout << "sprites created" << endl;
-                for (int x=0; x<(this->listComputerPath->length)-1; x++){
+             //   cout << "sprites created" << endl;
+                for (int x=0; x<(this->listComputerPath->length); x++){
                     dirB[x] = new Sprite;
                     dirB[x]->setTexture(*direct2);
                     for (int i=0; i<9; i++){
