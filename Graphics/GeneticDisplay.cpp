@@ -57,27 +57,20 @@ GeneticDisplay::GeneticDisplay() {
 void GeneticDisplay::gnome_to_image() {
 
     string gnome = this->fittest[this->genindex];
-    /*
-    int tmp[this->filer->divisions];
+    int Garray[this->filer->divisions];
+
+    for(int i = 0; i < 10 ; i++ ){
+        Garray[i] = gnome[i]-'0';
+    }
     bool mayor = false;
-
-    if(this->filer->divisions > 9){
-        mayor = true;
-    }
-    for(int i = 0; i<10;i++){
-        tmp[i] = gnome[i]-'0';
-    }
-
-    if(mayor){
-
-        for(int a = 10; a < gnome.size()-10; a+=2){
-            string ss;
-            ss.append(1,gnome[a]);
-            ss.append(1,gnome[a+1]);
-            tmp[a] = stoi(ss);
-            cout<<tmp[a]<<endl;
+    if(this->filer->divisions >=10){
+        int rest = this->filer->divisions - 10;
+        while(rest != 0){
+            rest--;
         }
     }
+
+    /*
 
     for(int u = 0; u < this->filer->divisions; u++){
         this->puzzle[tmp[u]].setPosition(this->positions[u].x,this->positions[u].y);

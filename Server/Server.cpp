@@ -44,11 +44,7 @@ Document jsonReceiver(Packet packet)
  * @return un string en formato JSON listo para enviar
  */
 string jsonSender(string type, string gnome)
-{   string finalG;
-    for(int i =0; i <gnome.size();i++){
-        finalG.append(1,gnome[i]);
-        finalG.append(1,'#');
-    }
+{
     string jsonStr = R"({"type":")"+ type + R"(","gnome":")" + finalG + "\"}";
     return jsonStr;
 }

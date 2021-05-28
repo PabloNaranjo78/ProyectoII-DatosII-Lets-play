@@ -4,6 +4,8 @@
 #include "Graphics/BoardDisplay.h"
 #include "BT/BackTrackingSearch.h"
 #include <SFML/Graphics.hpp>
+#include "../Graphics/GeneticDisplay.h"
+#include "../Graphics/GeneticDisplay.cpp"
 
 //using namespace sf;
 int main() {
@@ -11,8 +13,11 @@ int main() {
     //pathfindingA->getPath(6,7);
     //Board * board = new Board();
     //board->getPathPlayer();
-    BoardDisplay * bpGame = new BoardDisplay();
-    bpGame->runGame();
+    //BoardDisplay * bpGame = new BoardDisplay();
+    //bpGame->runGame();
+
+    GeneticDisplay* gen = new GeneticDisplay();
+    gen->rungenetic();
 
 //    int num[9][9]={
 //            {4,4,4,4,4,4,4,4,4},

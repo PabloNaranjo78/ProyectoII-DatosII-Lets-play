@@ -8,6 +8,8 @@
 #include <string>
 #include <cstdio>
 #include "rapidjson/document.h"
+#include <stdio.h>
+#include <string.h>
 
 #include "../ImageLoading/FileLoader.h"
 #include "../ImageLoading/FileLoader.cpp"
