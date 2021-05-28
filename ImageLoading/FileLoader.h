@@ -12,7 +12,6 @@ class FileLoader {
 
 public:
     string image;
-
     void load_image();
     string getCmdOutput(string cmd);
     void error();

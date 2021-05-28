@@ -188,7 +188,7 @@ void BoardDisplay::runGame() {
         winner->setString(winnerStr);
         this->bpGame->draw(*winner);
 
-        if (calculating && this->board->turnPlayers){
+        if (calculating && this->board->turnPlayers && !this->launching){
             //cout << "Error here" << endl;
             this->listPathPlayer = this->board->getPathPlayer(this->puck->getPosition().y+25, this->puck->getPosition().x+25);
             this->board->puck->setUpLaunch();
