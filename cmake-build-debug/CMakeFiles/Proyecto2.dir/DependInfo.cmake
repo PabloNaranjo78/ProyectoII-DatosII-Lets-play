@@ -4,6 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BTListRegister/BTLinkedList.cpp" "/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/cmake-build-debug/CMakeFiles/Proyecto2.dir/BT/BTListRegister/BTLinkedList.cpp.o"
+  "/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BTListRegister/LLNode.cpp" "/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/cmake-build-debug/CMakeFiles/Proyecto2.dir/BT/BTListRegister/LLNode.cpp.o"
+  "/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/BT/BackTrackingSearch.cpp" "/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/cmake-build-debug/CMakeFiles/Proyecto2.dir/BT/BackTrackingSearch.cpp.o"
   "/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/GameManagment/Ball.cpp" "/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/cmake-build-debug/CMakeFiles/Proyecto2.dir/GameManagment/Ball.cpp.o"
   "/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/GameManagment/Board.cpp" "/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/cmake-build-debug/CMakeFiles/Proyecto2.dir/GameManagment/Board.cpp.o"
   "/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/GameManagment/Scores.cpp" "/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/cmake-build-debug/CMakeFiles/Proyecto2.dir/GameManagment/Scores.cpp.o"
@@ -21,8 +24,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../SFML_INCLUDE_DIR"
   "../AlgoritmoG"
   "../Graphics"
-  "../ImageLoading"
-  "../ImageCutting"
+  "../BT"
+  "../BT/BTListRegister"
   )
 
 # Targets to which this target links.

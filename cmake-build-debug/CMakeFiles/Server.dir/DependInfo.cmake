@@ -13,8 +13,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../SFML_INCLUDE_DIR"
   "../AlgoritmoG"
   "../Graphics"
-  "../ImageLoading"
-  "../ImageCutting"
+  "../BT"
+  "../BT/BTListRegister"
   )
 
 # Targets to which this target links.
