@@ -9,13 +9,12 @@ PathfindingA::PathfindingA(bool obstacles[9][9], int goal[2]){
     this->result = "";
     this->goal[0] = goal[0];
     this->goal[1] = goal[1];
-    this->setMatrix();
     for (int i=0; i<this->limitsAt; i++){
-        for(int j=0; j<this->limitsAt; j++){
+        for (int  j=0; j<this->limitsAt; j++){
             this->obstacles[i][j] = obstacles[i][j];
         }
     }
-    this->setObstacles(8);
+    this->setMatrix();
     this->printMatrix();
 
 }
@@ -30,7 +29,6 @@ void PathfindingA::setMatrix() {
     for (int i = 0; i<this->limitsAt; i++){
         for (int j = 0; j<this->limitsAt; j++){
             this->matrix[i][j] = calculateHeuristics(i,j);
-            this->obstacles[i][j] = false;
         }
     }
     int numAt = 1;
@@ -88,7 +86,7 @@ void PathfindingA::setObstacles(int obstacles) {
 }
 
 bool PathfindingA::getObstacleFrom(int id) {
-    //cout << "function called" << endl;
+    cout << "function called with" << id << endl;
     bool valueReturn = false;
     for (int i=0; i<this->limitsAt; i++){
         for (int j=0; j<this->limitsAt; j++){
@@ -120,17 +118,21 @@ void PathfindingA::getNewELements(LinkedList * currentOpen, LinkedList * current
     //Para un id, se buscan los adyacentes
     //centro arriba y centro abajo +/- 9
     if (id-1 >= 0 && !this->getObstacleFrom(id-1) && id-1 != this->initial && !currentOpen->isIn(id-1) && !currentClosed->isIn(id-1)) {
+        cout << "checking right" << endl;
         currentOpen->addValue(id-1);
+        cout << "added" << endl;
         currentOpen->setParent(id, id-1);
         this->updateValue(id-1, this->getValueFrom(id) + 10, true);
     }
     else if (currentOpen->isIn(id-1)){
+        cout << "into this" << endl;
         if (this->getValueFrom(id-1) > this->getValueFrom(id) + 10){
             this->updateValue(id-1, this->getValueFrom(id) + 10, false);
             currentOpen->setParent(id, id-1);
         }
     }
 
+    cout << "first if" << endl;
     if (id+1 <= this->limitsAt * limitsAt && !this->getObstacleFrom(id+1) && id+1 != this->initial && !currentOpen->isIn(id+1) && !currentClosed->isIn(id+1)){
         currentOpen->addValue(id+1);
         currentOpen->setParent(id, id+1);
@@ -243,15 +245,23 @@ LinkedList * PathfindingA::getPath(int di, int dj) {
     LinkedList * openList = new LinkedList();
     LinkedList * closedList = new LinkedList();
     LinkedList * pathFound = new LinkedList();
+
+    if (this->matrix_names[di][dj] == this->matrix_names[this->goal[0]][this->goal[1]]){
+        return pathFound;
+    }
+
     closedList->addValue(this->matrix_names[di][dj]);
     this->initial = this->matrix_names[di][dj];
     cout << "id used: " << this->initial << endl;
     int id_used = this->matrix_names[di][dj];
+    cout << "getting first round" << endl;
     this->getNewELements(openList, closedList,this->matrix_names[di][dj]);
+    cout << "gotten!" << endl;
     this->printMatrix();
     int checking;
 
     while (!this->isGoalIn(openList)){
+
         cout << "paso 1" << endl;
         checking = this->getMin(openList);
 
@@ -284,6 +294,9 @@ LinkedList * PathfindingA::getPath(int di, int dj) {
         pathFound->addValue(current_checking);
         current_checking = closedList->getParent(current_checking);
         cout << "checking current: " << current_checking << endl;
+        if (current_checking == 0){
+            break;
+        }
     }
     pathFound->addValue(this->initial);
     cout << "path list:" << endl;
@@ -292,6 +305,8 @@ LinkedList * PathfindingA::getPath(int di, int dj) {
     openList->printList();
     cout << "Closed list:" << endl;
     closedList->printList();
+
+    cout << "final del proceso con exito" << endl;
 
     return pathFound;
 }

@@ -8,11 +8,27 @@
 #include "iostream"
 using namespace std;
 
-BackTrackingSearch::BackTrackingSearch() {
+BackTrackingSearch::BackTrackingSearch(bool _obstacles[9][9]) {
+    memcpy(obstacles,_obstacles,sizeof(bool)*9*9);
+    for (int i = 0;i<9;i++){
+        for (int j = 0; j< 9;j++){
+            if (obstacles[i][j] == 1){
+                matrix[i][j] = 4;
+            }
+        }
+    }
+}
 
+LinkedList* BackTrackingSearch::getPath(int x, int y) {
+    clearMatrix();
+    matrix[4][7] = 2;
+    matrix[y][x] = 3;
+    add(matrix);
+    return searchOnePath();
 }
 
 void BackTrackingSearch::printMatrix() {
+    cout<<endl;
     for (int i = 0; i < 9; i++){
         for (int j = 0; j < 9;j++){
             cout<<matrix[i][j]<<" ";
@@ -21,11 +37,22 @@ void BackTrackingSearch::printMatrix() {
     }
 }
 
+
+
+void BackTrackingSearch::printPostList(){
+//    list.printPostList();
+    list.printList();
+}
+
+LinkedList * BackTrackingSearch::getPostList() {
+    return list.getPostList();
+}
+
 void BackTrackingSearch::add(int _matrix[9][9]) {
     memcpy(matrix,_matrix,sizeof(int)*9*9 );
 }
 
-void BackTrackingSearch::searchOnePath() {
+LinkedList* BackTrackingSearch::searchOnePath() {
     searchStart();
     bool found = false;
     int x = startRow;
@@ -34,51 +61,51 @@ void BackTrackingSearch::searchOnePath() {
 
         cout<<"--------"<<endl;
         cout<<x<<"-"<<y<<endl;
-
-            if (matrix[y-1][x] == 0 and matrix[y-1][x] != 4 and y>0 and matrix[y-1][x] != 5){
-                y-=1;
-                matrix[y][x] = 1;
-                list.addToList(matrix,"y-1");
-            } else
-            if (matrix[y][x-1] == 0 and matrix[y][x-1] != 4 and x >0 and matrix[y][x-1] != 5){
+        if (matrix[y][x + 1] == 0 and matrix[y][x + 1] != 4 and matrix[y][x + 1] != 4) {
+            x += 1;
+            matrix[y][x] = 1;
+            list.addToList(matrix, "x+1",x,y);
+        }else
+        if (matrix[y + 1][x] == 0 and matrix[y + 1][x] != 4 and matrix[y + 1][x] != 5) {
+            y += 1;
+            matrix[y][x] = 1;
+            list.addToList(matrix,"y+1",x,y);
+        }else if (matrix[y][x-1] == 0 and matrix[y][x-1] != 4 and x >0 and matrix[y][x-1] != 5){
+            x-=1;
+            matrix[y][x] = 1;
+            list.addToList(matrix,"x-1",x,y);
+        }else
+        if (matrix[y-1][x] == 0 and matrix[y-1][x] != 4 and y>0 and matrix[y-1][x] != 5){
+            y-=1;
+            matrix[y][x] = 1;
+            list.addToList(matrix,"y-1",x,y);
+        } else  if (closePath(x,y)){
+            string lastMov = list.getLastMovement();
+            memcpy(matrix,list.getLastElement()->data, sizeof(int)*9*9);
+            cout<<"REVIERTE    -------  ------- ------"<<endl;
+            matrix[y][x] = 5;
+            list.replaceInALl(5,x,y);
+            if (lastMov == "x+1"){
                 x-=1;
-                matrix[y][x] = 1;
-                list.addToList(matrix,"x-1");
-            }else
-            if (matrix[y + 1][x] == 0 and matrix[y + 1][x] != 4 and matrix[y + 1][x] != 5) {
-                y += 1;
-                matrix[y][x] = 1;
-                list.addToList(matrix,"y+1");
-            } else if (matrix[y][x + 1] == 0 and matrix[y][x + 1] != 4 and matrix[y][x + 1] != 4) {
-                x += 1;
-                matrix[y][x] = 1;
-                list.addToList(matrix, "x+1");
-            }else if (closePath(x,y)){
-                string lastMov = list.getLastMovement();
-                memcpy(matrix,list.getLastElement()->data, sizeof(int)*9*9);
-                cout<<"REVIERTE    -------  ------- ------"<<endl;
-                matrix[y][x] = 5;
-                list.replaceInALl(5,x,y);
-                if (lastMov == "x+1"){
-                    x-=1;
-                } else if(lastMov == "y+1") {
-                    y-=1;
-                } else if (lastMov == "x-1"){
-                    x+=1;
-                } else if (lastMov == "y-1"){
-                    y+=1;
-                }
+            } else if(lastMov == "y+1") {
+                y-=1;
+            } else if (lastMov == "x-1"){
+                x+=1;
+            } else if (lastMov == "y-1"){
+                y+=1;
+            }
 
             //    break;
 
-            }
-      //  result+= "["+ to_string(x) +","+ to_string(y)+"],";
+        }
+
+        //  result+= "["+ to_string(x) +","+ to_string(y)+"],";
         if(matrix[y-1][x] == 2 or matrix[y][x-1] == 2 or matrix[y+1][x] == 2 or matrix[y][x+1] == 2){
             found = true;
         }// list.replaceInALl(9,4,0);
         printMatrix();
     }
-
+    return getPostList();
 }
 
 void BackTrackingSearch::searchBestPath() {
@@ -105,5 +132,22 @@ bool BackTrackingSearch::closePath(int x, int y) {
             return true;
     } else{
         return false;
+    }
+}
+
+void BackTrackingSearch::clearMatrix() {
+
+    for (int i = 0;i<9;i++){
+        for (int j = 0; j< 9;j++){
+            matrix[i][j] = 0;
+
+        }
+    }
+    for (int i = 0;i<9;i++){
+        for (int j = 0; j< 9;j++){
+            if (obstacles[i][j] == 1){
+                matrix[i][j] = 4;
+            }
+        }
     }
 }

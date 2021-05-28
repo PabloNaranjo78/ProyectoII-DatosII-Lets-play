@@ -7,4 +7,5 @@
 
 Node::Node(int id) {
     this->id = id;
+    this->next = NULL;
 }

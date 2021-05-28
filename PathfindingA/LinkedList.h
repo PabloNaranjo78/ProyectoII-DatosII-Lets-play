@@ -25,6 +25,7 @@ public:
     void deleteNode(int id);
     void setParent(int parent, int id);
     int getParent(int id);
+    string getListString();
 };
 
 

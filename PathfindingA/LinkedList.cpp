@@ -19,6 +19,7 @@ void LinkedList::addValue(int id) {
         }
         tmp->next = new Node(id);
     }
+    cout << "Node added" << endl;
 }
 
 int LinkedList::getValueAt(int i) {
@@ -67,6 +68,7 @@ bool LinkedList::isIn(int id) {
         }
         tmp = tmp->next;
     }
+    cout << "all right" << endl;
     return check;
 }
 
@@ -76,6 +78,19 @@ void LinkedList::printList() {
         cout << "<" << tmp->id << ">" << endl;
         tmp = tmp->next;
     }
+}
+
+
+
+string LinkedList::getListString() {
+    string result;
+    Node * tmp = this->head;
+    while (tmp != NULL){
+        cout << "<" << tmp->id << ">" << endl;
+        result+= "$"+ to_string(tmp->id);
+        tmp = tmp->next;
+    }
+    return result;
 }
 
 void LinkedList::setParent(int parent, int id) {

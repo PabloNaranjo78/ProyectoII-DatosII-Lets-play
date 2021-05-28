@@ -11,24 +11,31 @@
 #include "../PathfindingA/PathfindingA.h"
 #include "../Physics/Movement.h"
 #include "Scores.h"
+#include "../BT/BackTrackingSearch.h"
+
 
 class Board {
 private:
     const int grid_x = 90;
     const int grid_y = 70;
     int limitsAt;
-    bool obstacles[9][9];
     int goals[4];
-    bool turnPlayers;
     PathfindingA * pathfinder1;
     //PathfindingA * pathfinder2;
-    Movement * puck;
-    Scores * scores;
     void setObstacles(int obstacles);
+    BackTrackingSearch * backTrackingSearch;
 
 public:
     Board();
-    void getPathPlayer();
+    Movement * puck;
+    Scores * scores;
+    bool turnPlayers;
+    int obstaclesNum;
+    int matrix_names[9][9];
+    bool obstacles[9][9];
+    LinkedList * getPathPlayer(int y, int x);
+    LinkedList * getPathComputer(int y, int x);
+
 
 };
 
