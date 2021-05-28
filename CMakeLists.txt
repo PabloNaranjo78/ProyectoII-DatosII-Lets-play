@@ -21,5 +21,7 @@ endif()
 include_directories(AlgoritmoG Graphics ImageLoading ImageCutting)
 
 add_executable(Proyecto2 main.cpp PathfindingA/PathfindingA.cpp PathfindingA/PathfindingA.h PathfindingA/LinkedList.cpp PathfindingA/LinkedList.h PathfindingA/Node.cpp PathfindingA/Node.h Physics/Movement.cpp Physics/Movement.h GameManagment/Scores.cpp GameManagment/Scores.h GameManagment/Board.cpp GameManagment/Board.h GameManagment/Ball.cpp GameManagment/Ball.h Graphics/BoardDisplay.cpp Graphics/BoardDisplay.h )
+add_executable(Server Server/Server.cpp)
 
-target_link_libraries (Proyecto2 sfml-graphics sfml-window sfml-system)
+target_link_libraries (Proyecto2 sfml-graphics sfml-window sfml-system sfml-network)
+target_link_libraries(Server sfml-graphics sfml-window sfml-system sfml-network)

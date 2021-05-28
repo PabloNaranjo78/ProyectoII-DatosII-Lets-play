@@ -6,28 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/AlgoritmoG/Genetic.cpp
-Genetic.h
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/AlgoritmoG/Genetic.h
-Individuo.h
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/AlgoritmoG/Individuo.h
-Individuo.cpp
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/AlgoritmoG/Individuo.cpp
-
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/AlgoritmoG/Genetic.h
-bits/stdc++.h
--
-Individuo.h
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/AlgoritmoG/Individuo.h
-
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/AlgoritmoG/Individuo.cpp
-Individuo.h
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/AlgoritmoG/Individuo.h
-
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/AlgoritmoG/Individuo.h
-bits/stdc++.h
--
-
 /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/GameManagment/Board.h
 iostream
 -
@@ -69,8 +47,14 @@ SFML/Network.hpp
 -
 vector
 -
+iostream
+-
 string
 -
+cstdio
+-
+rapidjson/document.h
+/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/Graphics/rapidjson/document.h
 ../ImageLoading/FileLoader.h
 /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/ImageLoading/FileLoader.h
 ../ImageLoading/FileLoader.cpp
@@ -79,10 +63,6 @@ string
 /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/ImageCutting/Cutter.h
 ../ImageCutting/Cutter.cpp
 /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/ImageCutting/Cutter.cpp
-../AlgoritmoG/Genetic.h
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/AlgoritmoG/Genetic.h
-../AlgoritmoG/Genetic.cpp
-/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/AlgoritmoG/Genetic.cpp
 Button.h
 /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/Graphics/Button.h
 Button.cpp

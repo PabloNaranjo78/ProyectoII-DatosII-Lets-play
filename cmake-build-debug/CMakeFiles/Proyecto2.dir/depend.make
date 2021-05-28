@@ -34,10 +34,6 @@ CMakeFiles/Proyecto2.dir/Physics/Movement.cpp.o: ../GameManagment/Scores.h
 CMakeFiles/Proyecto2.dir/Physics/Movement.cpp.o: ../Physics/Movement.cpp
 CMakeFiles/Proyecto2.dir/Physics/Movement.cpp.o: ../Physics/Movement.h
 
-CMakeFiles/Proyecto2.dir/main.cpp.o: ../AlgoritmoG/Genetic.cpp
-CMakeFiles/Proyecto2.dir/main.cpp.o: ../AlgoritmoG/Genetic.h
-CMakeFiles/Proyecto2.dir/main.cpp.o: ../AlgoritmoG/Individuo.cpp
-CMakeFiles/Proyecto2.dir/main.cpp.o: ../AlgoritmoG/Individuo.h
 CMakeFiles/Proyecto2.dir/main.cpp.o: ../GameManagment/Board.h
 CMakeFiles/Proyecto2.dir/main.cpp.o: ../GameManagment/Scores.h
 CMakeFiles/Proyecto2.dir/main.cpp.o: ../Graphics/Button.cpp

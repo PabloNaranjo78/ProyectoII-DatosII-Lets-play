@@ -4,19 +4,22 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/Network.hpp>
 #include <vector>
+#include <iostream>
 #include <string>
+#include <cstdio>
+#include "rapidjson/document.h"
 
 #include "../ImageLoading/FileLoader.h"
 #include "../ImageLoading/FileLoader.cpp"
 #include "../ImageCutting/Cutter.h"
 #include "../ImageCutting/Cutter.cpp"
-#include "../AlgoritmoG/Genetic.h"
-#include "../AlgoritmoG/Genetic.cpp"
+
 #include "Button.h"
 #include "Button.cpp"
 
 using namespace std;
 using namespace sf;
+using namespace rapidjson;
 
 class GeneticDisplay {
 
@@ -36,6 +39,7 @@ class GeneticDisplay {
     vector<Sprite> puzzle;
     bool draw_image;
     bool draw_puzzle;
+    int genindex;
 
     //IMAGE DIVDER
     Vector2u psize;
@@ -58,18 +62,17 @@ class GeneticDisplay {
     Font font;
 
     //GENETIC ALGORITHM
-    vector<vector<string>> generations;
     vector<string> fittest;
-    Genetic* genetic;
 
 public:
     GeneticDisplay();
     virtual ~GeneticDisplay();
     void rungenetic();
     void render();
-    void update(Vector2f mousepos);
+    void update(Vector2f mousepos, TcpSocket* socket);
     void cut_display_image();
-
+    string get_target();
+    void gnome_to_image();
 };
 
 

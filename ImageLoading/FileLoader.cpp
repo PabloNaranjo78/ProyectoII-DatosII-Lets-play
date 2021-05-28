@@ -20,7 +20,7 @@ void FileLoader::error() {
 }
 
 void FileLoader::getimagedivisions() {
-    string zenCmd = "zenity --entry --title \"Entry of a value\" --text \"Enter a value\"";
+    string zenCmd = "zenity --entry --title \"Entry of a value (4-20)\" --text \"Enter a value\"";
     string output = getCmdOutput(zenCmd);
     this->divisions = stoi(output);
 }

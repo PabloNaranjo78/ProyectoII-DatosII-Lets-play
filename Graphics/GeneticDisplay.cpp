@@ -1,5 +1,8 @@
 #include "GeneticDisplay.h"
 
+
+
+
 GeneticDisplay::GeneticDisplay() {
     this->keepOpen = true;
     this->width = 1200;
@@ -14,11 +17,11 @@ GeneticDisplay::GeneticDisplay() {
     //UTILITY LOAD
     this->filer = new FileLoader();
     this->cutter = new Cutter();
-    this->genetic = new Genetic();
 
     //VARIABLES
     this->draw_image = false;
     this->draw_puzzle = false;
+    this->genindex = 0;
 
     //GUI load
     this->background.setSize(Vector2f(this->width,this->height));
@@ -51,6 +54,36 @@ GeneticDisplay::GeneticDisplay() {
     this->startGbutton->disabled = true;
 }
 
+void GeneticDisplay::gnome_to_image() {
+
+    string gnome = this->fittest[this->genindex];
+    /*
+    int tmp[this->filer->divisions];
+    bool mayor = false;
+
+    if(this->filer->divisions > 9){
+        mayor = true;
+    }
+    for(int i = 0; i<10;i++){
+        tmp[i] = gnome[i]-'0';
+    }
+
+    if(mayor){
+
+        for(int a = 10; a < gnome.size()-10; a+=2){
+            string ss;
+            ss.append(1,gnome[a]);
+            ss.append(1,gnome[a+1]);
+            tmp[a] = stoi(ss);
+            cout<<tmp[a]<<endl;
+        }
+    }
+
+    for(int u = 0; u < this->filer->divisions; u++){
+        this->puzzle[tmp[u]].setPosition(this->positions[u].x,this->positions[u].y);
+    }
+    */
+}
 
 void GeneticDisplay::cut_display_image() {
     this->puzzle.clear();
@@ -88,10 +121,59 @@ void GeneticDisplay::cut_display_image() {
 }
 
 
+string GeneticDisplay::get_target() {
+
+    string target = "0123456789abcdefghijklmno";
+    while(target.size() != this->filer->divisions){
+        target.pop_back();
+    }
+    return target;
+}
 
 
+/**
+ * @brief jsonReviever se encarga de desempaquetar el mensaje JSON del cliente
+ * @param packet paquete que envio el cliente
+ * @return un documento donde se pueden extraer las variables
+ */
+Document jsonReceiver(Packet packet)
+{
+    string pet;
+    Document petD;
 
-void GeneticDisplay::update(Vector2f mousepos) {
+    packet >> pet;
+    cout << pet << endl;
+    const char* petChar = pet.c_str();
+    petD.Parse(petChar);
+
+    return petD;
+}
+
+/**
+ * @brief jsonSender se encarga de formatear los mensajes de servidor-> cliente
+ * @param memory espacio de memoria alocada
+ * @param value valor de la variable
+ * @param variable nombre de la variable
+ * @param ref cantiad de referencias
+ * @return un string en formato JSON listo para enviar
+ */
+string jsonSender(string type, string action)
+{
+    string jsonStr = R"({"type":")"+ type + R"(","action":")" + action + "\"}";
+    return jsonStr;
+}
+
+string jsonSenderG(string type, string action, string target)
+{
+    string jsonStr = R"({"type":")"+ type + R"(","action":")" + action + R"(","target":")" + target + "\"}";
+    return jsonStr;
+}
+
+
+void GeneticDisplay::update(Vector2f mousepos,TcpSocket* socket) {
+    //sockets
+    Packet packetS;
+    string json;
 
     //BUTTONS
     this->filebutton->update(mousepos);
@@ -106,6 +188,11 @@ void GeneticDisplay::update(Vector2f mousepos) {
         cout<<"Amount of positions: "<<this->positions.size()<<endl;
         this->draw_puzzle = true;
         this->startGbutton->disabled = true;
+        json = jsonSenderG("startG","start",get_target());
+        packetS << json;//empaqueta el json
+        socket->send(packetS);//manda el json a cliente
+        packetS.clear();//vacia los packets
+
     }
 
 
@@ -177,7 +264,20 @@ void GeneticDisplay::render() {
     }
 }
 
+
+
 void GeneticDisplay::rungenetic() {
+
+    //Se definen la variables necesarias para la comunicacion por sockets
+    IpAddress ip = IpAddress::getLocalAddress();
+    TcpSocket socket;
+    size_t received;
+    Packet packetR;
+
+    //Se conecta el cliente al socket
+    socket.connect(ip, 8080);
+    socket.setBlocking(false);
+
     while (this->keepOpen) {
 
         Event event;
@@ -191,13 +291,29 @@ void GeneticDisplay::rungenetic() {
                 cout << "--------------------" << endl;
                 cout << "X: " << event.mouseButton.x << " | Y: " << event.mouseButton.y << endl;
             }
-
         }
 
-        this->Gwindow->clear(Color::White);
+        socket.receive(packetR);
+        if (packetR.getData() != NULL) {
+            Document petition = jsonReceiver(packetR);//desempaqueta el JSON
 
+            //separa el json en variables
+            string type = petition["type"].GetString();
+            string content = petition["gnome"].GetString();
+            if(type == "gnome"){
+                cout << content <<endl;
+                this->fittest.push_back(content);
+                cout << this->fittest[0]<<endl;
+                gnome_to_image();
+                this->genindex++;
+            }
+        }
+
+        packetR.clear();
+        this->Gwindow->clear(Color::White);
         Vector2f mousepos = this->Gwindow->mapPixelToCoords(Mouse::getPosition(*this->Gwindow));
-        update(mousepos);
+
+        update(mousepos,&socket);
         render();
         this->Gwindow->display();
     }

@@ -72,6 +72,7 @@ CMAKE_BINARY_DIR = /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Le
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/Server.dir/all
 all: CMakeFiles/Proyecto2.dir/all
 
 .PHONY : all
@@ -82,9 +83,37 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/Server.dir/clean
 clean: CMakeFiles/Proyecto2.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/Server.dir
+
+# All Build rule for target.
+CMakeFiles/Server.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/cmake-build-debug/CMakeFiles --progress-num=11,12 "Built target Server"
+.PHONY : CMakeFiles/Server.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Server.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/Server.dir/rule
+
+# Convenience name for target.
+Server: CMakeFiles/Server.dir/rule
+
+.PHONY : Server
+
+# clean rule for target.
+CMakeFiles/Server.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/clean
+.PHONY : CMakeFiles/Server.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/Proyecto2.dir

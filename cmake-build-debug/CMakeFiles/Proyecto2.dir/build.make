@@ -220,6 +220,7 @@ Proyecto2: CMakeFiles/Proyecto2.dir/Graphics/BoardDisplay.cpp.o
 Proyecto2: CMakeFiles/Proyecto2.dir/build.make
 Proyecto2: /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1
 Proyecto2: /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1
+Proyecto2: /usr/lib/x86_64-linux-gnu/libsfml-network.so.2.5.1
 Proyecto2: /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
 Proyecto2: CMakeFiles/Proyecto2.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/david/Documents/Proyecto2Complete/ProyectoII-DatosII-Lets-play/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable Proyecto2"

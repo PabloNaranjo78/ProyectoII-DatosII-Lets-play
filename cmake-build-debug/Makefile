@@ -130,6 +130,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named Server
+
+# Build rule for target.
+Server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Server
+.PHONY : Server
+
+# fast build rule for target.
+Server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/build
+.PHONY : Server/fast
+
+#=============================================================================
 # Target rules for targets named Proyecto2
 
 # Build rule for target.
@@ -358,6 +371,33 @@ Physics/Movement.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Proyecto2.dir/build.make CMakeFiles/Proyecto2.dir/Physics/Movement.cpp.s
 .PHONY : Physics/Movement.cpp.s
 
+Server/Server.o: Server/Server.cpp.o
+
+.PHONY : Server/Server.o
+
+# target to build an object file
+Server/Server.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Server/Server.cpp.o
+.PHONY : Server/Server.cpp.o
+
+Server/Server.i: Server/Server.cpp.i
+
+.PHONY : Server/Server.i
+
+# target to preprocess a source file
+Server/Server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Server/Server.cpp.i
+.PHONY : Server/Server.cpp.i
+
+Server/Server.s: Server/Server.cpp.s
+
+.PHONY : Server/Server.s
+
+# target to generate assembly for a file
+Server/Server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Server/Server.cpp.s
+.PHONY : Server/Server.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -394,6 +434,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Proyecto2"
+	@echo "... Server"
 	@echo "... GameManagment/Ball.o"
 	@echo "... GameManagment/Ball.i"
 	@echo "... GameManagment/Ball.s"
@@ -418,6 +459,9 @@ help:
 	@echo "... Physics/Movement.o"
 	@echo "... Physics/Movement.i"
 	@echo "... Physics/Movement.s"
+	@echo "... Server/Server.o"
+	@echo "... Server/Server.i"
+	@echo "... Server/Server.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
