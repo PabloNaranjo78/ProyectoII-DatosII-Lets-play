@@ -8,8 +8,22 @@
 #include "iostream"
 using namespace std;
 
-BackTrackingSearch::BackTrackingSearch() {
+BackTrackingSearch::BackTrackingSearch(bool obstacles[9][9]) {
+    for (int i = 0;i<9;i++){
+        for (int j = 0; j< 9;j++){
+            if (obstacles[i][j] == 1){
+                matrix[i][j] = 4;
+            }
+        }
+    }
 
+}
+
+LinkedList* BackTrackingSearch::getPath(int x, int y) {
+    matrix[7][4] = 2;
+    matrix[y][x] = 3;
+    add(matrix);
+    return searchOnePath();
 }
 
 void BackTrackingSearch::printMatrix() {
@@ -22,15 +36,22 @@ void BackTrackingSearch::printMatrix() {
     }
 }
 
+
+
 void BackTrackingSearch::printPostList(){
 //    list.printPostList();
+    list.printList();
+}
+
+LinkedList * BackTrackingSearch::getPostList() {
+    return list.getPostList();
 }
 
 void BackTrackingSearch::add(int _matrix[9][9]) {
     memcpy(matrix,_matrix,sizeof(int)*9*9 );
 }
 
-void BackTrackingSearch::searchOnePath() {
+LinkedList* BackTrackingSearch::searchOnePath() {
     searchStart();
     bool found = false;
     int x = startRow;
@@ -40,20 +61,22 @@ void BackTrackingSearch::searchOnePath() {
         cout<<"--------"<<endl;
         cout<<x<<"-"<<y<<endl;
 
-            if (matrix[y-1][x] == 0 and matrix[y-1][x] != 4 and y>0 and matrix[y-1][x] != 5){
-                y-=1;
-                matrix[y][x] = 1;
-                list.addToList(matrix,"y-1",x,y);
-            } else
+        if (matrix[y + 1][x] == 0 and matrix[y + 1][x] != 4 and matrix[y + 1][x] != 5) {
+            y += 1;
+            matrix[y][x] = 1;
+            list.addToList(matrix,"y+1",x,y);
+        }
+
+             else
             if (matrix[y][x-1] == 0 and matrix[y][x-1] != 4 and x >0 and matrix[y][x-1] != 5){
                 x-=1;
                 matrix[y][x] = 1;
                 list.addToList(matrix,"x-1",x,y);
             }else
-            if (matrix[y + 1][x] == 0 and matrix[y + 1][x] != 4 and matrix[y + 1][x] != 5) {
-                y += 1;
+            if (matrix[y-1][x] == 0 and matrix[y-1][x] != 4 and y>0 and matrix[y-1][x] != 5){
+                y-=1;
                 matrix[y][x] = 1;
-                list.addToList(matrix,"y+1",x,y);
+                list.addToList(matrix,"y-1",x,y);
             } else if (matrix[y][x + 1] == 0 and matrix[y][x + 1] != 4 and matrix[y][x + 1] != 4) {
                 x += 1;
                 matrix[y][x] = 1;
@@ -83,7 +106,7 @@ void BackTrackingSearch::searchOnePath() {
         }// list.replaceInALl(9,4,0);
         printMatrix();
     }
-
+    return getPostList();
 }
 
 void BackTrackingSearch::searchBestPath() {

@@ -10,17 +10,20 @@
 
 class BackTrackingSearch {
 public:
-    BackTrackingSearch();
-    void add(int _matrix[9][9]);
+    BackTrackingSearch(bool obstacles[9][9]);
     void printMatrix();
-    void searchOnePath();
-    void searchBestPath();
+    LinkedList* getPath(int x, int y);
     void printPostList();
 private:
+    void add(int _matrix[9][9]);
+    LinkedList* searchOnePath();
+    void searchBestPath();
+    LinkedList * getPostList();
     BTLinkedList list;
     void searchStart();
     bool closePath(int x, int y);
     int matrix[9][9]{};
+
     int startRow = 0;
     int startColumn = 0;
     string result = "";

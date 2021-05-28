@@ -12,7 +12,7 @@ public:
     LLNode();
 
     int getData();
-    void setData(int _data[9][9], string movement, int x,int y);
+    void setData(int _data[9][9], string movement, int pos);
     string movement;
     LLNode *prev;
     int data[9][9];
