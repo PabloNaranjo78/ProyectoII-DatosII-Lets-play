@@ -80,8 +80,6 @@ void LinkedList::printList() {
     }
 }
 
-
-
 string LinkedList::getListString() {
     string result;
     Node * tmp = this->head;
