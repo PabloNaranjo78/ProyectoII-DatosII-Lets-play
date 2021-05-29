@@ -23,6 +23,30 @@ Button::Button(float x, float y, float width, float height, Font *font, string t
     this->shape.setFillColor(this->idleColor);
 }
 
+Button::Button(float x, float y, float width, float height, Font *font, string text, Color idleColor, Color hoverColor,
+               Color activeColor,int size) {
+    this->buttonstate = BTN_IDLE;
+    this->disabled = false;
+
+    this->shape.setPosition(Vector2f(x,y));
+    this->shape.setSize(Vector2f(width,height));
+
+    this->font = font;
+    this->text.setFont(*this->font);
+    this->text.setString(text);
+    this->text.setFillColor(Color::Black);
+    this->text.setCharacterSize(size);
+    this->text.setPosition(this->shape.getPosition().x + (this->shape.getGlobalBounds().width / 2.f) - this->text.getGlobalBounds().width/2.f,
+                           this->shape.getPosition().y + (this->shape.getGlobalBounds().height / 2.f) - this->text.getGlobalBounds().height/2.f);
+
+    this->idleColor = idleColor;
+    this->hoverColor = hoverColor;
+    this->activeColor = activeColor;
+
+    this->shape.setFillColor(this->idleColor);
+}
+
+
 //Accesors
 const bool Button::is_pressed() const {
    if(this->buttonstate== BTN_ACTIVE){

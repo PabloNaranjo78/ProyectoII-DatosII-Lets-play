@@ -1,0 +1,97 @@
+\hypertarget{class_genetic}{}\doxysection{Genetic Class Reference}
+\label{class_genetic}\index{Genetic@{Genetic}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_genetic_a6f8b101c3a4a540308024e039482707c}{random\+\_\+num}} (int start, int end)
+\item 
+char \mbox{\hyperlink{class_genetic_ab78f76ec2e29b51e3e8d3b3e9e2bf9db}{mutated\+\_\+genes}} ()
+\item 
+string \mbox{\hyperlink{class_genetic_acefe5f6fd9e943ece43bd8d318d2b44c}{create\+\_\+gnome}} ()
+\item 
+\mbox{\hyperlink{class_individuo}{Individuo}} \mbox{\hyperlink{class_genetic_a58d7361618a207696855d423541934c5}{aparear}} (\mbox{\hyperlink{class_individuo}{Individuo}} par1, \mbox{\hyperlink{class_individuo}{Individuo}} par2)
+\item 
+int \mbox{\hyperlink{class_genetic_ac1d6b2153a519cd8d9dd75a4df015a45}{cal\+\_\+fitness}} (\mbox{\hyperlink{class_individuo}{Individuo}} individuo)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_genetic_a7aba0e4b84b0067eacf6f32173981f17}\label{class_genetic_a7aba0e4b84b0067eacf6f32173981f17}} 
+string {\bfseries genes} =\char`\"{}0123456789abcdefghijklmno\char`\"{}
+\item 
+\mbox{\Hypertarget{class_genetic_a397add73eabd7c6108a256886e931c9e}\label{class_genetic_a397add73eabd7c6108a256886e931c9e}} 
+string {\bfseries target}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_genetic_a58d7361618a207696855d423541934c5}\label{class_genetic_a58d7361618a207696855d423541934c5}} 
+\index{Genetic@{Genetic}!aparear@{aparear}}
+\index{aparear@{aparear}!Genetic@{Genetic}}
+\doxysubsubsection{\texorpdfstring{aparear()}{aparear()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_individuo}{Individuo}} Genetic\+::aparear (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_individuo}{Individuo}}}]{par1,  }\item[{\mbox{\hyperlink{class_individuo}{Individuo}}}]{par2 }\end{DoxyParamCaption})}
+
+Aparea dos individuos 
+\begin{DoxyParams}{Parameters}
+{\em par1} & padre 1 \\
+\hline
+{\em par2} & padre 2 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A\+DN del hijo 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_genetic_ac1d6b2153a519cd8d9dd75a4df015a45}\label{class_genetic_ac1d6b2153a519cd8d9dd75a4df015a45}} 
+\index{Genetic@{Genetic}!cal\_fitness@{cal\_fitness}}
+\index{cal\_fitness@{cal\_fitness}!Genetic@{Genetic}}
+\doxysubsubsection{\texorpdfstring{cal\_fitness()}{cal\_fitness()}}
+{\footnotesize\ttfamily int Genetic\+::cal\+\_\+fitness (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_individuo}{Individuo}}}]{individuo }\end{DoxyParamCaption})}
+
+calcula el fitness de cada individuo 
+\begin{DoxyParams}{Parameters}
+{\em individuo} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+fitnes del individuo 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_genetic_acefe5f6fd9e943ece43bd8d318d2b44c}\label{class_genetic_acefe5f6fd9e943ece43bd8d318d2b44c}} 
+\index{Genetic@{Genetic}!create\_gnome@{create\_gnome}}
+\index{create\_gnome@{create\_gnome}!Genetic@{Genetic}}
+\doxysubsubsection{\texorpdfstring{create\_gnome()}{create\_gnome()}}
+{\footnotesize\ttfamily string Genetic\+::create\+\_\+gnome (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Crea el A\+DN de cada individuo \begin{DoxyReturn}{Returns}
+el A\+DN del individuo 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_genetic_ab78f76ec2e29b51e3e8d3b3e9e2bf9db}\label{class_genetic_ab78f76ec2e29b51e3e8d3b3e9e2bf9db}} 
+\index{Genetic@{Genetic}!mutated\_genes@{mutated\_genes}}
+\index{mutated\_genes@{mutated\_genes}!Genetic@{Genetic}}
+\doxysubsubsection{\texorpdfstring{mutated\_genes()}{mutated\_genes()}}
+{\footnotesize\ttfamily char Genetic\+::mutated\+\_\+genes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+selecciona cual gen quiere mutar \begin{DoxyReturn}{Returns}
+gen 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_genetic_a6f8b101c3a4a540308024e039482707c}\label{class_genetic_a6f8b101c3a4a540308024e039482707c}} 
+\index{Genetic@{Genetic}!random\_num@{random\_num}}
+\index{random\_num@{random\_num}!Genetic@{Genetic}}
+\doxysubsubsection{\texorpdfstring{random\_num()}{random\_num()}}
+{\footnotesize\ttfamily int Genetic\+::random\+\_\+num (\begin{DoxyParamCaption}\item[{int}]{start,  }\item[{int}]{end }\end{DoxyParamCaption})}
+
+Genera numero random 
+\begin{DoxyParams}{Parameters}
+{\em start} & limite inferior \\
+\hline
+{\em end} & limite superios \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+el numero generado 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Algoritmo\+G/Genetic.\+h\item 
+Algoritmo\+G/Genetic.\+cpp\end{DoxyCompactItemize}

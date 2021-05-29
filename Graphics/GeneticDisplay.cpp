@@ -77,6 +77,12 @@ GeneticDisplay::GeneticDisplay() {
                                       Color(151, 171, 201,200),
                                       Color(99, 109, 125,200));
     this->startGbutton->disabled = true;
+
+    this->fowardbutton = new Button(this->width/2+250,700,150,50,&this->font,"NEXT",
+                                    Color(109, 172, 199,200),
+                                    Color(151, 171, 201,200),
+                                    Color(99, 109, 125,200),30);
+    this->fowardbutton->disabled = true;
 }
 
 void GeneticDisplay::gnome_to_image() {
@@ -102,6 +108,7 @@ void GeneticDisplay::gnome_to_image() {
 
 void GeneticDisplay::cut_display_image() {
     this->puzzle.clear();
+    this->positions.clear();
     //valores iniciales
     int x = 0;
     int y = 0;
@@ -194,6 +201,7 @@ void GeneticDisplay::update(Vector2f mousepos,TcpSocket* socket) {
     this->filebutton->update(mousepos);
     this->divisionbutton->update(mousepos);
     this->startGbutton->update(mousepos);
+    this->fowardbutton->update(mousepos);
 
 
     //START ALGORITHM BUTTON
@@ -269,6 +277,7 @@ void GeneticDisplay::render() {
     this->filebutton->render(this->Gwindow);
     this->divisionbutton->render(this->Gwindow);
     this->startGbutton->render(this->Gwindow);
+    this->fowardbutton->render(this->Gwindow);
 
     if (this->draw_image){
         this->Gwindow->draw(this->complete);

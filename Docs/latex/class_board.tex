@@ -1,0 +1,88 @@
+\hypertarget{class_board}{}\doxysection{Board Class Reference}
+\label{class_board}\index{Board@{Board}}
+
+
+{\ttfamily \#include $<$Board.\+h$>$}
+
+
+
+Collaboration diagram for Board\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{class_board__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_linked_list}{Linked\+List}} $\ast$ \mbox{\hyperlink{class_board_aac928cf105b62245556246c4787e0378}{get\+Path\+Player}} (int y, int x)
+\item 
+\mbox{\hyperlink{class_linked_list}{Linked\+List}} $\ast$ \mbox{\hyperlink{class_board_a029458cde63823940cdad4c5478672de}{get\+Path\+Computer}} (int y, int x)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_board_a992e7db650f747677f3b515536891f6e}\label{class_board_a992e7db650f747677f3b515536891f6e}} 
+\mbox{\hyperlink{class_movement}{Movement}} $\ast$ {\bfseries puck}
+\item 
+\mbox{\Hypertarget{class_board_a3578ae79e9124cd89e45e4ded2bd0eef}\label{class_board_a3578ae79e9124cd89e45e4ded2bd0eef}} 
+\mbox{\hyperlink{class_scores}{Scores}} $\ast$ {\bfseries scores}
+\item 
+\mbox{\Hypertarget{class_board_acd7fcb800de4b8cdb4594cba99cca5d4}\label{class_board_acd7fcb800de4b8cdb4594cba99cca5d4}} 
+bool {\bfseries turn\+Players}
+\item 
+\mbox{\Hypertarget{class_board_a97e54cd5e8e3f5821ef8b5d7528ead36}\label{class_board_a97e54cd5e8e3f5821ef8b5d7528ead36}} 
+int {\bfseries obstacles\+Num}
+\item 
+\mbox{\Hypertarget{class_board_a492eb55b6c3240c393b5f6a78afb6833}\label{class_board_a492eb55b6c3240c393b5f6a78afb6833}} 
+int {\bfseries matrix\+\_\+names} \mbox{[}9\mbox{]}\mbox{[}9\mbox{]}
+\item 
+\mbox{\Hypertarget{class_board_a54fb429e2adc8a868f36fa70607c53d6}\label{class_board_a54fb429e2adc8a868f36fa70607c53d6}} 
+bool {\bfseries obstacles} \mbox{[}9\mbox{]}\mbox{[}9\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase gestora 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_board_a029458cde63823940cdad4c5478672de}\label{class_board_a029458cde63823940cdad4c5478672de}} 
+\index{Board@{Board}!getPathComputer@{getPathComputer}}
+\index{getPathComputer@{getPathComputer}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{getPathComputer()}{getPathComputer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_linked_list}{Linked\+List}} $\ast$ Board\+::get\+Path\+Computer (\begin{DoxyParamCaption}\item[{int}]{y,  }\item[{int}]{x }\end{DoxyParamCaption})}
+
+Retorna la lista que contiene el camino que sera seguido para la computadora 
+\begin{DoxyParams}{Parameters}
+{\em y} & posicion en y del puck \\
+\hline
+{\em x} & posicion en x del puck \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+lista enlazda que contiene el camino encontrado (en enteros) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_board_aac928cf105b62245556246c4787e0378}\label{class_board_aac928cf105b62245556246c4787e0378}} 
+\index{Board@{Board}!getPathPlayer@{getPathPlayer}}
+\index{getPathPlayer@{getPathPlayer}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{getPathPlayer()}{getPathPlayer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_linked_list}{Linked\+List}} $\ast$ Board\+::get\+Path\+Player (\begin{DoxyParamCaption}\item[{int}]{y,  }\item[{int}]{x }\end{DoxyParamCaption})}
+
+Retorna la lista que contiene el camino que se sugiere al jugador 
+\begin{DoxyParams}{Parameters}
+{\em y} & posicion en y del puck \\
+\hline
+{\em x} & posicion en x del puck \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+lista enlazada que contiene el camino encontrado (en enteros) 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Game\+Managment/Board.\+h\item 
+Game\+Managment/Board.\+cpp\end{DoxyCompactItemize}

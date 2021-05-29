@@ -71,8 +71,12 @@ void run_geneticAlgorithm(TcpSocket* socket, Genetic* gen){
         tmp.fitness = gen->cal_fitness(tmp);
         population.push_back(tmp);
     }
-    cout<<"Creo population"<<endl;
-    cout<< population.begin()->chromosome<<endl;
+    json = jsonSender("gnome",population.begin()->chromosome);
+    cout << json<<endl;
+    packetS << json;//empaqueta el json
+    socket->send(packetS);//manda el json a cliente
+    packetS.clear();//vacia los packets
+    json = "";
     while(! found)
     {
         // sort the population in increasing order of fitness score
