@@ -7,8 +7,6 @@ using namespace sf;
 
 
 
-
-
 int main() {
     //PathfindingA * pathfindingA = new PathfindingA();
     //pathfindingA->getPath(6,7);
