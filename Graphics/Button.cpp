@@ -37,7 +37,7 @@ Button::Button(float x, float y, float width, float height, Font *font, string t
     this->text.setFillColor(Color::Black);
     this->text.setCharacterSize(size);
     this->text.setPosition(this->shape.getPosition().x + (this->shape.getGlobalBounds().width / 2.f) - this->text.getGlobalBounds().width/2.f,
-                           this->shape.getPosition().y + (this->shape.getGlobalBounds().height / 2.f) - this->text.getGlobalBounds().height/2.f);
+                           this->shape.getPosition().y + (this->shape.getGlobalBounds().height / 2.f) - this->text.getGlobalBounds().height/2.f-10);
 
     this->idleColor = idleColor;
     this->hoverColor = hoverColor;
