@@ -1,0 +1,139 @@
+\hypertarget{class_linked_list}{}\doxysection{Linked\+List Class Reference}
+\label{class_linked_list}\index{LinkedList@{LinkedList}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_linked_list_afe7f78983e173f8018927cf2ad11a5aa}{Linked\+List}} ()
+\item 
+void \mbox{\hyperlink{class_linked_list_a8981f12b32c355aac76753e21eef6d4c}{add\+Value}} (int id)
+\item 
+int \mbox{\hyperlink{class_linked_list_a0a5b63c9dff517874c7567ae1c56357e}{get\+Value\+At}} (int i)
+\item 
+void \mbox{\hyperlink{class_linked_list_ac96230938fd74a4efeb4efe8c995ee53}{print\+List}} ()
+\item 
+bool \mbox{\hyperlink{class_linked_list_aa8b86f01799ad870cb66582a7b21b1df}{is\+In}} (int id)
+\item 
+void \mbox{\hyperlink{class_linked_list_a0b1fecf633f8ea872d26a5108486a428}{delete\+Node}} (int id)
+\item 
+void \mbox{\hyperlink{class_linked_list_a8c931e71bbf974f62ef2b298791c9757}{set\+Parent}} (int parent, int id)
+\item 
+int \mbox{\hyperlink{class_linked_list_af4885ee40d921c8eab78db8103e8d5b6}{get\+Parent}} (int id)
+\item 
+string \mbox{\hyperlink{class_linked_list_af2c8907d8840bb560d6843bbf76f83b5}{get\+List\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_linked_list_a0ee3b52ce8c1297315a78a59de6aba24}\label{class_linked_list_a0ee3b52ce8c1297315a78a59de6aba24}} 
+int {\bfseries length}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_linked_list_afe7f78983e173f8018927cf2ad11a5aa}\label{class_linked_list_afe7f78983e173f8018927cf2ad11a5aa}} 
+\index{LinkedList@{LinkedList}!LinkedList@{LinkedList}}
+\index{LinkedList@{LinkedList}!LinkedList@{LinkedList}}
+\doxysubsubsection{\texorpdfstring{LinkedList()}{LinkedList()}}
+{\footnotesize\ttfamily Linked\+List\+::\+Linked\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor de la clase 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_linked_list_a8981f12b32c355aac76753e21eef6d4c}\label{class_linked_list_a8981f12b32c355aac76753e21eef6d4c}} 
+\index{LinkedList@{LinkedList}!addValue@{addValue}}
+\index{addValue@{addValue}!LinkedList@{LinkedList}}
+\doxysubsubsection{\texorpdfstring{addValue()}{addValue()}}
+{\footnotesize\ttfamily void Linked\+List\+::add\+Value (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+Agrega un valor a la lista 
+\begin{DoxyParams}{Parameters}
+{\em id} & identificador del valor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_linked_list_a0b1fecf633f8ea872d26a5108486a428}\label{class_linked_list_a0b1fecf633f8ea872d26a5108486a428}} 
+\index{LinkedList@{LinkedList}!deleteNode@{deleteNode}}
+\index{deleteNode@{deleteNode}!LinkedList@{LinkedList}}
+\doxysubsubsection{\texorpdfstring{deleteNode()}{deleteNode()}}
+{\footnotesize\ttfamily void Linked\+List\+::delete\+Node (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+Elimina un nodo de la lista 
+\begin{DoxyParams}{Parameters}
+{\em id} & identificador del nodo \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_linked_list_af2c8907d8840bb560d6843bbf76f83b5}\label{class_linked_list_af2c8907d8840bb560d6843bbf76f83b5}} 
+\index{LinkedList@{LinkedList}!getListString@{getListString}}
+\index{getListString@{getListString}!LinkedList@{LinkedList}}
+\doxysubsubsection{\texorpdfstring{getListString()}{getListString()}}
+{\footnotesize\ttfamily string Linked\+List\+::get\+List\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Obtiene la lista en formato de string \begin{DoxyReturn}{Returns}
+lista en formato de string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_linked_list_af4885ee40d921c8eab78db8103e8d5b6}\label{class_linked_list_af4885ee40d921c8eab78db8103e8d5b6}} 
+\index{LinkedList@{LinkedList}!getParent@{getParent}}
+\index{getParent@{getParent}!LinkedList@{LinkedList}}
+\doxysubsubsection{\texorpdfstring{getParent()}{getParent()}}
+{\footnotesize\ttfamily int Linked\+List\+::get\+Parent (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+Obtiene el nodo padre de cierto nodo (pathfinding) 
+\begin{DoxyParams}{Parameters}
+{\em id} & identificador del nodo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+identificador del nodo padre 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_linked_list_a0a5b63c9dff517874c7567ae1c56357e}\label{class_linked_list_a0a5b63c9dff517874c7567ae1c56357e}} 
+\index{LinkedList@{LinkedList}!getValueAt@{getValueAt}}
+\index{getValueAt@{getValueAt}!LinkedList@{LinkedList}}
+\doxysubsubsection{\texorpdfstring{getValueAt()}{getValueAt()}}
+{\footnotesize\ttfamily int Linked\+List\+::get\+Value\+At (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+Obtiene un valor en cierta posicion 
+\begin{DoxyParams}{Parameters}
+{\em i} & index que se desea consultar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+identificador en dicha posicion 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_linked_list_aa8b86f01799ad870cb66582a7b21b1df}\label{class_linked_list_aa8b86f01799ad870cb66582a7b21b1df}} 
+\index{LinkedList@{LinkedList}!isIn@{isIn}}
+\index{isIn@{isIn}!LinkedList@{LinkedList}}
+\doxysubsubsection{\texorpdfstring{isIn()}{isIn()}}
+{\footnotesize\ttfamily bool Linked\+List\+::is\+In (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+Indica si el nodo se encuentra en la lista 
+\begin{DoxyParams}{Parameters}
+{\em id} & identificador asociado al nodo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+valor de verdad para conocer si el valor ya esta asociado a un nodo 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_linked_list_ac96230938fd74a4efeb4efe8c995ee53}\label{class_linked_list_ac96230938fd74a4efeb4efe8c995ee53}} 
+\index{LinkedList@{LinkedList}!printList@{printList}}
+\index{printList@{printList}!LinkedList@{LinkedList}}
+\doxysubsubsection{\texorpdfstring{printList()}{printList()}}
+{\footnotesize\ttfamily void Linked\+List\+::print\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Muestra los elementos de la lista \mbox{\Hypertarget{class_linked_list_a8c931e71bbf974f62ef2b298791c9757}\label{class_linked_list_a8c931e71bbf974f62ef2b298791c9757}} 
+\index{LinkedList@{LinkedList}!setParent@{setParent}}
+\index{setParent@{setParent}!LinkedList@{LinkedList}}
+\doxysubsubsection{\texorpdfstring{setParent()}{setParent()}}
+{\footnotesize\ttfamily void Linked\+List\+::set\+Parent (\begin{DoxyParamCaption}\item[{int}]{parent,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+Especifica el nodo padre de cierto nodo (pathfinding) 
+\begin{DoxyParams}{Parameters}
+{\em parent} & identificador del nodo padre \\
+\hline
+{\em id} & identificador del nodo deseado \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Pathfinding\+A/Linked\+List.\+h\item 
+Pathfinding\+A/Linked\+List.\+cpp\end{DoxyCompactItemize}

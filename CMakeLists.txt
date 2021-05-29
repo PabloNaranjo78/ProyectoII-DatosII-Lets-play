@@ -18,9 +18,19 @@ if(SFML_FOUND)
     message(STATUS "SFML_VERSION: ${SFML_VERSION}")
 endif()
 
+
 include_directories(AlgoritmoG Graphics BT BT/BTListRegister)
 
 add_executable(Proyecto2 main.cpp PathfindingA/PathfindingA.cpp PathfindingA/PathfindingA.h PathfindingA/LinkedList.cpp PathfindingA/LinkedList.h PathfindingA/Node.cpp PathfindingA/Node.h Physics/Movement.cpp Physics/Movement.h GameManagment/Scores.cpp GameManagment/Scores.h GameManagment/Board.cpp GameManagment/Board.h GameManagment/Ball.cpp GameManagment/Ball.h Graphics/BoardDisplay.cpp Graphics/BoardDisplay.h BT/BackTrackingSearch.cpp BT/BackTrackingSearch.h BT/BTListRegister/BTLinkedList.cpp BT/BTListRegister/LLNode.h BT/BTListRegister/LLNode.h BT/BTListRegister/LLNode.cpp)
 add_executable(Server Server/Server.cpp)
 target_link_libraries (Proyecto2 sfml-graphics sfml-window sfml-system sfml-network)
 target_link_libraries (Server sfml-graphics sfml-window sfml-system sfml-network)
+
+set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake_modules" ${CMAKE_MODULE_PATH})
+
+find_package(TinyXML)
+if(TinyXML_FOUND)
+    set(WITH_TINYXML TRUE)
+    include_directories(${TinyXML_INCLUDE_DIRS})
+    target_link_libraries(Server ${TinyXML_LIBRARIES})
+endif()

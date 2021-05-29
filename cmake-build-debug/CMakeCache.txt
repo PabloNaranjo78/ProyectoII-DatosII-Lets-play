@@ -238,6 +238,12 @@ SFML_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/SFML
 //Path to a file.
 SFML_DOC_DIR:PATH=SFML_DOC_DIR-NOTFOUND
 
+//Path to a file.
+TinyXML_INCLUDE_DIR:PATH=TinyXML_INCLUDE_DIR-NOTFOUND
+
+//Path to a library.
+TinyXML_LIBRARY:FILEPATH=TinyXML_LIBRARY-NOTFOUND
+
 
 ########################
 # INTERNAL cache entries
@@ -398,4 +404,8 @@ CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 ProcessorCount_cmd_nproc-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: ProcessorCount_cmd_sysctl
 ProcessorCount_cmd_sysctl-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: TinyXML_INCLUDE_DIR
+TinyXML_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: TinyXML_LIBRARY
+TinyXML_LIBRARY-ADVANCED:INTERNAL=1
 

@@ -1,0 +1,56 @@
+\hypertarget{class_pathfinding_a}{}\doxysection{PathfindingA Class Reference}
+\label{class_pathfinding_a}\index{PathfindingA@{PathfindingA}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pathfinding_a_a514d0f59fc9a08898352271adc745dd4}{PathfindingA}} (bool obstacles\mbox{[}9\mbox{]}\mbox{[}9\mbox{]}, int goal\mbox{[}2\mbox{]})
+\item 
+\mbox{\hyperlink{class_linked_list}{Linked\+List}} $\ast$ \mbox{\hyperlink{class_pathfinding_a_ab75c35c41204b2b02029aab0382bbadc}{get\+Path}} (int di, int dj)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pathfinding_a_a7fa2368b4b887daa0199e9e5e6c8693d}\label{class_pathfinding_a_a7fa2368b4b887daa0199e9e5e6c8693d}} 
+string {\bfseries result}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pathfinding_a_a514d0f59fc9a08898352271adc745dd4}\label{class_pathfinding_a_a514d0f59fc9a08898352271adc745dd4}} 
+\index{PathfindingA@{PathfindingA}!PathfindingA@{PathfindingA}}
+\index{PathfindingA@{PathfindingA}!PathfindingA@{PathfindingA}}
+\doxysubsubsection{\texorpdfstring{PathfindingA()}{PathfindingA()}}
+{\footnotesize\ttfamily Pathfinding\+A\+::\+PathfindingA (\begin{DoxyParamCaption}\item[{bool}]{obstacles\mbox{[}9\mbox{]}\mbox{[}9\mbox{]},  }\item[{int}]{goal\mbox{[}2\mbox{]} }\end{DoxyParamCaption})}
+
+Constructor de la clase 
+\begin{DoxyParams}{Parameters}
+{\em obstacles} & matriz booleana que contiene los obstaculos \\
+\hline
+{\em goal} & porteria como un vector de posicion \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pathfinding_a_ab75c35c41204b2b02029aab0382bbadc}\label{class_pathfinding_a_ab75c35c41204b2b02029aab0382bbadc}} 
+\index{PathfindingA@{PathfindingA}!getPath@{getPath}}
+\index{getPath@{getPath}!PathfindingA@{PathfindingA}}
+\doxysubsubsection{\texorpdfstring{getPath()}{getPath()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_linked_list}{Linked\+List}} $\ast$ Pathfinding\+A\+::get\+Path (\begin{DoxyParamCaption}\item[{int}]{di,  }\item[{int}]{dj }\end{DoxyParamCaption})}
+
+Obtiene una lista con el camino que se debe seguir 
+\begin{DoxyParams}{Parameters}
+{\em di} & columna de la matriz que compone al valor \\
+\hline
+{\em dj} & fila de la matriz que compone al valor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+lista enlazada simple con las posiciones relativas que deben recorrerse 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Pathfinding\+A/Pathfinding\+A.\+h\item 
+Pathfinding\+A/Pathfinding\+A.\+cpp\end{DoxyCompactItemize}

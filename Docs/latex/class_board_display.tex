@@ -1,0 +1,95 @@
+\hypertarget{class_board_display}{}\doxysection{Board\+Display Class Reference}
+\label{class_board_display}\index{BoardDisplay@{BoardDisplay}}
+
+
+{\ttfamily \#include $<$Board\+Display.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_board_display_a9a4a0d883bf16f7400a59ca924ff7163}{Board\+Display}} ()
+\item 
+void \mbox{\hyperlink{class_board_display_a4b6fa2c2f4a1366c835e76ba2c99876c}{run\+Game}} ()
+\item 
+void \mbox{\hyperlink{class_board_display_a4cc3f79e20d95ca43c68b5e09dda1e0e}{check\+Events}} ()
+\item 
+void \mbox{\hyperlink{class_board_display_a889601fb9b702352c4a591571c68c969}{check\+Mouse\+Position}} ()
+\item 
+void \mbox{\hyperlink{class_board_display_a523edc76d5ac58764d1e8007530db966}{check\+Collisions}} ()
+\item 
+void \mbox{\hyperlink{class_board_display_acc46a20a26a3acd78f315dbc056db05e}{set\+Player\+Path}} ()
+\item 
+void \mbox{\hyperlink{class_board_display_aa4a290c3530c6ac8e199bdd9180e1c5c}{set\+Computer\+Path}} ()
+\item 
+void \mbox{\hyperlink{class_board_display_a05bfb0b8d07c27b8b0c488d6134623fd}{search\+Angle\+Start}} (int current\+\_\+pos, int first\+\_\+on\+\_\+path)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interfaz grafica para BP game 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_board_display_a9a4a0d883bf16f7400a59ca924ff7163}\label{class_board_display_a9a4a0d883bf16f7400a59ca924ff7163}} 
+\index{BoardDisplay@{BoardDisplay}!BoardDisplay@{BoardDisplay}}
+\index{BoardDisplay@{BoardDisplay}!BoardDisplay@{BoardDisplay}}
+\doxysubsubsection{\texorpdfstring{BoardDisplay()}{BoardDisplay()}}
+{\footnotesize\ttfamily Board\+Display\+::\+Board\+Display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor de la clase 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_board_display_a523edc76d5ac58764d1e8007530db966}\label{class_board_display_a523edc76d5ac58764d1e8007530db966}} 
+\index{BoardDisplay@{BoardDisplay}!checkCollisions@{checkCollisions}}
+\index{checkCollisions@{checkCollisions}!BoardDisplay@{BoardDisplay}}
+\doxysubsubsection{\texorpdfstring{checkCollisions()}{checkCollisions()}}
+{\footnotesize\ttfamily void Board\+Display\+::check\+Collisions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Revisa las colisiones con los bordes y los obstaculos \mbox{\Hypertarget{class_board_display_a4cc3f79e20d95ca43c68b5e09dda1e0e}\label{class_board_display_a4cc3f79e20d95ca43c68b5e09dda1e0e}} 
+\index{BoardDisplay@{BoardDisplay}!checkEvents@{checkEvents}}
+\index{checkEvents@{checkEvents}!BoardDisplay@{BoardDisplay}}
+\doxysubsubsection{\texorpdfstring{checkEvents()}{checkEvents()}}
+{\footnotesize\ttfamily void Board\+Display\+::check\+Events (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Revisa los eventos relacionados al mouse o la ventana \mbox{\Hypertarget{class_board_display_a889601fb9b702352c4a591571c68c969}\label{class_board_display_a889601fb9b702352c4a591571c68c969}} 
+\index{BoardDisplay@{BoardDisplay}!checkMousePosition@{checkMousePosition}}
+\index{checkMousePosition@{checkMousePosition}!BoardDisplay@{BoardDisplay}}
+\doxysubsubsection{\texorpdfstring{checkMousePosition()}{checkMousePosition()}}
+{\footnotesize\ttfamily void Board\+Display\+::check\+Mouse\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Revisa la posicion del mouse y la actualiza \mbox{\Hypertarget{class_board_display_a4b6fa2c2f4a1366c835e76ba2c99876c}\label{class_board_display_a4b6fa2c2f4a1366c835e76ba2c99876c}} 
+\index{BoardDisplay@{BoardDisplay}!runGame@{runGame}}
+\index{runGame@{runGame}!BoardDisplay@{BoardDisplay}}
+\doxysubsubsection{\texorpdfstring{runGame()}{runGame()}}
+{\footnotesize\ttfamily void Board\+Display\+::run\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Ciclo de juego en el que los valores cambian internamente \mbox{\Hypertarget{class_board_display_a05bfb0b8d07c27b8b0c488d6134623fd}\label{class_board_display_a05bfb0b8d07c27b8b0c488d6134623fd}} 
+\index{BoardDisplay@{BoardDisplay}!searchAngleStart@{searchAngleStart}}
+\index{searchAngleStart@{searchAngleStart}!BoardDisplay@{BoardDisplay}}
+\doxysubsubsection{\texorpdfstring{searchAngleStart()}{searchAngleStart()}}
+{\footnotesize\ttfamily void Board\+Display\+::search\+Angle\+Start (\begin{DoxyParamCaption}\item[{int}]{current\+\_\+pos,  }\item[{int}]{first\+\_\+on\+\_\+path }\end{DoxyParamCaption})}
+
+Busca el angulo donde inicia el lanzamiento 
+\begin{DoxyParams}{Parameters}
+{\em current\+\_\+pos} & posicion inicial relativa a la matriz \\
+\hline
+{\em first\+\_\+on\+\_\+path} & primera posicion a la que se va \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_board_display_aa4a290c3530c6ac8e199bdd9180e1c5c}\label{class_board_display_aa4a290c3530c6ac8e199bdd9180e1c5c}} 
+\index{BoardDisplay@{BoardDisplay}!setComputerPath@{setComputerPath}}
+\index{setComputerPath@{setComputerPath}!BoardDisplay@{BoardDisplay}}
+\doxysubsubsection{\texorpdfstring{setComputerPath()}{setComputerPath()}}
+{\footnotesize\ttfamily void Board\+Display\+::set\+Computer\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Busca el camino que debe seguir el lanzamiento de la computadora \mbox{\Hypertarget{class_board_display_acc46a20a26a3acd78f315dbc056db05e}\label{class_board_display_acc46a20a26a3acd78f315dbc056db05e}} 
+\index{BoardDisplay@{BoardDisplay}!setPlayerPath@{setPlayerPath}}
+\index{setPlayerPath@{setPlayerPath}!BoardDisplay@{BoardDisplay}}
+\doxysubsubsection{\texorpdfstring{setPlayerPath()}{setPlayerPath()}}
+{\footnotesize\ttfamily void Board\+Display\+::set\+Player\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Busca el camino que se sugiere al jugador 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Graphics/Board\+Display.\+h\item 
+Graphics/Board\+Display.\+cpp\end{DoxyCompactItemize}

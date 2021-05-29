@@ -3,6 +3,7 @@
 #include "rapidjson/document.h"
 #include <string>
 #include <iostream>
+#include "tinyxml.h"
 
 
 #include "../AlgoritmoG/Genetic.h"
@@ -17,6 +18,38 @@ bool operator<(const Individuo &ind1, const Individuo &ind2)
 {
     return ind1.fitness < ind2.fitness;
 }
+
+void saveXML(int generation, vector<Individuo> population){
+
+    TiXmlDocument doc;
+    TiXmlDeclaration* decl = new TiXmlDeclaration( "1.0", "", "" );
+    doc.LinkEndChild( decl );
+
+    TiXmlElement* element = new TiXmlElement( "Generation"+ to_string(generation) );
+    doc.LinkEndChild( element );
+
+    TiXmlText* text = new TiXmlText( "Population" );
+    element->LinkEndChild( text );
+
+
+    for(int i=0; i<population.size(); i++)
+    {
+        TiXmlElement* element2 = new TiXmlElement( "Individuo" );
+        TiXmlText* text2 = new TiXmlText( "" );
+
+        element2->SetAttribute("DNA",population.at(i).chromosome);
+        element2->SetAttribute("fitness",population.at(i).fitness);
+
+        element->LinkEndChild( element2 );
+        element2->LinkEndChild( text2 );
+    }
+
+    doc.SaveFile( "../XMLS/generation"+ to_string(generation)+".xml" );
+}
+
+
+
+
 
 /**
  * @brief jsonReviever se encarga de desempaquetar el mensaje JSON del cliente
@@ -45,7 +78,7 @@ Document jsonReceiver(Packet packet)
  */
 string jsonSender(string type, string gnome)
 {
-    string jsonStr = R"({"type":")"+ type + R"(","gnome":")" + finalG + "\"}";
+    string jsonStr = R"({"type":")"+ type + R"(","gnome":")" + gnome + "\"}";
     return jsonStr;
 }
 
@@ -56,7 +89,7 @@ void run_geneticAlgorithm(TcpSocket* socket, Genetic* gen){
     string json;
 
     srand((unsigned)(time(0)));
-
+    cout<<gen->genes.size()<<endl;
     // current generation
     int generation = 0;
 
@@ -71,13 +104,17 @@ void run_geneticAlgorithm(TcpSocket* socket, Genetic* gen){
         tmp.fitness = gen->cal_fitness(tmp);
         population.push_back(tmp);
     }
-    cout<<"Creo population"<<endl;
-    cout<< population.begin()->chromosome<<endl;
+    json = jsonSender("gnome",population.begin()->chromosome);
+    cout << json<<endl;
+    packetS << json;//empaqueta el json
+    socket->send(packetS);//manda el json a cliente
+    packetS.clear();//vacia los packets
+    json = "";
     while(! found)
     {
         // sort the population in increasing order of fitness score
         sort(population.begin(), population.end());
-
+        saveXML(generation,population);
         // if the individual having lowest fitness score ie.
         // 0 then we know that we have reached to the target
         // and break the loop
@@ -92,14 +129,14 @@ void run_geneticAlgorithm(TcpSocket* socket, Genetic* gen){
 
         // Perform Elitism, that mean 10% of fittest population
         // goes to the next generation
-        int s = (2*POPULATION_SIZE)/100;
+        int s = (10*POPULATION_SIZE)/100;
         for(int i = 0;i<s;i++)
             new_generation.push_back(population[i]);
 
 
         // From 50% of fittest population, Individuals
         // will mate to produce offspring
-        s = (98*POPULATION_SIZE)/100;
+        s = (90*POPULATION_SIZE)/100;
         for(int i = 0;i<s;i++)
         {
             int len = population.size();
@@ -116,19 +153,20 @@ void run_geneticAlgorithm(TcpSocket* socket, Genetic* gen){
         cout<< "String: "<< population[0].chromosome <<"\t";
         cout<< "Fitness: "<< population[0].fitness << "\n";
         //escribir XML
-        /*
+
         json = jsonSender("gnome",population[0].chromosome);
         cout << json<<endl;
         packetS << json;//empaqueta el json
         socket->send(packetS);//manda el json a cliente
         packetS.clear();//vacia los packets
-*/
+
         generation++;
     }
     cout<< "Generation: " << generation << "\t";
     cout<< "String: "<< population[0].chromosome <<"\t";
     cout<< "Fitness: "<< population[0].fitness << "\n";
-
+    saveXML(generation,population);
+    //json = jsonSender("gnome",population[0].chromosome);
     json = jsonSender("gnome",population[0].chromosome);
     cout << json <<endl;
     packetS << json;//empaqueta el json

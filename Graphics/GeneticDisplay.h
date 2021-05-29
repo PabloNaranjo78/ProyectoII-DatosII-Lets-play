@@ -42,6 +42,9 @@ class GeneticDisplay {
     bool draw_image;
     bool draw_puzzle;
     int genindex;
+    int maxindex;
+    map<char,int> trad;
+
 
     //IMAGE DIVDER
     Vector2u psize;
@@ -49,9 +52,12 @@ class GeneticDisplay {
     float divy;
     vector<Vector2u> positions;
 
+
     //GUI PARTS
     RectangleShape background;
     RectangleShape imagebackground;
+    Text title;
+    Text generation;
 
     //BUTTONS
     Button* backbutton;
@@ -62,18 +68,46 @@ class GeneticDisplay {
 
     //FONT
     Font font;
+    Font ftitle;
 
     //GENETIC ALGORITHM
     vector<string> fittest;
 
 public:
+    /**
+     * Constructor de la clase
+     */
     GeneticDisplay();
+    /**
+     * Destructor de la clase
+     */
     virtual ~GeneticDisplay();
+    /**
+     * Main loop de la ventana
+     */
     void rungenetic();
+    /**
+     * Dibuja todas figuras en la pantalla
+     */
     void render();
+    /**
+     * Have update a todos lso objetos de la pantalla
+     * @param mousepos posicion del mouse
+     * @param socket socket al que quiere mandar
+     */
     void update(Vector2f mousepos, TcpSocket* socket);
+    /**
+     * Parte la imagen en pedazos
+     */
     void cut_display_image();
+    /**
+     * con la cantidad de pedazos genera el target
+     * @return target
+     */
     string get_target();
+    /**
+     * Transforma string a posicion en imagenes
+     */
     void gnome_to_image();
 };
 

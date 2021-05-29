@@ -1,0 +1,5 @@
+<map id="Board" name="Board">
+<area shape="rect" id="node1" title=" " alt="" coords="72,95,132,121"/>
+<area shape="rect" id="node2" href="$class_movement.html" title=" " alt="" coords="5,5,97,32"/>
+<area shape="rect" id="node3" href="$class_scores.html" title=" " alt="" coords="121,5,187,32"/>
+</map>

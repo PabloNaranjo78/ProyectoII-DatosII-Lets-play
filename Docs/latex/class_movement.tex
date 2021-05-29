@@ -1,0 +1,120 @@
+\hypertarget{class_movement}{}\doxysection{Movement Class Reference}
+\label{class_movement}\index{Movement@{Movement}}
+
+
+{\ttfamily \#include $<$Movement.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_movement_a103f3f8ff9b7893127996003d2fad8dd}{Movement}} (\mbox{\hyperlink{class_scores}{Scores}} $\ast$current\+Scores, bool obstacles\mbox{[}9\mbox{]}\mbox{[}9\mbox{]})
+\item 
+void \mbox{\hyperlink{class_movement_a5c2946fd974b1a6aae8bac5ed0d1a976}{set\+Up\+Launch}} ()
+\item 
+bool \mbox{\hyperlink{class_movement_af350c7017fe00922130d3a39fdb5cf67}{perform\+Launch}} (int force, float angle, float init\+\_\+x, float init\+\_\+y, Sprite $\ast$puck)
+\item 
+bool \mbox{\hyperlink{class_movement_a3195e382a7df3e835a6c56a62b84d209}{check\+Obstacle\+Collision}} (bool dir)
+\item 
+bool \mbox{\hyperlink{class_movement_a94733651483ae3671485bb3a91a82081}{check\+In\+Goal}} (int x, int y)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_movement_a019f5c10b8ab180ceccd11ca5d80da3d}\label{class_movement_a019f5c10b8ab180ceccd11ca5d80da3d}} 
+float {\bfseries x}
+\item 
+\mbox{\Hypertarget{class_movement_ae302ab6fab43b66f55f507748cc378d0}\label{class_movement_ae302ab6fab43b66f55f507748cc378d0}} 
+float {\bfseries y}
+\item 
+\mbox{\Hypertarget{class_movement_aeceed941bee8b15e00ecea155c041a4c}\label{class_movement_aeceed941bee8b15e00ecea155c041a4c}} 
+int {\bfseries a} = -\/1
+\item 
+\mbox{\Hypertarget{class_movement_ab9228e2aede8505bc2a08c69a23657e3}\label{class_movement_ab9228e2aede8505bc2a08c69a23657e3}} 
+int {\bfseries b} = -\/1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementacion de las fisicas para BP game 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_movement_a103f3f8ff9b7893127996003d2fad8dd}\label{class_movement_a103f3f8ff9b7893127996003d2fad8dd}} 
+\index{Movement@{Movement}!Movement@{Movement}}
+\index{Movement@{Movement}!Movement@{Movement}}
+\doxysubsubsection{\texorpdfstring{Movement()}{Movement()}}
+{\footnotesize\ttfamily Movement\+::\+Movement (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scores}{Scores}} $\ast$}]{current\+Scores,  }\item[{bool}]{obstacles\mbox{[}9\mbox{]}\mbox{[}9\mbox{]} }\end{DoxyParamCaption})}
+
+Constructor de la clase 
+\begin{DoxyParams}{Parameters}
+{\em current\+Scores} & gestor del marcador \\
+\hline
+{\em obstacles} & matriz que contiene los obstaculos \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_movement_a94733651483ae3671485bb3a91a82081}\label{class_movement_a94733651483ae3671485bb3a91a82081}} 
+\index{Movement@{Movement}!checkInGoal@{checkInGoal}}
+\index{checkInGoal@{checkInGoal}!Movement@{Movement}}
+\doxysubsubsection{\texorpdfstring{checkInGoal()}{checkInGoal()}}
+{\footnotesize\ttfamily bool Movement\+::check\+In\+Goal (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+Indica si el puck se encuentra en alguna porteria 
+\begin{DoxyParams}{Parameters}
+{\em x} & posicion en x \\
+\hline
+{\em y} & posicion en y \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+valor de verdad que indica si esta en alguna porteria 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_movement_a3195e382a7df3e835a6c56a62b84d209}\label{class_movement_a3195e382a7df3e835a6c56a62b84d209}} 
+\index{Movement@{Movement}!checkObstacleCollision@{checkObstacleCollision}}
+\index{checkObstacleCollision@{checkObstacleCollision}!Movement@{Movement}}
+\doxysubsubsection{\texorpdfstring{checkObstacleCollision()}{checkObstacleCollision()}}
+{\footnotesize\ttfamily bool Movement\+::check\+Obstacle\+Collision (\begin{DoxyParamCaption}\item[{bool}]{dir }\end{DoxyParamCaption})}
+
+Revisa si ocurre una colision en el lanzamiento 
+\begin{DoxyParams}{Parameters}
+{\em dir} & direccion en la que ocurre la colision (vertical u horizontal) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+valor de verdad que indica si colisiona 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_movement_af350c7017fe00922130d3a39fdb5cf67}\label{class_movement_af350c7017fe00922130d3a39fdb5cf67}} 
+\index{Movement@{Movement}!performLaunch@{performLaunch}}
+\index{performLaunch@{performLaunch}!Movement@{Movement}}
+\doxysubsubsection{\texorpdfstring{performLaunch()}{performLaunch()}}
+{\footnotesize\ttfamily bool Movement\+::perform\+Launch (\begin{DoxyParamCaption}\item[{int}]{force,  }\item[{float}]{angle,  }\item[{float}]{init\+\_\+x,  }\item[{float}]{init\+\_\+y,  }\item[{Sprite $\ast$}]{puck }\end{DoxyParamCaption})}
+
+Realiza un lanzamiento del puck segun las condiciones especificadas 
+\begin{DoxyParams}{Parameters}
+{\em force} & fuerza con la que se lanza \\
+\hline
+{\em angle} & angulo de lanzamiento \\
+\hline
+{\em init\+\_\+x} & posicion inicial en x \\
+\hline
+{\em init\+\_\+y} & posicion inicial en y \\
+\hline
+{\em puck} & objeto de la clase Puck \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+booleano que indica si se marca un tanto 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_movement_a5c2946fd974b1a6aae8bac5ed0d1a976}\label{class_movement_a5c2946fd974b1a6aae8bac5ed0d1a976}} 
+\index{Movement@{Movement}!setUpLaunch@{setUpLaunch}}
+\index{setUpLaunch@{setUpLaunch}!Movement@{Movement}}
+\doxysubsubsection{\texorpdfstring{setUpLaunch()}{setUpLaunch()}}
+{\footnotesize\ttfamily void Movement\+::set\+Up\+Launch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Configura la variables requeridas para generar un lanzamiento 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Physics/Movement.\+h\item 
+Physics/Movement.\+cpp\end{DoxyCompactItemize}
