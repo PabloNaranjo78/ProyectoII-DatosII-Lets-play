@@ -74,12 +74,6 @@ cstdio
 string
 -
 
-/home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/BT/BTListRegister/BTLinkedList.cpp
-iostream
--
-BTLinkedList.h
-/home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/BT/BTListRegister/BTLinkedList.h
-
 /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/BT/BTListRegister/BTLinkedList.h
 LLNode.h
 /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/BT/BTListRegister/LLNode.h
@@ -88,37 +82,13 @@ iostream
 ../../PathfindingA/LinkedList.h
 /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/PathfindingA/LinkedList.h
 
-/home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/BT/BTListRegister/LLNode.cpp
-cstring
--
-LLNode.h
-/home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/BT/BTListRegister/LLNode.h
-
 /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/BT/BTListRegister/LLNode.h
 iostream
 /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/BT/BTListRegister/iostream
 
-/home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/BT/BackTrackingSearch.cpp
-cstring
--
-BackTrackingSearch.h
-/home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/BT/BackTrackingSearch.h
-iostream
-/home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/BT/iostream
-
 /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/BT/BackTrackingSearch.h
 BTListRegister/BTLinkedList.h
 /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/BT/BTListRegister/BTLinkedList.h
-
-/home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/GameManagment/Ball.cpp
-Ball.h
-/home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/GameManagment/Ball.h
-
-/home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/GameManagment/Ball.h
-
-/home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/GameManagment/Board.cpp
-Board.h
-/home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/GameManagment/Board.h
 
 /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/GameManagment/Board.h
 iostream
@@ -138,19 +108,11 @@ Scores.h
 ../BT/BackTrackingSearch.h
 /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/BT/BackTrackingSearch.h
 
-/home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/GameManagment/Scores.cpp
-Scores.h
-/home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/GameManagment/Scores.h
-
 /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/GameManagment/Scores.h
 string
 -
 iostream
 -
-
-/home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/Graphics/BoardDisplay.cpp
-BoardDisplay.h
-/home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/Graphics/BoardDisplay.h
 
 /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/Graphics/BoardDisplay.h
 SFML/Graphics.hpp
@@ -158,10 +120,6 @@ SFML/Graphics.hpp
 ../GameManagment/Board.h
 /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/GameManagment/Board.h
 
-/home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/PathfindingA/LinkedList.cpp
-LinkedList.h
-/home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/PathfindingA/LinkedList.h
-
 /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/PathfindingA/LinkedList.h
 Node.h
 /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/PathfindingA/Node.h
@@ -170,17 +128,9 @@ iostream
 string
 -
 
-/home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/PathfindingA/Node.cpp
-Node.h
-/home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/PathfindingA/Node.h
-
 /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/PathfindingA/Node.h
 iostream
 -
-
-/home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/PathfindingA/PathfindingA.cpp
-PathfindingA.h
-/home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/PathfindingA/PathfindingA.h
 
 /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/PathfindingA/PathfindingA.h
 iostream
@@ -193,10 +143,6 @@ time.h
 -
 LinkedList.h
 /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/PathfindingA/LinkedList.h
-
-/home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/Physics/Movement.cpp
-Movement.h
-/home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/Physics/Movement.h
 
 /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/Physics/Movement.h
 string
