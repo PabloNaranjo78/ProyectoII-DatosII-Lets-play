@@ -14,6 +14,8 @@ GeneticDisplay::GeneticDisplay() {
     if (!this->font.loadFromFile("../fonts/arial.ttf"))
         cout << "Couldn't load font" << endl;
 
+    if (!this->ftitle.loadFromFile("../fonts/NewAmsterdam.ttf"))
+        cout << "Couldn't load font" << endl;
     //UTILITY LOAD
     this->filer = new FileLoader();
     this->cutter = new Cutter();
@@ -57,6 +59,22 @@ GeneticDisplay::GeneticDisplay() {
     this->imagebackground.setPosition(this->width/2-700/2,50);
     this->imagebackground.setFillColor(Color(219, 219, 219,255));
 
+    //TEXT
+    this->title.setFont(this->ftitle);
+    this->title.setString("Genetic \nPuzzle");
+    this->title.setFillColor(Color::Black);
+    this->title.setCharacterSize(50);
+    this->title.setPosition(60,10);
+
+    this->generation.setFont(this->ftitle);
+    this->generation.setString(to_string(this->genindex));
+    this->generation.setFillColor(Color::Black);
+    this->generation.setCharacterSize(50);
+    this->generation.setPosition((this->width/2)- (this->generation.getPosition().x/2)-10,700);
+
+
+
+
     //BUTTONS
     //file button
     this->filebutton = new Button(50,300,150,50,&this->font,"Load Image",
@@ -78,11 +96,17 @@ GeneticDisplay::GeneticDisplay() {
                                       Color(99, 109, 125,200));
     this->startGbutton->disabled = true;
 
-    this->fowardbutton = new Button(this->width/2+250,700,150,50,&this->font,"NEXT",
+    this->fowardbutton = new Button((this->width/2)+200,700,150,50,&this->font,"NEXT",
                                     Color(109, 172, 199,200),
                                     Color(151, 171, 201,200),
                                     Color(99, 109, 125,200),30);
     this->fowardbutton->disabled = true;
+
+    this->backbutton = new Button((this->width/2)-350,700,150,50,&this->font,"PREVIOUS",
+                                    Color(109, 172, 199,200),
+                                    Color(151, 171, 201,200),
+                                    Color(99, 109, 125,200),30);
+    this->backbutton->disabled = true;
 }
 
 void GeneticDisplay::gnome_to_image() {
@@ -92,6 +116,9 @@ void GeneticDisplay::gnome_to_image() {
         this->startGbutton->disabled = false;
         this->divisionbutton->disabled = false;
         this->filebutton->disabled = false;
+        this->fowardbutton->disabled = false;
+        this->backbutton->disabled = false;
+        this->maxindex = this->genindex;
     }
 
     int Garray[this->filer->divisions];
@@ -202,17 +229,38 @@ void GeneticDisplay::update(Vector2f mousepos,TcpSocket* socket) {
     this->divisionbutton->update(mousepos);
     this->startGbutton->update(mousepos);
     this->fowardbutton->update(mousepos);
+    this->backbutton->update(mousepos);
 
+    //FOWARD GENERATION
+    if(this->fowardbutton->is_pressed() && !this->fowardbutton->disabled){
+        if(this->genindex != this->maxindex){
+            this->genindex++;
+            gnome_to_image();
+            this->generation.setString(to_string(this->genindex));
+        }
+    }
 
+    //BACKWARDS GENERATION
+    if(this->backbutton->is_pressed() && !this->backbutton->disabled){
+        if(this->genindex != 0){
+            this->genindex--;
+            gnome_to_image();
+            this->generation.setString(to_string(this->genindex));
+        }
+    }
     //START ALGORITHM BUTTON
     if(this->startGbutton->is_pressed() && !this->startGbutton->disabled){
         this->draw_image = false;
+        this->fittest.clear();
         cut_display_image();
         cout<<"Amount of positions: "<<this->positions.size()<<endl;
         this->draw_puzzle = true;
         this->startGbutton->disabled = true;
         this->divisionbutton->disabled = true;
         this->filebutton->disabled = true;
+        this->genindex = 0;
+        this->maxindex = 0;
+
         json = jsonSenderG("startG","start",get_target());
         packetS << json;//empaqueta el json
         socket->send(packetS);//manda el json a cliente
@@ -272,12 +320,20 @@ void GeneticDisplay::update(Vector2f mousepos,TcpSocket* socket) {
 }
 
 void GeneticDisplay::render() {
+    //RECTANGLES
     this->Gwindow->draw(this->background);
     this->Gwindow->draw(this->imagebackground);
+
+    //BUTTONS
     this->filebutton->render(this->Gwindow);
     this->divisionbutton->render(this->Gwindow);
     this->startGbutton->render(this->Gwindow);
     this->fowardbutton->render(this->Gwindow);
+    this->backbutton->render(this->Gwindow);
+
+    //TEXT
+    this->Gwindow->draw(this->title);
+    this->Gwindow->draw(this->generation);
 
     if (this->draw_image){
         this->Gwindow->draw(this->complete);
@@ -333,6 +389,7 @@ void GeneticDisplay::rungenetic() {
                 cout << this->fittest[0]<<endl;
                 gnome_to_image();
                 this->genindex++;
+                this->generation.setString(to_string(this->genindex));
             }
         }
 

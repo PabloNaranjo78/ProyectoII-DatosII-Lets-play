@@ -42,6 +42,7 @@ class GeneticDisplay {
     bool draw_image;
     bool draw_puzzle;
     int genindex;
+    int maxindex;
     map<char,int> trad;
 
 
@@ -55,6 +56,8 @@ class GeneticDisplay {
     //GUI PARTS
     RectangleShape background;
     RectangleShape imagebackground;
+    Text title;
+    Text generation;
 
     //BUTTONS
     Button* backbutton;
@@ -65,6 +68,7 @@ class GeneticDisplay {
 
     //FONT
     Font font;
+    Font ftitle;
 
     //GENETIC ALGORITHM
     vector<string> fittest;
