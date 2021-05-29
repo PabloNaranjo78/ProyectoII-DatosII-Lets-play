@@ -3,6 +3,7 @@
 #include "rapidjson/document.h"
 #include <string>
 #include <iostream>
+#include "tinyxml.h"
 
 
 #include "../AlgoritmoG/Genetic.h"
@@ -17,6 +18,38 @@ bool operator<(const Individuo &ind1, const Individuo &ind2)
 {
     return ind1.fitness < ind2.fitness;
 }
+
+void saveXML(int generation, vector<Individuo> population){
+
+    TiXmlDocument doc;
+    TiXmlDeclaration* decl = new TiXmlDeclaration( "1.0", "", "" );
+    doc.LinkEndChild( decl );
+
+    TiXmlElement* element = new TiXmlElement( "Generation"+ to_string(generation) );
+    doc.LinkEndChild( element );
+
+    TiXmlText* text = new TiXmlText( "Population" );
+    element->LinkEndChild( text );
+
+
+    for(int i=0; i<population.size(); i++)
+    {
+        TiXmlElement* element2 = new TiXmlElement( "Individuo" );
+        TiXmlText* text2 = new TiXmlText( "" );
+
+        element2->SetAttribute("DNA",population.at(i).chromosome);
+        element2->SetAttribute("fitness",population.at(i).fitness);
+
+        element->LinkEndChild( element2 );
+        element2->LinkEndChild( text2 );
+    }
+
+    doc.SaveFile( "../XMLS/generation"+ to_string(generation)+".xml" );
+}
+
+
+
+
 
 /**
  * @brief jsonReviever se encarga de desempaquetar el mensaje JSON del cliente
@@ -81,7 +114,7 @@ void run_geneticAlgorithm(TcpSocket* socket, Genetic* gen){
     {
         // sort the population in increasing order of fitness score
         sort(population.begin(), population.end());
-
+        saveXML(generation,population);
         // if the individual having lowest fitness score ie.
         // 0 then we know that we have reached to the target
         // and break the loop
@@ -132,7 +165,7 @@ void run_geneticAlgorithm(TcpSocket* socket, Genetic* gen){
     cout<< "Generation: " << generation << "\t";
     cout<< "String: "<< population[0].chromosome <<"\t";
     cout<< "Fitness: "<< population[0].fitness << "\n";
-
+    saveXML(generation,population);
     //json = jsonSender("gnome",population[0].chromosome);
     json = jsonSender("gnome",population[0].chromosome);
     cout << json <<endl;
