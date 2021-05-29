@@ -60,12 +60,14 @@ void Menu::update(Vector2f mousepos) {
     if(this->BPbutton->is_pressed()){
         BoardDisplay * bpGame = new BoardDisplay();
         this->keepOpen = false;
+        this->window->close();
         bpGame->runGame();
 
     }
     if(this->Gbutton->is_pressed()){
         GeneticDisplay* gen = new GeneticDisplay();
         this->keepOpen = false;
+        this->window->close();
         gen->rungenetic();
 
     }

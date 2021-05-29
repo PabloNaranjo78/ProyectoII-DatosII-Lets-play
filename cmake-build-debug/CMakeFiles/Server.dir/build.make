@@ -101,6 +101,7 @@ Server: CMakeFiles/Server.dir/build.make
 Server: /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1
 Server: /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1
 Server: /usr/lib/x86_64-linux-gnu/libsfml-network.so.2.5.1
+Server: /usr/lib/x86_64-linux-gnu/libtinyxml.so
 Server: /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
 Server: CMakeFiles/Server.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Server"
