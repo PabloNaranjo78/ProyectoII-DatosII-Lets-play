@@ -222,6 +222,9 @@ void BoardDisplay::runGame() {
                     this->listComputerPath = NULL;
                     this->listComputerPath = this->board->getPathComputer(this->puck->getPosition().y+25, this->puck->getPosition().x+25);
                     this->listComputerPath->printList();
+                    cout<<"****************************************************************"<<endl;
+                    cout<<this->listComputerPath->getListString()<<endl;
+
                     int i = this->puck->getPosition().y/grid_y;
                     int j = this->puck->getPosition().x/grid_x;
                     this->board->puck->setUpLaunch();

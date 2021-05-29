@@ -13,10 +13,10 @@ int main() {
     //pathfindingA->getPath(6,7);
     //Board * board = new Board();
     //board->getPathPlayer();
-    //BoardDisplay * bpGame = new BoardDisplay();
-    //bpGame->runGame();
-    GeneticDisplay* gen = new GeneticDisplay();
-    gen->rungenetic();
+    BoardDisplay * bpGame = new BoardDisplay();
+    bpGame->runGame();
+//    GeneticDisplay* gen = new GeneticDisplay();
+//    gen->rungenetic();
 
 //    int num[9][9]={
 //            {4,4,4,4,4,4,4,4,4},

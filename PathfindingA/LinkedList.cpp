@@ -114,5 +114,14 @@ int LinkedList::getParent(int id) {
     return parent;
 }
 
+void LinkedList::loadValueFromString(string inData) {
+    int items = inData.length();
+    while(items>0){
+        this->addValue(stoi(inData.substr(items-2,2)));
+        inData = inData.substr(0,items-3);
+        items = inData.length();
+    }
+}
+
 
 
