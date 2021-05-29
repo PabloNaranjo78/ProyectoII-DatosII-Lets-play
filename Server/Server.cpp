@@ -19,6 +19,7 @@ bool operator<(const Individuo &ind1, const Individuo &ind2)
     return ind1.fitness < ind2.fitness;
 }
 
+
 void saveXML(int generation, vector<Individuo> population){
 
     TiXmlDocument doc;
@@ -46,8 +47,6 @@ void saveXML(int generation, vector<Individuo> population){
 
     doc.SaveFile( "../XMLS/generation"+ to_string(generation)+".xml" );
 }
-
-
 
 
 

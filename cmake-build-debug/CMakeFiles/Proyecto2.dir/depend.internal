@@ -63,22 +63,24 @@ CMakeFiles/Proyecto2.dir/Physics/Movement.cpp.o
  /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/Physics/Movement.cpp
  /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/Physics/Movement.h
 CMakeFiles/Proyecto2.dir/main.cpp.o
- /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/Graphics/Button.cpp
- /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/Graphics/Button.h
- /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/Graphics/GeneticDisplay.cpp
- /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/Graphics/GeneticDisplay.h
- /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ImageCutting/Cutter.cpp
- /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ImageCutting/Cutter.h
- /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ImageLoading/FileLoader.cpp
- /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ImageLoading/FileLoader.h
- /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/BT/BTListRegister/BTLinkedList.h
- /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/BT/BTListRegister/LLNode.h
- /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/BT/BackTrackingSearch.h
- /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/GameManagment/Board.h
- /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/GameManagment/Scores.h
- /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/Graphics/BoardDisplay.h
- /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/PathfindingA/LinkedList.h
- /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/PathfindingA/Node.h
- /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/PathfindingA/PathfindingA.h
- /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/Physics/Movement.h
+ ../BT/BTListRegister/BTLinkedList.h
+ ../BT/BTListRegister/LLNode.h
+ ../BT/BackTrackingSearch.h
+ ../GameManagment/Board.h
+ ../GameManagment/Scores.h
+ ../Graphics/BoardDisplay.h
+ ../Graphics/Button.cpp
+ ../Graphics/Button.h
+ ../Graphics/GeneticDisplay.cpp
+ ../Graphics/GeneticDisplay.h
+ ../Graphics/Menu.cpp
+ ../Graphics/Menu.h
+ ../ImageCutting/Cutter.cpp
+ ../ImageCutting/Cutter.h
+ ../ImageLoading/FileLoader.cpp
+ ../ImageLoading/FileLoader.h
+ ../PathfindingA/LinkedList.h
+ ../PathfindingA/Node.h
+ ../PathfindingA/PathfindingA.h
+ ../Physics/Movement.h
  /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/main.cpp
