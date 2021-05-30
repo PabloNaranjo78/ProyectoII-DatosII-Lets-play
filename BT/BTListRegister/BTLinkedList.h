@@ -12,7 +12,6 @@
 
 using namespace std;
 class BTLinkedList {
-
 public:
     /***
      * @brief Constructor de la clase para la lista enlazada para el backtracking.
@@ -55,7 +54,6 @@ private:
     LLNode *firstData;
     int matrix_names[9][9];
     LinkedList *regList;
-
 };
 
 

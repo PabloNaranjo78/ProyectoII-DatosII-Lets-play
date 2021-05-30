@@ -66,6 +66,12 @@ public:
      * @return lista en formato de string
      */
     string getListString();
+
+    /***
+     * @brief Carga los elementos a la lista a partir de un string
+     * @param inData string con elementos a cargar
+     */
+    void loadValueFromString(string inData);
 };
 
 
