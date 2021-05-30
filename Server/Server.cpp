@@ -8,6 +8,7 @@
 
 #include "../AlgoritmoG/Genetic.h"
 #include "../AlgoritmoG/Genetic.cpp"
+#include "../GameManagment/Board.h"
 
 using namespace sf;
 using namespace std;
@@ -187,6 +188,7 @@ int main() {
     string json;//json que se manda
     Genetic genetic;
 
+    Board * board = new Board();
 
     TcpListener listener;//listener del server
     listener.listen(8080);//asigarle el puerto 8080
@@ -217,10 +219,15 @@ int main() {
                 run_geneticAlgorithm(&socket,&genetic);
             }
             else if (type == "startPathF"){
+                int x = petition["x"].GetInt();
+                int y = petition["y"].GetInt();
+                board->getPathPlayer(y,x);
 
             }
             else if (type == "startBackT"){
-
+                int x = petition["x"].GetInt();
+                int y = petition["y"].GetInt();
+                board->getPathComputer(y,x);
             }
         }
 

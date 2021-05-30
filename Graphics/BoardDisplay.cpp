@@ -80,6 +80,18 @@ string jsonSender(string type, int x, int y)
 }
 
 
+Document jsonReceiverBTPF(Packet packet)
+{
+    string pet;
+    Document petD;
+
+    packet >> pet;
+    cout << pet << endl;
+    const char* petChar = pet.c_str();
+    petD.Parse(petChar);
+
+    return petD;
+}
 
 void BoardDisplay::runGame() {
 
@@ -178,7 +190,7 @@ void BoardDisplay::runGame() {
     IpAddress ip = IpAddress::getLocalAddress();
     TcpSocket socket;
     size_t received;
-    Packet packetR;
+    Packet packetR,packetS;
 
     //Se conecta el cliente al socket
     socket.connect(ip, 8080);
@@ -211,11 +223,29 @@ void BoardDisplay::runGame() {
         if (calculating && this->board->turnPlayers && !this->launching){
             //cout << "Error here" << endl;
             this->listPathPlayer = NULL;
+
             json = jsonSender("startPathF", this->puck->getPosition().x+25,this->puck->getPosition().y+25);
+            cout << json<<endl;
+            packetS << json;
+            socket.send(packetS);
+            packetS.clear();
+
+            socket.receive(packetR);
+            if (packetR.getData() != NULL) {
+                Document petition = jsonReceiverBTPF(packetR);
+
+                string type = petition["type"].GetString();
+                string content = petition["lista"].GetString();
+            }
+
+            packetR.clear();
+
             this->listPathPlayer = this->board->getPathPlayer(this->puck->getPosition().y+25, this->puck->getPosition().x+25);
             this->board->puck->setUpLaunch();
+
             calculating = false;
         }
+
         if (!this->launching && this->board->turnPlayers){
             cout << "length" <<  listPathPlayer->length << endl;
             if (this->listPathPlayer->length > 0) {
@@ -246,6 +276,20 @@ void BoardDisplay::runGame() {
                     this->listComputerPath = NULL;
                     this->listComputerPath = this->board->getPathComputer(this->puck->getPosition().y+25, this->puck->getPosition().x+25);
                     json = jsonSender("startBackT", this->puck->getPosition().x+25, this->puck->getPosition().y+25);
+                    cout << json<<endl;
+                    packetS << json;
+                    socket.send(packetS);
+                    packetS.clear();
+
+                    socket.receive(packetR);
+                    if (packetR.getData() != NULL) {
+                        Document petition = jsonReceiverBTPF(packetR);
+
+                        string type = petition["type"].GetString();
+                        string content = petition["lista"].GetString();
+                    }
+                    packetR.clear();
+
                     this->listComputerPath->printList();
                     cout<<"****************************************************************"<<endl;
                     cout<<this->listComputerPath->getListString()<<endl;

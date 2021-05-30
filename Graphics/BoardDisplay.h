@@ -6,8 +6,10 @@
 #include <SFML/Graphics.hpp>
 #include "../GameManagment/Board.h"
 #include <SFML/Network.hpp>
+#include "rapidjson/document.h"
 
 using namespace sf;
+using namespace rapidjson;
 
 
 /**
