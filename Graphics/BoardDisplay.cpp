@@ -196,24 +196,27 @@ void BoardDisplay::runGame() {
             calculating = false;
         }
         if (!this->launching && this->board->turnPlayers){
-            Sprite * dirB[this->listPathPlayer->length];
-            for (int x=0; x<(this->listPathPlayer->length)-1; x++){
-                dirB[x] = new Sprite;
-                dirB[x]->setTexture(*direct);
-                for (int i=0; i<9; i++){
-                    for (int j=0; j<9; j++){
-                        if (this->listPathPlayer->getValueAt(x) == this->board->matrix_names[i][j]){
-                            dirB[x]->setPosition(j*grid_x+10, i*grid_y);
-                            this->bpGame->draw(*dirB[x]);
+            cout << "length" <<  listPathPlayer->length << endl;
+            if (this->listPathPlayer->length > 0) {
+                Sprite *dirB[this->listPathPlayer->length];
+                for (int x = 0; x < (this->listPathPlayer->length) - 1; x++) {
+                    dirB[x] = new Sprite;
+                    dirB[x]->setTexture(*direct);
+                    for (int i = 0; i < 9; i++) {
+                        for (int j = 0; j < 9; j++) {
+                            if (this->listPathPlayer->getValueAt(x) == this->board->matrix_names[i][j]) {
+                                dirB[x]->setPosition(j * grid_x + 10, i * grid_y);
+                                this->bpGame->draw(*dirB[x]);
+                            }
                         }
                     }
                 }
+                RectangleShape line(sf::Vector2f(7*this->force, 10));
+                line.rotate(this->angle + 180);
+                line.setFillColor(Color::Black);
+                line.setPosition(this->puck->getPosition().x + 25, this->puck->getPosition().y + 25);
+                this->bpGame->draw(line);
             }
-            RectangleShape line(sf::Vector2f(30, 10));
-            line.rotate(this->angle+180);
-            line.setFillColor(Color::Black);
-            line.setPosition(this->puck->getPosition().x+25, this->puck->getPosition().y+25);
-            this->bpGame->draw(line);
 
         }else if (!this->launching && !this->board->turnPlayers){
             if (this->step == 1){
@@ -250,7 +253,7 @@ void BoardDisplay::runGame() {
                         }
                     }
                 }
-                RectangleShape line(sf::Vector2f(30, 10));
+                RectangleShape line(sf::Vector2f(7*this->force, 10));
                 line.rotate(this->angle+180);
                 line.setFillColor(Color::Black);
                 line.setPosition(this->puck->getPosition().x+25, this->puck->getPosition().y+25);

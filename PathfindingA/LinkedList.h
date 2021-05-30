@@ -18,7 +18,7 @@ class LinkedList {
 private:
     Node * head;
 public:
-    int length;
+    int length = 0;
     /**
      * Constructor de la clase
      */
