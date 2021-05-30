@@ -5,6 +5,7 @@
 #define PROYECTO2_BOARDDISPLAY_H
 #include <SFML/Graphics.hpp>
 #include "../GameManagment/Board.h"
+#include <SFML/Network.hpp>
 
 using namespace sf;
 

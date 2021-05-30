@@ -73,6 +73,14 @@ void BoardDisplay::checkEvents() {
     }
 }
 
+string jsonSender(string type, int x, int y)
+{
+    string jsonStr = R"({"type":")"+ type + R"(","x":")" + to_string(x)  + R"(","y":")" + to_string(y) + "\"}";
+    return jsonStr;
+}
+
+
+
 void BoardDisplay::runGame() {
 
     Texture * backgroundImage = new Texture;
@@ -97,7 +105,7 @@ void BoardDisplay::runGame() {
     for (int i=0; i<9; i++){
         for (int j=0; j<9; j++){
             if (this->board->obstacles[i][j] && i != 0 && j != 0 && i != 8 && j != 8){
-                cout << "Found obstacle" << endl;
+                cout << "Found obstacle" << this->board->matrix_names[i][j] << endl;
                 obstacles[indexAt] = new Sprite;
                 if (indexAt < this->board->obstaclesNum/2){
                     obstacles[indexAt]->setTexture(*p1Image);
@@ -167,7 +175,19 @@ void BoardDisplay::runGame() {
     bool first_in = true;
     this->step = 1;
 
+    IpAddress ip = IpAddress::getLocalAddress();
+    TcpSocket socket;
+    size_t received;
+    Packet packetR;
+
+    //Se conecta el cliente al socket
+    socket.connect(ip, 8080);
+    socket.setBlocking(false);
+    string json;
+
     while (this->keepOpen){
+
+
         this->checkMousePosition();
         this->checkEvents();
         this->bpGame->clear(Color::White);
@@ -191,6 +211,7 @@ void BoardDisplay::runGame() {
         if (calculating && this->board->turnPlayers && !this->launching){
             //cout << "Error here" << endl;
             this->listPathPlayer = NULL;
+            json = jsonSender("startPathF", this->puck->getPosition().x+25,this->puck->getPosition().y+25);
             this->listPathPlayer = this->board->getPathPlayer(this->puck->getPosition().y+25, this->puck->getPosition().x+25);
             this->board->puck->setUpLaunch();
             calculating = false;
@@ -224,11 +245,16 @@ void BoardDisplay::runGame() {
                 if (first_in){
                     this->listComputerPath = NULL;
                     this->listComputerPath = this->board->getPathComputer(this->puck->getPosition().y+25, this->puck->getPosition().x+25);
+                    json = jsonSender("startBackT", this->puck->getPosition().x+25, this->puck->getPosition().y+25);
                     this->listComputerPath->printList();
                     int i = this->puck->getPosition().y/grid_y;
                     int j = this->puck->getPosition().x/grid_x;
                     this->board->puck->setUpLaunch();
-                    this->searchAngleStart(this->board->matrix_names[i][j], this->listComputerPath->getValueAt(this->listComputerPath->length-1));
+                    if (this->board->matrix_names[i][j] != this->listComputerPath->getValueAt(this->listComputerPath->length-1)){
+                        this->searchAngleStart(this->board->matrix_names[i][j], this->listComputerPath->getValueAt(this->listComputerPath->length-1));
+                    }else{
+                        this->searchAngleStart(this->board->matrix_names[i][j], this->listComputerPath->getValueAt(this->listComputerPath->length-2));
+                    }
                     this->force = 8;
                     first_in = false;
                 }
@@ -277,6 +303,8 @@ void BoardDisplay::runGame() {
             this->launching = false;
             this->board->turnPlayers = !this->board->turnPlayers;
             if (this->board->turnPlayers){
+                this->angle = 40;
+                this->force = 11;
                 calculating = true;
             }else{
                 this->step = 1;
@@ -304,14 +332,47 @@ void BoardDisplay::setPlayerPath() {
 }
 
 void BoardDisplay::searchAngleStart(int current_pos, int first_on_path) {
-    if (first_on_path > current_pos){
-       this->angle = 180;
+    int i1 = 0;
+    int j1 = 0;
+    int i2 = 0;
+    int j2 = 0;
+    for (int i=0; i<9; i++){
+        for (int j=0; j<9; j++){
+            if (this->board->matrix_names[i][j] == current_pos){
+                i1 = i;
+                j1 = j;
+            }else if (this->board->matrix_names[i][j] == first_on_path){
+                i2 = i;
+                j2 = j;
+            }
+        }
     }
-    else if (first_on_path < current_pos){
-        this->angle = 0;
+    cout << "current, next" << this->board->matrix_names[i1][j1] << "," << this->board->matrix_names[i2][j2] << endl;
+
+    if (j1 == j2){
+        if (i1 > i2){
+            this->angle = 90;
+        }else{
+            this->angle = 270;
+        }
+    }else if (i1 == i2){
+        if (j1 > j2){
+            this->angle = 0;
+        }else{
+            this->angle = 180;
+        }
+    }else{
+        if (j2<j1 && i2<i1){
+            this->angle = 50;
+        }else if (j2<j1 && i2>i1){
+            this->angle = 320;
+        }else if (j2>j1 && i2<i1){
+            this->angle = 140;
+        }else if (j2>j1 && i2>i1){
+            this->angle = 220;
+        }
     }
-    else if (first_on_path == current_pos){
-        this->angle = 90;
-    }
+
+
 
 }

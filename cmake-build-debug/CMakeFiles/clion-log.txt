@@ -3,7 +3,6 @@
 -- SFML_INCLUDE_DIR: /home/rewieer/Libraries/SFML-2.5.1/include
 -- SFML_LIBRARIES: 
 -- SFML_VERSION: 2.5.1
--- Found TinyXML: /usr/lib/x86_64-linux-gnu/libtinyxml.so  
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/anthony/Desktop/RepositoriosGit/Proyecto2Correcto/ProyectoII-DatosII-Lets-play/cmake-build-debug
