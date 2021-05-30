@@ -20,6 +20,8 @@ BackTrackingSearch::BackTrackingSearch(bool _obstacles[9][9]) {
 }
 
 LinkedList* BackTrackingSearch::getPath(int x, int y) {
+    list = nullptr;
+    list = new BTLinkedList;
     clearMatrix();
     matrix[4][7] = 2;
     matrix[y][x] = 3;
@@ -41,11 +43,11 @@ void BackTrackingSearch::printMatrix() {
 
 void BackTrackingSearch::printPostList(){
 //    list.printPostList();
-    list.printList();
+    list->printList();
 }
 
 LinkedList * BackTrackingSearch::getPostList() {
-    return list.getPostList();
+    return list->getPostList();
 }
 
 void BackTrackingSearch::add(int _matrix[9][9]) {
@@ -64,27 +66,27 @@ LinkedList* BackTrackingSearch::searchOnePath() {
         if (matrix[y][x + 1] == 0 and matrix[y][x + 1] != 4 and matrix[y][x + 1] != 4) {
             x += 1;
             matrix[y][x] = 1;
-            list.addToList(matrix, "x+1",x,y);
+            list->addToList(matrix, "x+1",x,y);
         }else
         if (matrix[y + 1][x] == 0 and matrix[y + 1][x] != 4 and matrix[y + 1][x] != 5) {
             y += 1;
             matrix[y][x] = 1;
-            list.addToList(matrix,"y+1",x,y);
+            list->addToList(matrix,"y+1",x,y);
         }else if (matrix[y][x-1] == 0 and matrix[y][x-1] != 4 and x >0 and matrix[y][x-1] != 5){
             x-=1;
             matrix[y][x] = 1;
-            list.addToList(matrix,"x-1",x,y);
+            list->addToList(matrix,"x-1",x,y);
         }else
         if (matrix[y-1][x] == 0 and matrix[y-1][x] != 4 and y>0 and matrix[y-1][x] != 5){
             y-=1;
             matrix[y][x] = 1;
-            list.addToList(matrix,"y-1",x,y);
+            list->addToList(matrix,"y-1",x,y);
         } else  if (closePath(x,y)){
-            string lastMov = list.getLastMovement();
-            memcpy(matrix,list.getLastElement()->data, sizeof(int)*9*9);
+            string lastMov = list->getLastMovement();
+            memcpy(matrix,list->getLastElement()->data, sizeof(int)*9*9);
             cout<<"REVIERTE    -------  ------- ------"<<endl;
             matrix[y][x] = 5;
-            list.replaceInALl(5,x,y);
+            list->replaceInALl(5,x,y);
             if (lastMov == "x+1"){
                 x-=1;
             } else if(lastMov == "y+1") {

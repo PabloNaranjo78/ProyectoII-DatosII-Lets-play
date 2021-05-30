@@ -63,9 +63,10 @@ private:
     int startRow = 0;
     int startColumn = 0;
     LinkedList * getPostList();
-    BTLinkedList list;
+    BTLinkedList* list;
     string result = "";
     LinkedList* regList;
+
 };
 
 

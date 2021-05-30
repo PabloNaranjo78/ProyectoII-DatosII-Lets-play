@@ -63,13 +63,14 @@ void BTLinkedList::replaceInALl(int num,int x, int y) {
 }
 
 LinkedList* BTLinkedList::getPostList() {
+    regList = NULL;
     LLNode *temp = thisData;
-    LinkedList* result = new LinkedList;
+    regList = new LinkedList;
     while(temp != NULL){
-        result->addValue(temp->posMove);
+        regList->addValue(temp->posMove);
         temp = temp->prev;
     }
-    cout << "nodes added" << endl;
-    return result;
+
+    return regList;
 }
 
